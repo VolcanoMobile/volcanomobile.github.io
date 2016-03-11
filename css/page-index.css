@@ -1,0 +1,166 @@
+.carousel{
+	border-radius: 0.5em;
+	overflow: hidden;
+	border: 3px solid #5C5B5A;
+	box-shadow: 0.3em 0.3em 0.5em #000000;
+	margin-bottom: 2em;
+}
+.item{
+	border: 0px solid;
+	/*height: 294px;*/
+}
+
+.item .image{
+	border: 0px solid;
+	/*height: 300px;*/
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url("../img/mg-dino/feature.png");
+}
+
+.carousel-indicators{
+	width: auto;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin-left: 0;
+	margin-bottom: 0;
+	text-align: right;
+	padding-right: 1em;
+	padding-bottom: 1em;
+}
+
+.carousel-control .icon-prev, 
+.carousel-control .icon-next, 
+.carousel-control .fa-chevron-left, 
+.carousel-control .fa-chevron-right {
+	position: absolute;
+	top: 50%;
+	z-index: 5;
+	display: inline-block;
+}
+
+.carousel-caption{
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	background-color: rgba( 0, 0, 0, 0.5);
+	padding: 0.5em 1em 0.5em 1em;
+}
+.carousel-caption h3{
+	text-align: left;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 1.5em;
+}
+.carousel-caption p{
+	text-align: left;
+	margin-bottom: 0.0em;
+}
+
+
+#item-chain-reaction .image{
+	background-image: url("../img/chain-reaction/feature.png");
+	background-position: bottom left;
+}
+
+#item-yarrrr .image{
+	background-image: url("../img/yarrrr/feature.png");
+	background-position: bottom left;
+}
+
+#item-flying-jelly-bean .image{
+	background-image: url("../img/flying-jelly-bean/feature.png");
+	background-position: bottom left;
+}
+
+#item-fartman .image{
+	background-image: url("../img/fartman/game_over_panel.png");
+	background-position: center right;
+}
+
+#item-shape-blaster .image{
+	background-image: url("../img/shape-blaster/shape-blaster-promo.png");
+	background-position: center;
+}
+
+#item-dino .image{
+	background-image: url("../img/mg-dino/feature.png");
+	background-position: center;
+}
+
+#item-halloween .image{
+	background-image: url("../img/mg-halloween/feature.png");
+}
+
+#item-sea .image{
+	background-image: url("../img/mg-sea/feature.png");
+}
+
+#item-chords-player .image{
+	background-image: url("../img/chords-player/feature.png");
+}
+
+
+@media(min-width:518px){
+	.item{
+		height: 294px;
+	}
+	.item .image{
+		height: 300px;
+	}
+}
+@media(max-width:518px){
+	.item{
+		height: 244px;
+	}
+	.item .image{
+		height: 250px;
+	}
+}
+@media(max-width:368px){
+	.item{
+		height: 194px;
+	}
+	.item .image{
+		height: 200px;
+	}
+}
+
+
+
+
+.twitter-feeds{
+	border: 0px solid #ff0000;
+	height: 300px;
+	border-radius: 0.5em;
+	overflow: hidden;
+	box-shadow: 0.3em 0.3em 0.5em #000000;
+	margin-bottom: 2em;
+}
+.twitter-feeds > iframe{
+	border: 5px solid #ff0000;
+}
+
+
+
+
+
+.app-item{
+	text-align: center;
+	border: 0px solid;
+	height: 160px;
+}
+.app-item img{
+	height: 120px;
+}
+.app-item .title{
+	font-weight: bold;
+}
+
+
+
+.form-contact{}
+.form-contact body{
+	background: #ff0000;
+}

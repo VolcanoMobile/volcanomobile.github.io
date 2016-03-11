@@ -1,0 +1,16 @@
+@media(min-width:1200px){
+	.container{
+		width: 900px;
+	}
+}
+
+
+.panel-default {
+	border-color: #888888;
+}
+.panel-default>.panel-heading {
+	font-weight: bold;
+	color: #ffffff;
+	background-image: none;
+	background-color: #000000;
+}

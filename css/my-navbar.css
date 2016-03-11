@@ -1,0 +1,117 @@
+.my-navbar{
+	border-bottom: 2px solid #000000;
+	background: #ffffff;
+	position: fixed;
+	top: 0px;
+	display: block;
+	width: 100%;
+	z-index: 1000;
+	box-shadow: 0px 3px 3px #444444;
+}
+
+.my-navbar-header{
+	border-right: 1px solid #000000;
+	overflow: hidden;
+	float: left;
+}
+
+.my-navbar-header .logo{
+	background-image: url("../img/logo.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 40px;
+	width: 60px;
+	float: left;	
+	margin: 5px;
+}
+.my-navbar-header .my-navbar-brand{
+	float: left;
+	font-size: 1.5em;
+	line-height: 1.0em;
+	margin-left: 0px;
+	padding-top: 15px;
+	padding-right: 10px;
+}
+
+
+.my-navbar-nav {
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+.my-navbar-nav a {
+	line-height: 50px;
+	float: left;
+	display: block;
+}
+
+
+@media(max-width:1200px){
+}
+@media(max-width:992px){
+}
+@media(min-width:768px){
+	.my-navbar-nav a {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+	.social-networks a{
+		width: 40px;
+		height: 40px;
+	}
+	.social-networks li{
+		padding: 5px;
+	}
+}
+@media(max-width:768px){
+	.my-navbar-nav a {
+		padding-left: 0.2em;
+		padding-right: 0.2em;
+	}
+	.social-networks li{
+		padding: 10px;
+	}
+	.social-networks a{
+		width: 30px;
+		height: 30px;
+	}
+}
+@media(max-width:368px){
+	.my-navbar-header{
+		display: none;
+	}
+}
+
+.social-networks{
+}
+.social-networks li{
+	line-height: 0px;
+}
+.social-networks a{
+	padding: 0em;
+	margin-left: 0.3em;
+	border: 0px solid;
+}
+.social-networks #social-networks-twitter{
+	background-image: url("../img/twitter.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.social-networks #social-networks-facebook{
+	background-image: url("../img/facebook.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.social-networks #social-networks-google-play{
+	background-image: url("../img/google-play.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.social-networks #social-networks-google-plus{
+	background-image: url("../img/google-plus.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
