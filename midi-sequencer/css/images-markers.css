@@ -1,0 +1,419 @@
+/**** Action bar ******/
+
+#tuto-image-actionbar #tuto-image-marker-0 {
+    left: 3.7%;
+    top: 10%;
+}
+
+#tuto-image-actionbar #tuto-image-marker-1 {
+    left: 10.5%;
+    top: 10%;
+}
+
+#tuto-image-actionbar #tuto-image-marker-2 {
+    left: 15.8%;
+    top: 10%;
+}
+
+#tuto-image-actionbar #tuto-image-marker-3 {
+    left: 21.0%;
+    top: 10%;
+}
+
+#tuto-image-actionbar #tuto-image-marker-4 {
+    left: 96.5%;
+    top: 10%;
+}
+
+
+/***** Left Menu *****/
+
+#tuto-image-left-menu #tuto-image-marker-0 {
+    left: 27.5%;
+    top: 5%;
+}
+
+#tuto-image-left-menu #tuto-image-marker-1 {
+    left: 20.5%;
+    top: 15%;
+}
+
+#tuto-image-left-menu #tuto-image-marker-2 {
+    left: 20.5%;
+    top: 23.2%;
+}
+
+
+#tuto-image-left-menu #tuto-image-marker-3 {
+    left: 20.5%;
+    top: 31.5%;
+}
+
+
+#tuto-image-left-menu #tuto-image-marker-4 {
+    left: 20.5%;
+    top: 39.8%;
+}
+
+
+#tuto-image-left-menu #tuto-image-marker-5 {
+    left: 20.5%;
+    top: 47.9%;
+}
+
+
+#tuto-image-left-menu #tuto-image-marker-6 {
+    left: 20.5%;
+    top: 55.9%;
+}
+
+#tuto-image-left-menu #tuto-image-marker-7 {
+    left: 20.5%;
+    top: 64.0%;
+}
+
+
+/***** Options Menu *****/
+
+#tuto-image-options-menu #tuto-image-marker-0 {
+    left: 95.5%;
+    top: 4%;
+}
+
+#tuto-image-options-menu #tuto-image-marker-1 {
+    left: 95.5%;
+    top: 12.8%;
+}
+
+#tuto-image-options-menu #tuto-image-marker-2 {
+    left: 95.5%;
+    top: 21.5%;
+}
+
+
+#tuto-image-options-menu #tuto-image-marker-3 {
+    left: 95.5%;
+    top: 30.3%;
+}
+
+
+#tuto-image-options-menu #tuto-image-marker-4 {
+    left: 95.5%;
+    top: 38.8%;
+}
+
+
+#tuto-image-options-menu #tuto-image-marker-5 {
+    left: 95.5%;
+    top: 47.1%;
+}
+
+
+
+
+/***** Pattern *****/
+
+#tuto-image-pattern #tuto-image-marker-0 {
+    left: 29.7%;
+    top: 10%;
+}
+
+#tuto-image-pattern #tuto-image-marker-1 {
+    left: 11.0%;
+    top: 24%;
+}
+#tuto-image-pattern .tuto-image-square-1 {
+    width: 10.5%;
+    height: 35.1%;
+    left: 0.25%;
+    top: 9.4%;
+}
+
+#tuto-image-pattern #tuto-image-marker-2 {
+    left: 17.5%;
+    top: 18%;
+}
+
+#tuto-image-pattern #tuto-image-marker-3 {
+    left: 86.8%;
+    top: 10%;
+}
+
+#tuto-image-pattern #tuto-image-marker-4 {
+    left: 92.5%;
+    top: 10%;
+}
+
+#tuto-image-pattern #tuto-image-marker-5 {
+    left: 71.0%;
+    top: 20%;
+}
+
+#tuto-image-pattern #tuto-image-marker-6 {
+    left: 77.1%;
+    top: 20%;
+}
+
+#tuto-image-pattern #tuto-image-marker-7 {
+    left: 83.1%;
+    top: 20%;
+}
+
+#tuto-image-pattern #tuto-image-marker-8 {
+    left: 90.8%;
+    top: 20%;
+}
+
+#tuto-image-pattern #tuto-image-marker-9 {
+    left: 96.5%;
+    top: 20%;
+}
+
+/***** Pattern drum pads *****/
+
+#tuto-image-pattern-drumpads #tuto-image-marker-0 {
+    left: 11%;
+    top: 50%;
+}
+
+#tuto-image-pattern-drumpads .tuto-image-square-0 {
+    width: 88%;
+    height: 77%;
+    left: 11%;
+    top: 20%;
+}
+
+#tuto-image-pattern-drumpads #tuto-image-marker-1 {
+    left: 96.5%;
+    top: 20%;
+}
+
+
+/***** Pattern notes pads *****/
+
+#tuto-image-pattern-notespads #tuto-image-marker-0 {
+    left: 11%;
+    top: 50%;
+}
+
+#tuto-image-pattern-notespads .tuto-image-square-0 {
+    width: 88.3%;
+    height: 77.5%;
+    left: 11%;
+    top: 20%;
+}
+
+#tuto-image-pattern-notespads #tuto-image-marker-1 {
+    left: 96.5%;
+    top: 20%;
+}
+
+/***** Pattern notes *****/
+
+#tuto-image-pattern-notes #tuto-image-marker-0 {
+    left: 11%;
+    top: 45%;
+}
+
+#tuto-image-pattern-notes .tuto-image-square-0 {
+    width: 88.3%;
+    height: 50.5%;
+    left: 11%;
+    top: 20%;
+}
+
+#tuto-image-pattern-notes #tuto-image-marker-1 {
+    left: 92.5%;
+    top: 10%;
+}
+
+/***** Sequences *****/
+
+#tuto-image-sequences #tuto-image-marker-0 {
+    left: 50%;
+    top: 9.0%;
+}
+
+#tuto-image-sequences .tuto-image-square-0 {
+    width: 99.5%;
+    height: 37.5%;
+    left: 0.25%;
+    top: 9.0%;
+}
+
+#tuto-image-sequences #tuto-image-marker-1 {
+    left: 97%;
+    top: 17.0%;
+}
+
+#tuto-image-sequences #tuto-image-marker-2 {
+    left: 92.5%;
+    top: 10.0%;
+}
+
+/***** Tracks *****/
+
+#tuto-image-tracks #tuto-image-marker-0 {
+    left: 50%;
+    top: 9.0%;
+}
+
+#tuto-image-tracks .tuto-image-square-0 {
+    width: 99.5%;
+    height: 30.0%;
+    left: 0.25%;
+    top: 9.0%;
+}
+
+#tuto-image-tracks #tuto-image-marker-1 {
+    left: 97%;
+    top: 17.0%;
+}
+
+#tuto-image-tracks #tuto-image-marker-2 {
+    left: 92.5%;
+    top: 10.0%;
+}
+
+/***** Mixer *****/
+
+#tuto-image-mixer #tuto-image-marker-0 {
+    left: 22%;
+    top: 9.0%;
+}
+
+#tuto-image-mixer .tuto-image-square-0 {
+    width: 43.5%;
+    height: 13.3%;
+    margin-left: 0.25%;
+    margin-top: 5.5%;
+}
+
+#tuto-image-mixer #tuto-image-marker-1 {
+    left: 3.0%;
+    top: 22.5%;
+}
+
+#tuto-image-mixer #tuto-image-marker-2 {
+    left: 8.1%;
+    top: 22.5%;
+}
+
+#tuto-image-mixer #tuto-image-marker-3 {
+    left: 75%;
+    top: 22.5%;
+}
+
+#tuto-image-mixer .tuto-image-square-3 {
+    width: 99.5%;
+    height: 74.5%;
+    margin-left: 0.25%;
+    margin-top: 13.3%;
+}
+
+#tuto-image-mixer #tuto-image-marker-4 {
+    left: 82.8%;
+    top: 72.5%;
+}
+
+
+
+
+/***** Song mode *****/
+
+#tuto-image-song-mode #tuto-image-marker-0 {
+    left: 50%;
+    top: 9.0%;
+}
+
+#tuto-image-song-mode .tuto-image-square-0 {
+    width: 99.9%;
+    height: 89.3%;
+    left: 0.05%;
+    top: 9.0%;
+}
+
+#tuto-image-song-mode #tuto-image-marker-1 {
+    left: 4.2%;
+    top: 18.0%;
+}
+
+#tuto-image-song-mode #tuto-image-marker-2 {
+    left: 9.4%;
+    top: 18.0%;
+}
+
+#tuto-image-song-mode #tuto-image-marker-3 {
+    left: 19%;
+    top: 18.0%;
+}
+
+#tuto-image-song-mode .tuto-image-square-3 {
+    width: 13.5%;
+    height: 77.5%;
+    margin-left: 12.25%;
+    margin-top: 11.3%;
+}
+
+#tuto-image-song-mode #tuto-image-marker-4 {
+    left: 92.5%;
+    top: 10.0%;
+}
+
+
+
+/***** Settings *****/
+
+#tuto-image-settings #tuto-image-marker-0 {
+    left: 25%;
+    top: 20.0%;
+}
+
+#tuto-image-settings .tuto-image-square-0 {
+    width: 99.5%;
+    height: 89.3%;
+    margin-left: 0.25%;
+    margin-top: 5.0%;
+}
+
+#tuto-image-settings #tuto-image-marker-1 {
+    left: 15%;
+    top: 32.0%;
+}
+
+
+
+/***** MIDI Connections *****/
+
+#tuto-image-midi-connections #tuto-image-marker-0 {
+    left: 25%;
+    top: 10.0%;
+}
+
+#tuto-image-midi-connections .tuto-image-square-0 {
+    width: 49.25%;
+    height: 40.3%;
+    margin-left: 0.25%;
+    margin-top: 6.0%;
+}
+
+#tuto-image-midi-connections #tuto-image-marker-1 {
+    left: 75%;
+    top: 10.0%;
+}
+
+#tuto-image-midi-connections .tuto-image-square-1 {
+    width: 49.25%;
+    height: 67.5%;
+    margin-left: 50.25%;
+    margin-top: 6.0%;
+}
+
+#tuto-image-midi-connections #tuto-image-marker-2 {
+    left: 46.5%;
+    top: 19.0%;
+}
+
+
+
+

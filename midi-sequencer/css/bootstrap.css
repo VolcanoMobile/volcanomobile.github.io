@@ -1,0 +1,115 @@
+/***********************/
+/***** Bootstrap *******/
+/***********************/
+
+a{
+	color: #E09300;
+}
+
+a:hover{
+	color: #5a5a5a;
+}
+
+.badge-pill{
+	width: 2.5em;
+	height: 2.5em;
+	line-height: 2.5em;
+	padding: 0em;
+}
+
+
+
+.bg-primary{
+	background-color: #5a5a5a!important;
+}
+
+
+
+.card{
+}
+
+a .card{
+	color: #5a5a5a;
+}
+
+.card-header{
+	color: #FFB11B;
+	background-color: #5a5a5a;
+}
+
+.card-img-top{
+	width: 100%;
+	height: auto;
+}
+
+
+
+.list-group-item{
+	display: block;
+}
+
+
+ 
+.navbar{
+	box-shadow: 0em 0.0em 0.5em rgba(0, 0, 0, 0.5);
+    font-family: 'Source Sans Pro', sans-serif;
+	font-weight: bold;
+	/*background-image: url('https://imgjam.com/jamendomusic/radios/radio-electro-hero-l.jpg' );
+	background-position: bottom center;
+	background-size: cover;
+	background-repeat: no-repeat;*/
+	/*background-color: #5c5c5c;*/
+}
+
+.navbar .navbar-brand{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: #5c5c5c;
+}
+
+.navbar .nav-item{
+	text-transform: uppercase;
+}
+.navbar .nav-item:hover{
+	background-color: #eeeeee;
+}
+
+.navbar-nav .nav-item.active{
+	background-color: #dddddd;
+}
+.navbar .nav-item .nav-link{
+}
+.navbar .nav-item:hover .nav-link{
+}
+
+
+/***** Responsive *******/
+@media (max-width: 575px) {
+
+	div[class^='col-lg-'], div[class*=' col-lg-']{
+		padding-bottom: 1em;
+	}
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+	div[class^='col-lg-'], div[class*=' col-lg-']{
+		padding-bottom: 1em;
+	}
+	
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+	div[class^='col-lg-'], div[class*=' col-lg-']{
+		padding-bottom: 1em;
+	}
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+@media (min-width: 1200px) {
+
+
+}
