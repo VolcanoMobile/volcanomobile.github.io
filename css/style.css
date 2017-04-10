@@ -26,28 +26,34 @@ h2{
 	}
 }
 
-#header{
+header{
 	border: 0px solid #00ff00;
 	margin-top: 60px;
 	position: relative;
+	overflow: auto;
 }
-#header .header-relative{
-	position: relative;
+header .header-content{
+	height: 150px;
+	border: 0px solid #00ffff;
+	right: 0px;
+	bottom: 0px;
 	background-image: url("../img/header.png");
 	background-repeat: no-repeat;
 	background-position: bottom right;
 	background-size: 30%;
 }
 
-#header .logo{
+header .logo{
 	background-image: url("../img/logo.png");
 	background-size: contain;
 	background-repeat: no-repeat;
-	height: 150px;
-	padding-top: 1em; padding-bottom: 1em;
+	height: 130px;
+	width: 150px;
+	margin-bottom: 1em;
+	float: left;
 }
 
-#header .title{
+header .title{
 	position: absolute;
 	top: 0.5em;
 	left: 3em;
@@ -55,7 +61,7 @@ h2{
 	line-height: 0.8em;
 	color: #000000;
 }
-#header .title small{
+header .title small{
 	font-size: 0.5em;
 	margin-left: 5em;
 }
