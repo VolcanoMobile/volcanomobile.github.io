@@ -59,6 +59,21 @@
 }
 
 
+#item-midi-sequencer .image{
+	background-image: url("../img/midi-sequencer/feature_graphic.png");
+	background-position: center;
+}
+
+#item-drum-sequencer .image{
+	background-image: url("../img/drum-sequencer/feature.png");
+	background-position: center;
+}
+
+#item-midi-file-player .image{
+	background-image: url("../img/midi-file-player/feature-graphic.png");
+	background-position: center;
+}
+
 #item-chain-reaction .image{
 	background-image: url("../img/chain-reaction/feature.png");
 	background-position: bottom left;
