@@ -1,43 +1,26 @@
+/***** Carousel *****/
 .carousel{
-	border-radius: 0.5em;
-	overflow: hidden;
-	border: 3px solid #5C5B5A;
-	box-shadow: 0.3em 0.3em 0.5em #000000;
-	margin-bottom: 2em;
 }
-.item{
-	border: 0px solid;
-	/*height: 294px;*/
+.carousel-item{
+	border-radius: 0.25em;
+	overflow: hidden;
 }
 
-.item .image{
-	border: 0px solid;
-	/*height: 300px;*/
+.carousel-item > a{
+	display: block;
+	width: 100%;
+	/*height: 10em;*/
+	border-radius: 0.25em;
+	overflow: hidden;
+}
+
+.carousel-item .image{
+	width: 100%;
+	height: 22em;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-image: url("../img/mg-dino/feature.png");
-}
-
-.carousel-indicators{
-	width: auto;
-	left: 0px;
-	right: 0px;
-	bottom: 0px;
-	margin-left: 0;
-	margin-bottom: 0;
-	text-align: right;
-	padding-right: 1em;
-	padding-bottom: 1em;
-}
-
-.carousel-control .icon-prev, 
-.carousel-control .icon-next, 
-.carousel-control .fa-chevron-left, 
-.carousel-control .fa-chevron-right {
-	position: absolute;
-	top: 50%;
-	z-index: 5;
-	display: inline-block;
+	background-image: url("../img/logo.png");
+	border-radius: 0.25em;
 }
 
 .carousel-caption{
@@ -45,20 +28,11 @@
 	right: 0px;
 	bottom: 0px;
 	background-color: rgba( 0, 0, 0, 0.5);
-	padding: 0.5em 1em 0.5em 1em;
-}
-.carousel-caption h3{
-	text-align: left;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	font-size: 1.5em;
-}
-.carousel-caption p{
-	text-align: left;
-	margin-bottom: 0.0em;
+	padding: 0.5em 1em 1em 1em;
 }
 
 
+/***** Carousel items *****/
 #item-midi-sequencer .image{
 	background-image: url("../img/midi-sequencer/feature_graphic.png");
 	background-position: center;
@@ -118,39 +92,23 @@
 
 
 @media(min-width:518px){
-	.item{
-		height: 294px;
-	}
-	.item .image{
-		height: 300px;
-	}
+
 }
 @media(max-width:518px){
-	.item{
-		height: 244px;
-	}
-	.item .image{
-		height: 250px;
-	}
+
 }
 @media(max-width:368px){
-	.item{
-		height: 194px;
-	}
-	.item .image{
-		height: 200px;
-	}
+
 }
 
 
 
+/***** Twitter feeds *****/
 
 .twitter-feeds{
-	border: 0px solid #ff0000;
-	height: 300px;
+	border: 1px solid rgba(0,0,0,.125);
 	border-radius: 0.5em;
 	overflow: hidden;
-	box-shadow: 0.3em 0.3em 0.5em #000000;
 	margin-bottom: 2em;
 }
 .twitter-feeds > iframe{
@@ -160,11 +118,12 @@
 
 
 
+/***** Apps lists *****/
 
 .app-item{
 	text-align: center;
 	border: 0px solid;
-	height: 160px;
+	margin-bottom: 2em;
 }
 .app-item img{
 	height: 120px;
@@ -173,9 +132,3 @@
 	font-weight: bold;
 }
 
-
-
-.form-contact{}
-.form-contact body{
-	background: #ff0000;
-}

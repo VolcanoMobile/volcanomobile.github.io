@@ -7,19 +7,13 @@
 		<meta name="keywords" content="volcano,mobile,apps,applications,games,android,google,play,twitter">
 		<meta name="author" content="Volcano Mobile">
 
-		<meta name="viewport" content="width=100%; initial-scale=1; maximum-scale=1; minimum-scale=1;"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
  		<!-- jQuery -->
-		<script src="libs/jquery/jquery-1.10.2.min.js"></script>
+		<script src="node_modules/jquery/dist/jquery.min.js"></script>
 
-		<!-- jQuery-ui -->
-		<script src="libs/jquery/ui/jquery-ui.js"></script>
-		<link rel="stylesheet" href="libs/jquery/ui/jquery-ui.css">
-
-		<!-- Bootstrap -->
-		<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
-		<link rel="stylesheet" href="libs/bootstrap/bootstrap-theme.min.css">
-		<script src="libs/bootstrap/bootstrap.min.js"></script>
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 
 		<!-- font awesome -->
 		<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
@@ -36,7 +30,7 @@
 	<!-- Brand and toggle get grouped for better mobile display -->
 	<div class="my-navbar-header">
 		<a href="index.html"><span class="logo"></span></a>
-		<a class="my-navbar-brand hidden-xs" href="index.html"> Volcano Mobile</a>
+		<a class="my-navbar-brand hidden-sm-down" href="index.html"> Volcano Mobile</a>
 	</div>
 
 	<!-- Collect the nav links, forms, and other content for toggling -->
@@ -77,7 +71,6 @@
 			<li style="white-space: nowrap;">
 				<a style="display: inline-block;" target="_blank" href="https://play.google.com/store/apps/developer?id=Volcano%20Mobile" id="social-networks-google-play" title="Google Play"></a>
 				<a style="display: inline-block;" target="_blank" href="https://twitter.com/VolcanoMobile" id="social-networks-twitter" title="Twitter"></a>
-				<a style="display: inline-block;" target="_blank" href="https://www.facebook.com/pages/Volcano-Mobile/162675300498153" id="social-networks-facebook" title="Facebook"></a>
 				<a style="display: inline-block;" target="_blank" href="https://plus.google.com/u/0/116384353268147090242/" id="social-networks-google-plus" title="Google Plus"></a>
 			</li>
 
@@ -85,9 +78,7 @@
 	</div><!-- /.navbar-collapse -->
 </nav>
 
-<div class="fb-share">
-	<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.volcanomobile.net&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21&amp;appId=184502475094330" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe>
-</div>
+
 
 <header>
 
@@ -97,11 +88,14 @@
 				<div class="header-content">
 					<a href="index.html"><div class="logo"></div></a>
 					<a href="index.html">
-						<div class="title">
+						<h1 class="hidden-xs-down">
 							Volcano mobile<br/>
-							<small class="hidden-xs">All for your mobile</small>
-						</div>
+							<small class="hidden-sm-down">All for your mobile</small>
+						</h1>
 					</a>
+					<div class="fb-share">
+						<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.volcanomobile.net&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21&amp;appId=184502475094330" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -109,17 +103,6 @@
 	
 </header>
 
-<div id="menu">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<!--a href="#games">Games</a>
-				<a href="#applications">Applications</a-->
-				&nbsp;
-			</div>
-		</div>
-	</div>
-</div>
 
 <div id="page">
 	<div class="container">
@@ -127,125 +110,131 @@
 		<div class="row">
 
 			<div class="col-md-8">
-				<div data-ride="carousel" class="carousel slide" id="carousel-example-generic">
-					<ol class="carousel-indicators">
-						<li data-slide-to="0" data-target="#carousel-example-generic" class="active"></li>
-						<li data-slide-to="1" data-target="#carousel-example-generic" ></li>
-						<li data-slide-to="2" data-target="#carousel-example-generic"></li>
-						<li data-slide-to="3" data-target="#carousel-example-generic"></li>
-						<li data-slide-to="4" data-target="#carousel-example-generic"></li>
-						<li data-slide-to="5" data-target="#carousel-example-generic"></li>
-						<li data-slide-to="6" data-target="#carousel-example-generic"></li>
-						<li data-slide-to="7" data-target="#carousel-example-generic"></li>
-						<!--li data-slide-to="8" data-target="#carousel-example-generic"></li-->
-					</ol>
-					<div class="carousel-inner">
+				<div class="card">
+					<div class="card-block">
+					<div id="apps-carousel" data-ride="carousel" class="carousel slide">
+						<ol class="carousel-indicators">
+							<li data-slide-to="0" data-target="#apps-carousel" class="active"></li>
+							<li data-slide-to="1" data-target="#apps-carousel" ></li>
+							<li data-slide-to="2" data-target="#apps-carousel"></li>
+							<li data-slide-to="3" data-target="#apps-carousel"></li>
+							<li data-slide-to="4" data-target="#apps-carousel"></li>
+							<li data-slide-to="5" data-target="#apps-carousel"></li>
+							<li data-slide-to="6" data-target="#apps-carousel"></li>
+							<li data-slide-to="7" data-target="#apps-carousel"></li>
+							<!--li data-slide-to="8" data-target="#apps-carousel"></li-->
+						</ol>
+						<div class="carousel-inner">
 
-						<div class="item active" id="item-midi-sequencer">
-							<a target="_blank" href="https://play.google.com/store/apps/details?id=net.volcanomobile.midisequencer">
-								<div class="image"></div>
-								<div class="carousel-caption">
-									<h3>MIDI Sequencer</h3>
-									<p>
-										Sequencer MIDI
-									</p>
-								</div>
-							</a>
-						</div>
+							<div class="carousel-item active" id="item-midi-sequencer">
+								<a target="_blank" href="https://play.google.com/store/apps/details?id=net.volcanomobile.midisequencer">
+									<div class="image"></div>
+									<div class="carousel-caption">
+										<h3>MIDI Sequencer</h3>
+										<p>
+											Sequencer MIDI
+										</p>
+									</div>
+								</a>
+							</div>
 
-						<div class="item" id="item-drum-sequencer">
-							<a target="_blank" href="https://play.google.com/store/apps/details?id=com.volcanomobile.drumsequencer">
-								<div class="image"></div>
-								<div class="carousel-caption">
-									<h3>Drum Sequencer</h3>
-									<p>
-										Drum Sequencer
-									</p>
-								</div>
-							</a>
-						</div>
+							<div class="carousel-item" id="item-drum-sequencer">
+								<a target="_blank" href="https://play.google.com/store/apps/details?id=com.volcanomobile.drumsequencer">
+									<div class="image"></div>
+									<div class="carousel-caption">
+										<h3>Drum Sequencer</h3>
+										<p>
+											Drum Sequencer
+										</p>
+									</div>
+								</a>
+							</div>
 
-						<div class="item" id="item-midi-file-player">
-							<a target="_blank" href="https://play.google.com/store/apps/details?id=net.volcanomobile.midifileplayer">
-								<div class="image"></div>
-								<div class="carousel-caption">
-									<h3>MIDI file player</h3>
-									<p>
-										MIDI file player
-									</p>
-								</div>
-							</a>
-						</div>
+							<div class="carousel-item" id="item-midi-file-player">
+								<a target="_blank" href="https://play.google.com/store/apps/details?id=net.volcanomobile.midifileplayer">
+									<div class="image"></div>
+									<div class="carousel-caption">
+										<h3>MIDI file player</h3>
+										<p>
+											MIDI file player
+										</p>
+									</div>
+								</a>
+							</div>
 
-						<div class="item" id="item-chain-reaction">
-							<a target="_blank" href="https://play.google.com/store/apps/details?id=net.volcanomobile.chainreaction">
-								<div class="image"></div>
-								<div class="carousel-caption">
-									<h3>Chain reaction</h3>
-									<p>
-										Trigger the chain reaction exploding<br/>diamonds through the amazing power of light.
-									</p>
-								</div>
-							</a>
-						</div>
+							<div class="carousel-item" id="item-chain-reaction">
+								<a target="_blank" href="https://play.google.com/store/apps/details?id=net.volcanomobile.chainreaction">
+									<div class="image"></div>
+									<div class="carousel-caption">
+										<h3>Chain reaction</h3>
+										<p>
+											Trigger the chain reaction exploding diamonds through the amazing power of light.
+										</p>
+									</div>
+								</a>
+							</div>
 
-						<div class="item" id="item-yarrrr">
-							<a target="_blank" href="https://play.google.com/store/apps/details?id=net.volcanomobile.twofingersfighterandroid">
-								<div class="image"></div>
-								<div class="carousel-caption">
-									<h3>Yarrrr</h3>
-									<p>
-										Help Pat the pirate to fight for<br/> his life against the horde of zombies.
-									</p>
-								</div>
-							</a>
-						</div>
+							<div class="carousel-item" id="item-yarrrr">
+								<a target="_blank" href="https://play.google.com/store/apps/details?id=net.volcanomobile.twofingersfighterandroid">
+									<div class="image"></div>
+									<div class="carousel-caption">
+										<h3>Yarrrr</h3>
+										<p>
+											Help Pat the pirate to fight for his life against the horde of zombies.
+										</p>
+									</div>
+								</a>
+							</div>
 
-						<div class="item" id="item-flying-jelly-bean">
-							<a target="_blank" href="https://play.google.com/store/apps/details?id=net.volcanomobile.paflechien">
-								<div class="image"></div>
-								<div class="carousel-caption">
-									<h3>Flying Jelly Bean</h3>
-									<p>
-										Let's make the distance<br/>
-										with Flying Jelly Bean.
-									</p>
-								</div>
-							</a>
-						</div>
+							<div class="carousel-item" id="item-flying-jelly-bean">
+								<a target="_blank" href="https://play.google.com/store/apps/details?id=net.volcanomobile.paflechien">
+									<div class="image"></div>
+									<div class="carousel-caption">
+										<h3>Flying Jelly Bean</h3>
+										<p>
+											Let's make the distance<br/>
+											with Flying Jelly Bean.
+										</p>
+									</div>
+								</a>
+							</div>
 
-						<div class="item" id="item-fartman">
-							<a target="_blank" href="https://play.google.com/store/apps/details?id=net.volcanomobile.fartman">
-								<div class="image"></div>
-								<div class="carousel-caption">
-									<h3>Fartman</h3>
-									<p>
-										Super-Fart Hero.<br/>
-										Fart to rescue the city.
-									</p>
-								</div>
-							</a>
-						</div>
+							<div class="carousel-item" id="item-fartman">
+								<a target="_blank" href="https://play.google.com/store/apps/details?id=net.volcanomobile.fartman">
+									<div class="image"></div>
+									<div class="carousel-caption">
+										<h3>Fartman</h3>
+										<p>
+											Super-Fart Hero.<br/>
+											Fart to rescue the city.
+										</p>
+									</div>
+								</a>
+							</div>
 
-						<div class="item" id="item-chords-player">
-							<a target="_blank" href="https://play.google.com/store/apps/details?id=net.volcanomobile.chordsplayer">
-								<div class="image"></div>
-								<div class="carousel-caption">
-									<h3>Chords Player</h3>
-									<p>
-										Chords Player is a simple, yet useful, music tool.<br>
-										It lets you easily create chords sequences and arrange theme to create rhythm tracks for you to train on.
-									</p>
-								</div>
-							</a>
+							<div class="carousel-item" id="item-chords-player">
+								<a target="_blank" href="https://play.google.com/store/apps/details?id=net.volcanomobile.chordsplayer">
+									<div class="image"></div>
+									<div class="carousel-caption">
+										<h3>Chords Player</h3>
+										<p>
+											Chords Player is a simple, yet useful, music tool.
+											It lets you easily create chords sequences and arrange theme to create rhythm tracks for you to train on.
+										</p>
+									</div>
+								</a>
+							</div>
 						</div>
+						<a class="carousel-control-prev" href="#apps-carousel" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control-next" href="#apps-carousel" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
 					</div>
-					<a data-slide="prev" href="#carousel-example-generic" class="left carousel-control">
-						<span class="fa fa-chevron-left"></span>
-					</a>
-					<a data-slide="next" href="#carousel-example-generic" class="right carousel-control">
-						<span class="fa fa-chevron-right"></span>
-					</a>
+					</div>
 				</div>
 			</div>
 
@@ -259,213 +248,259 @@
 			</div>
 		</div>
 
-		<a name="games"></a>
-		<div class="panel panel-default">
-			<div class="panel-heading">Games</div>
-			<div class="panel-body">
-				<div class="row">
-
-					<div class="col-md-2 col-sm-3 col-xs-6">
-						<a target="_blank" title="Flip runner" href="https://play.google.com/store/apps/details?id=net.volcanomobile.fliprunner">
-							<div class="app-item">
-								<img src="img/flip-runner/logo.webp"></img>
-								<div class="title">Flip runner</div>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-2 col-sm-3 col-xs-6">
-						<a target="_blank" title="Yarrrr" href="https://play.google.com/store/apps/details?id=net.volcanomobile.chainreaction">
-							<div class="app-item">
-								<img src="img/connect/icon.png"></img>
-								<div class="title">Connect</div>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-2 col-sm-3 col-xs-6">
-						<a target="_blank" title="Yarrrr" href="https://play.google.com/store/apps/details?id=net.volcanomobile.chainreaction">
-							<div class="app-item">
-								<img src="img/chain-reaction/icon.png"></img>
-								<div class="title">Chain reaction</div>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-2 col-sm-3 col-xs-6">
-						<a target="_blank" title="Yarrrr" href="https://play.google.com/store/apps/details?id=net.volcanomobile.twofingersfighterandroid">
-							<div class="app-item">
-								<img src="img/yarrrr/icon.png"></img>
-								<div class="title">Yarrrr</div>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-2 col-sm-3 col-xs-6">
-						<a target="_blank" title="Flying Jelly Bean" href="https://play.google.com/store/apps/details?id=net.volcanomobile.paflechien">
-							<div class="app-item">
-								<img src="img/flying-jelly-bean/icon_512.png"></img>
-								<div class="title">Flying Jelly Bean</div>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-2 col-sm-3 col-xs-6">
-						<a target="_blank" title="Shape Blaster" href="https://play.google.com/store/apps/details?id=net.volcanomobile.fartman">
-							<div class="app-item">
-								<img src="img/fartman/icon_512x512.png"></img>
-								<div class="title">Fart-man</div>
-							</div>
-						</a>
-					</div>
-					<!--div class="col-md-2 col-sm-3 col-xs-6">
-						<a target="_blank" title="Memory Game - Under the sea" href="https://play.google.com/store/apps/details?id=net.volcanomobile.memorygame.undersea">
-							<div class="app-item">
-								<img src="img/mg-sea/icon.png"></img>
-								<div class="title">Memory Game - Under the sea</div>
-							</div>
-						</a>
-					</div-->
-					<!--div class="col-md-2 col-sm-3 col-xs-6">
-						<a target="_blank" title="Memory Game - Halloween" href="https://play.google.com/store/apps/details?id=net.volcanomobile.memorygame.halloween">
-							<div class="app-item">
-								<img src="img/mg-halloween/icon.png"></img>
-								<div class="title">Memory Game - Halloween</div>
-							</div>
-						</a>
-					</div-->
-					<!--div class="col-md-2 col-sm-3 col-xs-6">
-						<a target="_blank" title="Memory Game - Dino" href="https://play.google.com/store/apps/details?id=net.volcanomobile.memorygame.dino">
-							<div class="app-item">
-								<img src="img/mg-dino/icon.png"></img>
-								<div class="title">Memory Game - Dino</div>
-							</div>
-						</a>
-					</div-->
-				</div>
-			</div>
-		</div>
-
-		<a name="applications"></a>
-		<div class="panel panel-default">
-			<div class="panel-heading">Applications</div>
-			<div class="panel-body">
-				<div class="row">
-					<div class="col-md-2">
-						<a target="_blank" title="Drum sequencer" href="https://play.google.com/store/apps/details?id=com.volcanomobile.drumsequencer">
-							<div class="app-item">
-								<img src="img/drum-sequencer/ic_launcher_512.png"></img>
-								<div class="title">Drum sequencer</div>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-2">
-						<a target="_blank" title="MIDI Player" href="https://play.google.com/store/apps/details?id=net.volcanomobile.midiplayer">
-							<div class="app-item">
-								<img src="img/midi-player/logo.webp"></img>
-								<div class="title">MIDI Player</div>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-2">
-						<a target="_blank" title="MIDI Sequencer" href="https://play.google.com/store/apps/details?id=net.volcanomobile.midisequencer">
-							<div class="app-item">
-								<img src="img/midi-sequencer/logo.png"></img>
-								<div class="title">MIDI Sequencer</div>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-2">
-						<a target="_blank" title="MIDI File Player" href="https://play.google.com/store/apps/details?id=net.volcanomobile.midifileplayer">
-							<div class="app-item">
-								<img src="img/midi-file-player/app_icon_512.png"></img>
-								<div class="title">MIDI File Player</div>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-2">
-						<a target="_blank" title="MIDI PlayerOPL3 MIDI Synthesizer" href="https://play.google.com/store/apps/details?id=net.volcanomobile.opl3midisynth">
-							<div class="app-item">
-								<img src="img/opl3-midi-synthesizer/logo.webp"></img>
-								<div class="title">MIDI PlayerOPL3 MIDI Synthesizer</div>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-2">
-						<a target="_blank" title="VGM Player" href="https://play.google.com/store/apps/details?id=net.volcanomobile.vgmplayer">
-							<div class="app-item">
-								<img src="img/vgm-player/logo.webp"></img>
-								<div class="title">VGM Player</div>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-2">
-						<a target="_blank" title="FluidSynth MIDI Synthesizer" href="https://play.google.com/store/apps/details?id=net.volcanomobile.vgmplayer">
-							<div class="app-item">
-								<img src="img/fluidsynth-midi-synthesizer/logo.webp"></img>
-								<div class="title">FluidSynth MIDI Synthesizer</div>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-2">
-						<a target="_blank" title="General MIDI Synthesizer" href="https://play.google.com/store/apps/details?id=net.volcanomobile.sonivoxeasmidi">
-							<div class="app-item">
-								<img src="img/general-midi-synthesizer/logo.webp"></img>
-								<div class="title">General MIDI Synthesizer</div>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-2">
-						<a target="_blank" title="Comic Reader" href="https://play.google.com/store/apps/details?id=net.volcanomobile.comics">
-							<div class="app-item">
-								<img src="img/comic-reader/logo.webp"></img>
-								<div class="title">Comic Reader</div>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-2">
-						<a target="_blank" title="Chords player" href="https://play.google.com/store/apps/details?id=net.volcanomobile.chordsplayer">
-							<div class="app-item">
-								<img src="img/chords-player/ic_launcher_144.png"></img>
-								<div class="title">Chords player</div>
-							</div>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
 
 		<div class="row">
-			<div class="col-md-12">
-				<h2>Reviews</h2>
+
+			<div class="col-md-12 col-lg-6">
+
+				<a name="games"></a>
+				<div class="card">
+					<div class="card-block">
+
+						<h2 class="card-title">Games</h2>
+						<div class="row">
+							
+							<div class="col-6 col-sm-4">
+								<a target="_blank" title="Flip runner" href="https://play.google.com/store/apps/details?id=net.volcanomobile.fliprunner">
+									<div class="app-item">
+										<img src="img/flip-runner/logo.webp"></img>
+										<div class="title">Flip runner</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-6 col-sm-4">
+								<a target="_blank" title="Yarrrr" href="https://play.google.com/store/apps/details?id=net.volcanomobile.chainreaction">
+									<div class="app-item">
+										<img src="img/connect/icon.png"></img>
+										<div class="title">Connect</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-6 col-sm-4">
+								<a target="_blank" title="Yarrrr" href="https://play.google.com/store/apps/details?id=net.volcanomobile.chainreaction">
+									<div class="app-item">
+										<img src="img/chain-reaction/icon.png"></img>
+										<div class="title">Chain reaction</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-6 col-sm-4">
+								<a target="_blank" title="Yarrrr" href="https://play.google.com/store/apps/details?id=net.volcanomobile.twofingersfighterandroid">
+									<div class="app-item">
+										<img src="img/yarrrr/icon.png"></img>
+										<div class="title">Yarrrr</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-6 col-sm-4">
+								<a target="_blank" title="Flying Jelly Bean" href="https://play.google.com/store/apps/details?id=net.volcanomobile.paflechien">
+									<div class="app-item">
+										<img src="img/flying-jelly-bean/icon_512.png"></img>
+										<div class="title">Flying Jelly Bean</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-6 col-sm-4">
+								<a target="_blank" title="Shape Blaster" href="https://play.google.com/store/apps/details?id=net.volcanomobile.fartman">
+									<div class="app-item">
+										<img src="img/fartman/icon_512x512.png"></img>
+										<div class="title">Fart-man</div>
+									</div>
+								</a>
+							</div>
+							<!--div class="col-md-2 col-sm-3 col-xs-6">
+								<a target="_blank" title="Memory Game - Under the sea" href="https://play.google.com/store/apps/details?id=net.volcanomobile.memorygame.undersea">
+									<div class="app-item">
+										<img src="img/mg-sea/icon.png"></img>
+										<div class="title">Memory Game - Under the sea</div>
+									</div>
+								</a>
+							</div-->
+							<!--div class="col-md-2 col-sm-3 col-xs-6">
+								<a target="_blank" title="Memory Game - Halloween" href="https://play.google.com/store/apps/details?id=net.volcanomobile.memorygame.halloween">
+									<div class="app-item">
+										<img src="img/mg-halloween/icon.png"></img>
+										<div class="title">Memory Game - Halloween</div>
+									</div>
+								</a>
+							</div-->
+							<!--div class="col-md-2 col-sm-3 col-xs-6">
+								<a target="_blank" title="Memory Game - Dino" href="https://play.google.com/store/apps/details?id=net.volcanomobile.memorygame.dino">
+									<div class="app-item">
+										<img src="img/mg-dino/icon.png"></img>
+										<div class="title">Memory Game - Dino</div>
+									</div>
+								</a>
+							</div-->
+						</div>
+					</div>
+				</div>
+				
+			</div>
+
+			<div class="col-md-12 col-lg-6">
+
+				<a name="applications"></a>
+				<div class="card">
+					<div class="card-block">
+						<h2 class="card-title">Applications</h2>
+						<div class="row">
+							<div class="col-md-4">
+								<a target="_blank" title="Drum sequencer" href="https://play.google.com/store/apps/details?id=com.volcanomobile.drumsequencer">
+									<div class="app-item">
+										<img src="img/drum-sequencer/ic_launcher_512.png"></img>
+										<div class="title">Drum sequencer</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-md-4">
+								<a target="_blank" title="MIDI Player" href="https://play.google.com/store/apps/details?id=net.volcanomobile.midiplayer">
+									<div class="app-item">
+										<img src="img/midi-player/logo.webp"></img>
+										<div class="title">MIDI Player</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-md-4">
+								<a target="_blank" title="MIDI Sequencer" href="https://play.google.com/store/apps/details?id=net.volcanomobile.midisequencer">
+									<div class="app-item">
+										<img src="img/midi-sequencer/logo.png"></img>
+										<div class="title">MIDI Sequencer</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-md-4">
+								<a target="_blank" title="MIDI File Player" href="https://play.google.com/store/apps/details?id=net.volcanomobile.midifileplayer">
+									<div class="app-item">
+										<img src="img/midi-file-player/app_icon_512.png"></img>
+										<div class="title">MIDI File Player</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-md-4">
+								<a target="_blank" title="MIDI PlayerOPL3 MIDI Synthesizer" href="https://play.google.com/store/apps/details?id=net.volcanomobile.opl3midisynth">
+									<div class="app-item">
+										<img src="img/opl3-midi-synthesizer/logo.webp"></img>
+										<div class="title">MIDI PlayerOPL3 MIDI Synthesizer</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-md-4">
+								<a target="_blank" title="VGM Player" href="https://play.google.com/store/apps/details?id=net.volcanomobile.vgmplayer">
+									<div class="app-item">
+										<img src="img/vgm-player/logo.webp"></img>
+										<div class="title">VGM Player</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-md-4">
+								<a target="_blank" title="FluidSynth MIDI Synthesizer" href="https://play.google.com/store/apps/details?id=net.volcanomobile.vgmplayer">
+									<div class="app-item">
+										<img src="img/fluidsynth-midi-synthesizer/logo.webp"></img>
+										<div class="title">FluidSynth MIDI Synthesizer</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-md-4">
+								<a target="_blank" title="General MIDI Synthesizer" href="https://play.google.com/store/apps/details?id=net.volcanomobile.sonivoxeasmidi">
+									<div class="app-item">
+										<img src="img/general-midi-synthesizer/logo.webp"></img>
+										<div class="title">General MIDI Synthesizer</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-md-4">
+								<a target="_blank" title="Comic Reader" href="https://play.google.com/store/apps/details?id=net.volcanomobile.comics">
+									<div class="app-item">
+										<img src="img/comic-reader/logo.webp"></img>
+										<div class="title">Comic Reader</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-md-4">
+								<a target="_blank" title="Chords player" href="https://play.google.com/store/apps/details?id=net.volcanomobile.chordsplayer">
+									<div class="app-item">
+										<img src="img/chords-player/ic_launcher_144.png"></img>
+										<div class="title">Chords player</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
 
 			</div>
 
 			<div class="col-md-12">
+				
+				<a name="reviews"></a>
+				<div class="card">
+					<div class="card-block">
+						<h2 class="card-title">Reviews</h2>
+						<div class="row">
+							<div class="col-6 col-lg-4">
+								<a href="https://app-liv.com/en/hobbies/music/10391?id=3658025" target="_blank">
+									<div class="card">
+										<div class="card-block">
+											<img class="card-img" src="http://img.app-liv.com/link/appliv_l_b_txt.png" alt="Appliv -iPhone/Android App Discovery Website">
+											<!--h4 class="card-title">Appliv</h4-->
+										    <p class="card-text"><img src="img/midi-player/logo.webp" style="height: 2em;"></img> MIDI Player is reviewed in Appliv！</p>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-6 col-lg-4">
+								<a href="https://app-liv.com/en/hobbies/music/10989?id=1574926" target="_blank">
+									<div class="card">
+										<div class="card-block">
+											<img class="card-img" src="http://img.app-liv.com/link/appliv_l_b_txt.png" alt="Appliv -iPhone/Android App Discovery Website">
+											<!--h4 class="card-title">Appliv</h4-->
+										    <p class="card-text"><img src="img/drum-sequencer/ic_launcher_512.png" style="height: 2em;"></img> Drum Sequencer is reviewed in Appliv！</p>
+										</div>
+									</div>
+								</a>
+							</div>
 
-				<h4><a href="http://app-liv.com" target="_blank"><img src="http://img.app-liv.com/link/appliv_l_b_txt.png" alt="Appliv -iPhone/Android App Discovery Website" /></a></h4>
-				<div style="margin-bottom: 1em;">
-					<a href="https://app-liv.com/en/hobbies/music/10391?id=3658025" target="_blank">MIDI Player is reviewed in Appliv！</a>
+							<div class="col-6 col-lg-4">
+								<a href="http://www.fettspielen.de/blog/android-games-fartman/" target="_blank">
+									<div class="card">
+										<div class="card-block">
+											<img class="card-img" src="http://www.fettspielen.de/blog/wp-content/uploads/2014/07/Fettspielen-Blog-Logo-Header.png" alt="Fettspielen">
+											<!--h4 class="card-title">Fettspielen</h4-->
+										    <p class="card-text"><img src="img/fartman/icon_512x512.png" style="height: 2em;"></img> Fartman is reviewed in Fettspielen</p>
+										</div>
+									</div>
+								</a>
+							</div>
+
+							<div class="col-6 col-lg-4">
+								<a href="http://volcanomobile.itch.io/fartman" target="_blank">
+									<div class="card">
+										<div class="card-block">
+											<img class="card-img" src="https://static.itch.io/images/itchio-450.png" alt="itch.io">
+											<!--h4 class="card-title">itch.io</h4-->
+										    <p class="card-text"><img src="img/fartman/icon_512x512.png" style="height: 2em;"></img> Fartman is reviewed in itch.io</p>
+										</div>
+									</div>
+								</a>
+							</div>
+
+						</div>
+
+					</div>
 				</div>
-				<div style="margin-bottom: 1em;">
-					<a href="https://app-liv.com/en/hobbies/music/10989?id=1574926" target="_blank">Drum Sequencer is reviewed in Appliv！</a>
-				</div>
-
-				<h4>Fettspielen <a href="http://www.fettspielen.de/blog/" target="_blank"><span class="fa fa-external-link"></span></a></h4>
-				<img src="img/fartman/icon_512x512.png" style="height: 30px;"></img>
-				<a href="http://www.fettspielen.de/blog/android-games-fartman/" target="_blank">http://www.fettspielen.de/blog/android-games-fartman/</a>
-
-				<h4>Itch.io <a href="http://itch.io/" target="_blank"><span class="fa fa-external-link"></span></a></h4>
-				<img src="img/fartman/icon_512x512.png" style="height: 30px;"></img>
-				<a href="http://volcanomobile.itch.io/fartman" target="_blank">http://volcanomobile.itch.io/fartman</a>
 
 			</div>
 		</div>
-
+		
 	</div>
 
 
 </div>
 
-<div id="footer-fixed" class="footer">
-	<div class="row">
-		<div class="col-md-12">
-			<a href="https://play.google.com/store/apps/developer?id=Volcano%20Mobile" target="_blank">Volcano Mobile</a> |
+	<footer id="footer" class="footer">
+		<div class="container">
+			<a href="https://play.google.com/store/apps/developer?id=Volcano%20Mobile" target="_blank"><span class="fa fa-android"></span> Volcano Mobile</a> |
 
 			<a href="mailto:contact@volcanomobile.net"><span class="fa fa-envelope"></span></a>
 			<a href="mailto:contact@volcanomobile.net" style="display: inline;">contact@volcanomobile.net</a> |
@@ -473,22 +508,26 @@
 			<a target="_blank" href="https://twitter.com/VolcanoMobile" title="Twitter"><span class="fa fa-twitter"></span></a>
 			<a target="_blank" href="https://www.facebook.com/pages/Volcano-Mobile/162675300498153" title="Facebook"><span class="fa fa-facebook"></span></a>
 			<a target="_blank" href="https://plus.google.com/u/0/116384353268147090242/" title="Facebook"><span class="fa fa-google-plus"></span></a>
-
 		</div>
-	</div>
-</div>
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	</footer>
 
-  ga('create', 'UA-47075820-1', 'volcanomobile.net');
-  ga('send', 'pageview');
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-</script>
+	  ga('create', 'UA-47075820-1', 'volcanomobile.net');
+	  ga('send', 'pageview');
 
+	</script>
+
+	<!-- jQuery first, then Tether, then Bootstrap JS. -->
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="node_modules/tether/dist/js/tether.min.js"></script>
+	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	
 </body>
 
 </html>

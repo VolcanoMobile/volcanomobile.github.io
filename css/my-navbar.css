@@ -1,16 +1,16 @@
 .my-navbar{
-	border-bottom: 2px solid #000000;
+	border-bottom: 1px solid rgba(0,0,0,.125);
 	background: #ffffff;
 	position: fixed;
 	top: 0px;
 	display: block;
 	width: 100%;
 	z-index: 1000;
-	box-shadow: 0px 3px 3px #444444;
+	box-shadow: 0px 0px 1em rgba(0,0,0,.125);
 }
 
 .my-navbar-header{
-	border-right: 1px solid #000000;
+	border-right: 1px solid rgba(0,0,0,.125);
 	overflow: hidden;
 	float: left;
 }
@@ -95,11 +95,6 @@
 }
 .social-networks #social-networks-twitter{
 	background-image: url("../img/twitter.png");
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-.social-networks #social-networks-facebook{
-	background-image: url("../img/facebook.png");
 	background-size: contain;
 	background-repeat: no-repeat;
 }

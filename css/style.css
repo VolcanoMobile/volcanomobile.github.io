@@ -4,43 +4,37 @@
 @import url("my-navbar.css");
 
 body{
+	background: #eeeeee;
 	color: #000000;
+	padding-top: 70px;
 }
+
 a{
 	color: #000000;
 }
 h2{
-	border-bottom: 1px solid;
-	padding-bottom: 0.3em;
 }
 
-.fb-share{
-	position: fixed;
-	top: 60px;
-	z-index: 900;
-}
-@media(max-width:992px){
-	.fb-share{
-		display: block;
-		position: relative;
-	}
-}
 
+/***** Header *****/
 header{
 	border: 0px solid #00ff00;
-	margin-top: 60px;
 	position: relative;
 	overflow: auto;
 }
 header .header-content{
-	height: 150px;
-	border: 0px solid #00ffff;
-	right: 0px;
-	bottom: 0px;
-	background-image: url("../img/header.png");
+	background-color: #ffffff;
+	border: 1px solid rgba(0,0,0,.125);
+	padding: 1.25rem;
+	/*background-image: url("../img/header.png");
 	background-repeat: no-repeat;
 	background-position: bottom right;
-	background-size: 30%;
+	background-size: 30%;*/
+}
+
+header .header-content > *{
+	vertical-align: middle;
+	display: inline-block;
 }
 
 header .logo{
@@ -49,79 +43,53 @@ header .logo{
 	background-repeat: no-repeat;
 	height: 130px;
 	width: 150px;
-	margin-bottom: 1em;
-	float: left;
 }
 
-header .title{
+header h1{
+}
+
+
+/***** Facebook share *****/
+.fb-share{
 	position: absolute;
-	top: 0.5em;
-	left: 3em;
-	font-size: 3em;
-	line-height: 0.8em;
-	color: #000000;
+	right: 0px;
 }
-header .title small{
-	font-size: 0.5em;
-	margin-left: 5em;
+.fb-share > iframe{
+	display: inline-block;
+	min-width: 0em;
+	min-height: 0em;
+	width: 11em;
+	height: 2em;
+}
+.fb-share * *{
+	display: inline-block;
+}
+@media(max-width:992px){
+	.fb-share{
+	}
 }
 
 
-
-#menu{
-	background: #000000;
-	line-height: 3em;
-	font-weight: bold;
-	color: #ffffff;
-}
-#menu a{
-	color: #ffffff;
-	padding-left: 1em;
-	padding-right: 1em;
-}
+/***** page *****/
 
 #page{
 }
 #page .container{
 	padding-top: 1em;
 	padding-bottom: 3em;
-	background-color: #DDC797;
 }
+
+
+
+/***** Footer *****/
 .footer{
 	border: 0px solid #00ff00;
 	background: #000000;
-	padding: 0.5em;
+	padding: 1em;
 	text-align: right;
 	color: #ffffff;
 }
 
 .footer a{
 	color: #ffffff;
-}
-
-
-#footer-fixed{
-	position: fixed;
-	bottom: 0px;
-	left: 0px;
-	display: block;
-	width: 100%;
-	z-index: 1000;
-}
-
-
-
-
-
-
-#contact{
-	z-index: 1000;
-	border-bottom: 1px solid #000000;
-	background: #eeeeee;
-	padding-top: 1em;
-	display: none;
-	position: fixed;
-	top: 50px;
-	width: 100%;
-	height: 100%;
 }

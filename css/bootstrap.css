@@ -1,16 +1,11 @@
-@media(min-width:1200px){
-	.container{
-		width: 900px;
-	}
+/***** Card *****/
+.card{
+	margin-bottom: 1em;
 }
-
-
-.panel-default {
-	border-color: #888888;
+.card-title {
+    margin-bottom: 1.75rem;
 }
-.panel-default>.panel-heading {
-	font-weight: bold;
-	color: #ffffff;
-	background-image: none;
-	background-color: #000000;
+.card-img {
+    width: 100%;
+    margin-bottom: 2em;
 }
