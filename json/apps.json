@@ -1,0 +1,101 @@
+{
+	"name": "apps", 
+	"apps": [
+		{
+			"name": "Drum sequencer",
+			"icon": "img/drum-sequencer/ic_launcher_512.png",
+			"url": "https://play.google.com/store/apps/details?id=com.volcanomobile.drumsequencer",
+			"type": "app"
+		},
+		{
+			"name": "MIDI Player",
+			"icon": "img/midi-player/logo.png",
+			"url": "https://play.google.com/store/apps/details?id=net.volcanomobile.midiplayer",
+			"type": "app"
+		},
+		{
+			"name": "MIDI Sequencer",
+			"icon": "img/midi-sequencer/logo.png",
+			"url": "midi-sequencer/index.html",
+			"type": "app"
+		},
+		{
+			"name": "MIDI File Player",
+			"icon": "img/midi-file-player/app_icon_512.png",
+			"url": "https://play.google.com/store/apps/details?id=net.volcanomobile.midifileplayer",
+			"type": "app"
+		},
+		{
+			"name": "OPL3 MIDI Synthesizer",
+			"icon": "img/opl3-midi-synthesizer/logo.png",
+			"url": "https://play.google.com/store/apps/details?id=net.volcanomobile.opl3midisynth",
+			"type": "app"
+		},
+		{
+			"name": "VGM Player",
+			"icon": "img/vgm-player/logo.png",
+			"url": "https://play.google.com/store/apps/details?id=net.volcanomobile.vgmplayer",
+			"type": "app"
+		},
+		{
+			"name": "FluidSynth MIDI Synthesizer",
+			"icon": "img/fluidsynth-midi-synthesizer/logo.png",
+			"url": "https://play.google.com/store/apps/details?id=net.volcanomobile.fluidsynthmidi",
+			"type": "app"
+		},
+		{
+			"name": "General MIDI Synthesizer",
+			"icon": "img/general-midi-synthesizer/logo.png",
+			"url": "https://play.google.com/store/apps/details?id=net.volcanomobile.sonivoxeasmidi",
+			"type": "app"
+		},
+		{
+			"name": "Comic Reader",
+			"icon": "img/comic-reader/logo.png",
+			"url": "https://play.google.com/store/apps/details?id=net.volcanomobile.comics",
+			"type": "app"
+		},
+		{
+			"name": "Chords Player",
+			"icon": "img/chords-player/ic_launcher_144.png",
+			"url": "https://play.google.com/store/apps/details?id=net.volcanomobile.chordsplayer",
+			"type": "app"
+		},	
+		{
+			"name": "Flip Runner", 
+			"icon": "img/flip-runner/logo.png",
+			"url": "https://play.google.com/store/apps/details?id=net.volcanomobile.fliprunner",
+			"type": "game"
+		},
+		{
+			"name": "Yarrrr! (Pirates vs Zombies)", 
+			"icon": "img/yarrrr/icon.png",
+			"url": "https://play.google.com/store/apps/details?id=net.volcanomobile.twofingersfighterandroid",
+			"type": "game"
+		},
+		{
+			"name": "Chain Reaction", 
+			"icon": "img/chain-reaction/icon.png",
+			"url": "https://play.google.com/store/apps/details?id=net.volcanomobile.chainreaction",
+			"type": "game"
+		},
+		{
+			"name": "Connect", 
+			"icon": "img/connect/icon.png",
+			"url": "https://play.google.com/store/apps/details?id=net.volcanomobile.casinochips",
+			"type": "game"
+		},
+		{
+			"name": "Flying Jelly Bean",
+			"icon": "img/flying-jelly-bean/icon_512.png",
+			"url": "https://play.google.com/store/apps/details?id=net.volcanomobile.paflechien",
+			"type": "game"
+		},
+		{
+			"name": "Fartman",
+			"icon": "img/fartman/icon_512x512.png",
+			"url": "https://play.google.com/store/apps/details?id=net.volcanomobile.fartman",
+			"type": "game"
+		}
+	]
+}

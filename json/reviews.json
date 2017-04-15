@@ -1,0 +1,33 @@
+{
+	"name": "reviews", 
+	"reviews": [
+		{
+			"url": "https://app-liv.com/en/hobbies/music/10391?id=3658025",
+			"text": "MIDI Player is reviewed in Appliv！",
+			"reviewerIcon": "http://img.app-liv.com/link/appliv_l_b_txt.png",
+			"appIcon": "img/midi-player/logo.png",
+			"type": "app"
+		},
+		{
+			"url": "https://app-liv.com/en/hobbies/music/10989?id=1574926",
+			"text": "Drum Sequencer is reviewed in Appliv！",
+			"reviewerIcon": "http://img.app-liv.com/link/appliv_l_b_txt.png",
+			"appIcon": "img/drum-sequencer/ic_launcher_512.png",
+			"type": "app"
+		},
+		{
+			"url": "http://www.fettspielen.de/blog/android-games-fartman/",
+			"text": "Fartman is reviewed in Fettspielen",
+			"reviewerIcon": "http://www.fettspielen.de/blog/wp-content/uploads/2014/07/Fettspielen-Blog-Logo-Header.png",
+			"appIcon": "img/fartman/icon_512x512.png",
+			"type": "app"
+		},
+		{
+			"url": "http://volcanomobile.itch.io/fartman",
+			"text": "Fartman is reviewed in itch.io",
+			"reviewerIcon": "https://static.itch.io/images/itchio-450.png",
+			"appIcon": "img/fartman/icon_512x512.png",
+			"type": "app"
+		}
+	]
+}
