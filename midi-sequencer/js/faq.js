@@ -36,7 +36,7 @@ function loadFAQ( containerId ){
 			questionLink.html( faq.question );
 
 			responseCollapseHtml = $("<div></div>");
-			responseCollapseHtml.addClass( 'collapse show' );
+			responseCollapseHtml.addClass( 'collapse' );
 			responseCollapseHtml.attr( 'id', responseId );
 			
 			responseHtml = $("<div></div>");
