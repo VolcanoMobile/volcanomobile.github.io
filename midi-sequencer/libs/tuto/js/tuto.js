@@ -2,27 +2,6 @@ $(document).ready(function() {
 
 
 	/////
-	var tutoImageInfo = $('<div></div>').attr('id', 'tuto-image-infos').attr('class', 'tuto-image-infos card').appendTo('body');
-		
-	/////
-	var tutoImageInfoClose = $('<div></div>').attr('class', 'pull-right').appendTo(tutoImageInfo);
-	tutoImageInfoClose.html( '<span class="fa fa-times">' );
-	
-    tutoImageInfoClose.click(
-		function(e){
-			
-			$(this).parent().css("display", "none");
-            
-		}
-	);
-
-	/////
-	var tutoImageInfoText = $('<div></div>').attr('id', 'tuto-image-infos-text').appendTo(tutoImageInfo);
-	
-	
-	
-
-	/////
 	var tutoMarkersListsCpt = 0;
 
 	//// Each tuto markers-list
@@ -234,25 +213,3 @@ function resizeImageMarkers( tutoImageObject ){
 	)
 }
 
-
-
-
-
-
-
-
-/***  ***/
-function tutoDebug( text ){
-	tutoDebug( text, false );
-}
-function tutoDebug( text, clear ){
-
-	if ( clear ){
-		$("#tuto-image-infos-text").html("");
-		$("#tuto-image-infos").css("display", "initial");
-	}
-	
-	if ( text ) $("#tuto-image-infos-text").append( text + "<br/>" );
-
-
-}

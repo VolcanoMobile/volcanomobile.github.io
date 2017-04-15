@@ -27,14 +27,12 @@
 	</head>
 <body>
 
-<nav class="my-navbar" role="navigation">
-	<!-- Brand and toggle get grouped for better mobile display -->
+<!--nav class="my-navbar" role="navigation">
 	<div class="my-navbar-header">
 		<a href="index.html"><span class="logo"></span></a>
 		<a class="my-navbar-brand hidden-sm-down" href="index.html"> Volcano Mobile</a>
 	</div>
 
-	<!-- Collect the nav links, forms, and other content for toggling -->
 	<div class="my-navbar-navs">
 		<ul class="my-navbar-nav" style="float: left;">
 			<li  style="float: left;">
@@ -43,30 +41,9 @@
 			<li style="float: left;">
 				<a href="#applications">Applications</a>
 			</li>
-			<!--li>
-				<a href="mailto:info@volcanomobile.net"><span class="fa fa-envelope"></span> Contact</a>
-			</li-->
-			<!--li class="active"><a href="#">Contact</a></li>
-			<li><a href="#">Link</a></li>
-			<li class="dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-				<ul class="dropdown-menu">
-					<li><a href="#">Action</a></li>
-					<li><a href="#">Another action</a></li>
-					<li><a href="#">Something else here</a></li>
-					<li class="divider"></li>
-					<li><a href="#">Separated link</a></li>
-					<li class="divider"></li>
-					<li><a href="#">One more separated link</a></li>
-				</ul>
-			</li-->
+
 		</ul>
-		<!--form class="navbar-form navbar-left" role="search">
-			<div class="form-group">
-			<input type="text" class="form-control" placeholder="Search">
-			</div>
-			<button type="submit" class="btn btn-default">Submit</button>
-		</form-->
+
 
 		<ul class="my-navbar-nav social-networks" style="float: right;">
 			<li style="white-space: nowrap;">
@@ -76,28 +53,45 @@
 			</li>
 
 		</ul>
-	</div><!-- /.navbar-collapse -->
+	</div>
+</nav-->
+
+<nav class="navbar navbar-toggleable-md fixed-top navbar-inverse bg-inverse">
+	<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    	<span class="navbar-toggler-icon"></span>
+	</button>
+	<a class="navbar-brand" href="index.html">
+		<img src="img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+		Volcano Mobile
+	</a>
+	<div class="collapse navbar-collapse ml" id="navbarNavAltMarkup">
+		<div class="navbar-nav ml-auto">
+			<a class="nav-item nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+			<a class="nav-item nav-link" href="#games">Games</a>
+			<a class="nav-item nav-link" href="#applications">Applications</a>
+		</div>
+	</div>
 </nav>
-
-
 
 <header>
 
 	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="header-content">
-					<a href="index.html"><div class="logo"></div></a>
-					<a href="index.html">
-						<h1 class="hidden-xs-down">
-							Volcano mobile<br/>
-							<small class="hidden-sm-down">All for your mobile</small>
+		<div class="header-content">
+			<div class="row">
+				<div class="col-8 offset-2 col-sm-5 offset-sm-0 col-md-4">
+					<a href="index.html"><img class="img-fluid" src="img/logo.png"></img></a>
+				</div>
+				<div class="col-12 col-sm-7 col-md-8">
+					<a href="index.html" id="header-title-link">
+						<h1>
+							<span class="hidden-xs-down">Volcano mobile</span><br/>
+							<span><small class="">All for your mobile</small></span>
 						</h1>
 					</a>
-					<div class="fb-share">
-						<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.volcanomobile.net&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21&amp;appId=184502475094330" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-					</div>
 				</div>
+			</div>
+			<div class="fb-share">
+				<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.volcanomobile.net&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21&amp;appId=184502475094330" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 			</div>
 		</div>
 	</div>
@@ -108,11 +102,11 @@
 <div id="page">
 	<div class="container">
 
-		<div class="row">
+		<div class="row" style="display: none;">
 
 			<div class="col-md-8">
-				<div class="card">
-					<div class="card-block">
+				<div class="">
+					<div class="">
 					<div id="apps-carousel" data-ride="carousel" class="carousel slide">
 						<ol class="carousel-indicators">
 							<li data-slide-to="0" data-target="#apps-carousel" class="active"></li>
@@ -250,11 +244,10 @@
 		</div>
 
 
-		<div class="row">
+		<div class="row" id="app-div-old">
 
 			<div class="col-md-12 col-lg-6">
 
-				<a name="games"></a>
 				<div class="card">
 					<div class="card-block">
 
@@ -341,7 +334,6 @@
 
 			<div class="col-md-12 col-lg-6">
 
-				<a name="applications"></a>
 				<div class="card">
 					<div class="card-block">
 						<h2 class="card-title">Applications</h2>
@@ -431,72 +423,37 @@
 				</div>
 
 			</div>
-
-			<div class="col-md-12">
-				
-				<a name="reviews"></a>
-				<div class="card">
-					<div class="card-block">
-						<h2 class="card-title">Reviews</h2>
-						<div class="row">
-							<div class="col-6 col-lg-4">
-								<a href="https://app-liv.com/en/hobbies/music/10391?id=3658025" target="_blank">
-									<div class="card">
-										<div class="card-block">
-											<img class="card-img" src="http://img.app-liv.com/link/appliv_l_b_txt.png" alt="Appliv -iPhone/Android App Discovery Website">
-											<!--h4 class="card-title">Appliv</h4-->
-										    <p class="card-text"><img src="img/midi-player/logo.png" style="height: 2em;"></img> MIDI Player is reviewed in Appliv！</p>
-										</div>
-									</div>
-								</a>
-							</div>
-							<div class="col-6 col-lg-4">
-								<a href="https://app-liv.com/en/hobbies/music/10989?id=1574926" target="_blank">
-									<div class="card">
-										<div class="card-block">
-											<img class="card-img" src="http://img.app-liv.com/link/appliv_l_b_txt.png" alt="Appliv -iPhone/Android App Discovery Website">
-											<!--h4 class="card-title">Appliv</h4-->
-										    <p class="card-text"><img src="img/drum-sequencer/ic_launcher_512.png" style="height: 2em;"></img> Drum Sequencer is reviewed in Appliv！</p>
-										</div>
-									</div>
-								</a>
-							</div>
-
-							<div class="col-6 col-lg-4">
-								<a href="http://www.fettspielen.de/blog/android-games-fartman/" target="_blank">
-									<div class="card">
-										<div class="card-block">
-											<img class="card-img" src="http://www.fettspielen.de/blog/wp-content/uploads/2014/07/Fettspielen-Blog-Logo-Header.png" alt="Fettspielen">
-											<!--h4 class="card-title">Fettspielen</h4-->
-										    <p class="card-text"><img src="img/fartman/icon_512x512.png" style="height: 2em;"></img> Fartman is reviewed in Fettspielen</p>
-										</div>
-									</div>
-								</a>
-							</div>
-
-							<div class="col-6 col-lg-4">
-								<a href="http://volcanomobile.itch.io/fartman" target="_blank">
-									<div class="card">
-										<div class="card-block">
-											<img class="card-img" src="https://static.itch.io/images/itchio-450.png" alt="itch.io">
-											<!--h4 class="card-title">itch.io</h4-->
-										    <p class="card-text"><img src="img/fartman/icon_512x512.png" style="height: 2em;"></img> Fartman is reviewed in itch.io</p>
-										</div>
-									</div>
-								</a>
-							</div>
-
-						</div>
-
-					</div>
-				</div>
-
-			</div>
+			
 		</div>
-		
 	</div>
+	
+	<div class="container">
+		
+		<a name="applications"></a>
+		<h2>Apps</h2>
+		
+		<div id="apps-container" class="row justify-content-center"></div>
+		
+		<br/>
+		<br/>
+		<br/>
+			
+		<a name="games"></a>
+		<h2>Games</h2>
+		
+		<div id="games-container" class="row justify-content-center"></div>
 
+		<br/>
+		<br/>
+		<br/>
 
+		<a name="reviews"></a>
+		<h2>Reviews</h2>
+		
+		<div id="reviews-container" class="row justify-content-center"></div>
+
+	</div>
+	
 </div>
 
 	<footer id="footer" class="footer">

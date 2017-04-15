@@ -13,8 +13,11 @@ $(document).ready(function() {
 		else if ( pageName == "features.html" ){
 			 $('.navbar-nav').children().eq(1).addClass( "active" );
 		}
-		else if ( pageName == "tutorial.html" ){
+		else if ( pageName == "user-manual.html" ){
 			 $('.navbar-nav').children().eq(2).addClass( "active" );
+		}
+		else if ( pageName == "faq.html" ){
+			 $('.navbar-nav').children().eq(3).addClass( "active" );
 		}
 		
 	});

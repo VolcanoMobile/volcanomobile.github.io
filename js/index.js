@@ -12,7 +12,130 @@ jQuery( document ).ready(function( $ ) {
 		jQuery('#contact').slideToggle('slow');
 	} );
 	
+	/////load games
+	loadApps( 'game', '#games-container' )
+	
+	
+	/////load apps
+	loadApps( 'app', '#apps-container' )
+	
+	
+	/////load reviews
+	loadReviews( '#reviews-container' )
 	
 });
+
+
+function loadApps( type, containerId ){
+	
+	$.getJSON("json/apps.json", function( jsonObject ) {
+		
+		//console.log('getJSON jsonObject.name: ' + jsonObject.name );
+
+		$.each(jsonObject.apps, function(i, app) {
+			
+			//	console.log('getJSON app ' + i + ': ' + app.name );
+
+			if ( app.type == type || type == 'all' ){
+				
+				
+				htmlCol = $("<div></div>");
+				htmlCol.addClass( 'col-6 col-sm-4 col-md-3 col-lg-2' );
+				
+				var urlTarget = "_blank";
+				if ( app.urlTarget != null ) urlTarget = app.urlTarget;
+				htmlLink = $( '<a href="' + app.url + '" target="' + urlTarget + '"></a>');
+				
+				htmlCard = $("<div></div>");
+				htmlCard.addClass( );
+				
+				htmlCardBlock = $("<div></div>");
+				htmlCardBlock.addClass( '' );
+				
+				appImage = $("<img></img>");
+				appImage.attr( 'src', app.icon );
+				appImage.attr( 'alt', app.name );
+				appImage.attr( 'title', app.name );
+				appImage.addClass( 'img-fluid' );
+
+				htmlTitle = $("<div></div>");
+				//htmlTitle.html( app.name );
+				htmlTitle.addClass( 'card-title text-center' );
+
+				htmlCardBlock.append( appImage );
+				htmlCardBlock.append( htmlTitle );
+				htmlCard.html( htmlCardBlock );
+				htmlLink.html( htmlCard );
+				htmlCol.html( htmlLink );
+				$( containerId ).append(htmlCol);
+			}
+		});
+	});
+}
+
+
+function loadReviews( containerId ){
+	
+	$.getJSON("json/reviews.json", function( jsonObject ) {
+		
+		console.log('loadReviews jsonObject.name: ' + jsonObject.name );
+
+		$.each(jsonObject.reviews, function(i, review) {
+			
+			console.log('loadReviews app ' + i + ': ' + review.name );
+
+			
+			htmlCol = $("<div></div>");
+			htmlCol.addClass( 'col-6 col-lg-4' );
+			
+			htmlLink = $( '<a href="' + review.url + '" target="_blank"></a>');
+			
+			card = $("<div></div>");
+			card.addClass( 'card text-center' );
+			
+			cardBlock = $("<div></div>");
+			cardBlock.addClass( 'card-block' );
+			
+			reviewer = $("<div></div>");
+			reviewer.addClass( 'reviewer-icon-container' );
+			reviewerImage = $("<img></img>");
+			reviewerImage.attr( 'src', review.reviewerIcon );
+			reviewerImage.attr( 'alt', review.text );
+			reviewerImage.attr( 'title', review.text );
+			reviewerImage.addClass( 'img-fluid reviewer-icon' );
+
+			reviewContent = $("<div></div>");
+			reviewContent.addClass( '' );
+
+			appImage = $("<img></img>");
+			appImage.attr( 'src', review.appIcon );
+			appImage.attr( 'alt', review.text );
+			appImage.attr( 'title', review.text );
+			appImage.addClass( 'app-icon' );
+
+			text = $("<div></div>");
+			text.html( review.text );
+			text.addClass( 'card-title' );
+
+					reviewContent.append( appImage );
+					reviewContent.append( text );
+			
+				cardBlock.append( reviewContent );
+
+					reviewer.append( reviewerImage );
+			
+				cardBlock.append( reviewer );
+				
+			card.append( cardBlock );
+			
+			htmlLink.html( card );
+			
+			htmlCol.html( htmlLink );
+			
+			$( containerId ).append(htmlCol);
+
+		});
+	});
+}
 
 

@@ -9,3 +9,34 @@
     width: 100%;
     margin-bottom: 2em;
 }
+
+
+.navbar{
+	background-color: #384452!important;
+	color: #ffffff;
+	padding-top: 0.8rem;
+	padding-bottom: 0.8rem;
+}
+
+.navbar .navbar-brand{
+	background-color: #384452!important;
+	color: #ffffff;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.125rem;
+    font-weight: 700;
+	padding-top: 0.4em;
+	padding-bottom: 0.4em;
+}
+
+.navbar .navbar-nav .nav-link{
+	color: #ffffff;
+	transition: background-color .4s linear, color .4s linear;
+	font-weight: 700;
+	font-size: 0.75em;
+	text-transform: uppercase;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+}
+.navbar .navbar-nav .nav-link:hover{
+	color: #00b3fe;
+}
