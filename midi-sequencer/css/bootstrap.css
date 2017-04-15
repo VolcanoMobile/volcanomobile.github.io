@@ -10,6 +10,11 @@ a:hover{
 	color: #5a5a5a;
 }
 
+a:focus{
+	color: #E09300;
+}
+
+
 .badge-pill{
 	width: 2.5em;
 	height: 2.5em;
@@ -35,6 +40,13 @@ a .card{
 .card-header{
 	color: #FFB11B;
 	background-color: #5a5a5a;
+}
+
+.card-header a:hover{
+	color: #ffffff;
+}
+.card-header a:focus{
+	color: #ffffff;
 }
 
 .card-img-top{

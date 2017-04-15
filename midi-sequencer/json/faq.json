@@ -1,0 +1,43 @@
+{
+	"name": "faq", 
+	"faqs": [
+		{
+			"question": "How to change the tempo (bpm)?",
+			"response": null,
+			"responseSteps": {
+				"0": "Press the <b>left menu</b> icon ( <span class=' fa fa-bars'></span> ) on the top left of the screen",
+				"1": "Press the <b>project settings</b> icon ( <span class=' fa fa-cog'></span> ) on the top of the left menu",
+				"2": "Change the <b>bpm</b>"
+			}
+			
+		},
+		{
+			"question": "How to add a new sequence?",
+			"response": null,
+			"responseSteps": {
+				"0": "Press the <b>option menu</b> icon ( <span class=' fa fa-ellipsis-v'></span> ) on the top right of the screen",
+				"1": "Press the <b>add new sequence</b> button",
+				"2": "Set the new <b>sequence settings</b> and press the <b>OK</b> button"
+			},
+			"responseFoot" : "You can also add a new sequence in the <a target='_blank' href='http://localhost:8080/midi-sequencer/tutorial.html#anchor-sequences'>sequences screen</a>."
+		},
+		{
+			"question": "Can I delete a sequence?",
+			"response": "No... This feature will probably be added later.<br/>For now, we suggest you to just don't care about useless sequences and to reuse them later if you need new sequences."
+		},
+		{
+			"question": "How to add a new instrument track?",
+			"response": null,
+			"responseSteps": {
+				"0": "Press the <b>option menu</b> icon ( <span class=' fa fa-ellipsis-v'></span> ) on the top right of the screen",
+				"1": "Press the <b>add new track</b> button",
+				"2": "Set the new <b>track settings</b> and press the <b>OK</b> button"
+			},
+			"responseFoot" : "You can also add a new track in the <a target='_blank' href='http://localhost:8080/midi-sequencer/tutorial.html#anchor-tracks'>tracks screen</a>."
+		},
+		{
+			"question": "Can I delete a track?",
+			"response": "No... This feature will probably be added later.<br/>For now, we suggest you to just don't care about useless tracks and to reuse them later if you need new tracks."
+		}		
+	]
+}
