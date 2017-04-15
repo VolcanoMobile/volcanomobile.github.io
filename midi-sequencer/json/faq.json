@@ -16,7 +16,7 @@
 			"response": null,
 			"responseSteps": {
 				"0": "Press the <b>option menu</b> icon ( <span class=' fa fa-ellipsis-v'></span> ) on the top right of the screen",
-				"1": "Press the <b>add new sequence</b> button",
+				"1": "Press the <b>new sequence</b> button",
 				"2": "Set the new <b>sequence settings</b> and press the <b>OK</b> button"
 			},
 			"responseFoot" : "You can also add a new sequence in the <a target='_blank' href='http://localhost:8080/midi-sequencer/tutorial.html#anchor-sequences'>sequences screen</a>."
@@ -30,7 +30,7 @@
 			"response": null,
 			"responseSteps": {
 				"0": "Press the <b>option menu</b> icon ( <span class=' fa fa-ellipsis-v'></span> ) on the top right of the screen",
-				"1": "Press the <b>add new track</b> button",
+				"1": "Press the <b>new track</b> button",
 				"2": "Set the new <b>track settings</b> and press the <b>OK</b> button"
 			},
 			"responseFoot" : "You can also add a new track in the <a target='_blank' href='http://localhost:8080/midi-sequencer/tutorial.html#anchor-tracks'>tracks screen</a>."
