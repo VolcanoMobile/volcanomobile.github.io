@@ -16,6 +16,7 @@ $(document).ready(function() {
 				anchorName = anchorName.replace('<br/>','-'); ///// Remove <br/> tags
 				anchorName = anchorName.replace('<br>','-'); ///// Remove <br> tags
 				anchorName = anchorName.replace(/(<([^>]+)>)/ig,""); ///// Remove html tags
+				anchorName = anchorName.toLowerCase();
 				
 				///// Create anchor link just before title
 				var anchorLink = $('<a></a>').attr('name', anchorName ).insertBefore( $(this) );
@@ -56,6 +57,7 @@ $(document).ready(function() {
 						anchorName = anchorName.replace('<br/>','-'); ///// Remove <br/> tags
 						anchorName = anchorName.replace('<br>','-'); ///// Remove <br> tags
 						anchorName = anchorName.replace(/(<([^>]+)>)/ig,""); ///// Remove html tags
+						anchorName = anchorName.toLowerCase();
 						
 						/////
 						var reference = $('<a></a>').appendTo( referencesTable );
