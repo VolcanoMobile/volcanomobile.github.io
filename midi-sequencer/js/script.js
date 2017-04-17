@@ -6,7 +6,8 @@ $(document).ready(function() {
 		$("body").prepend( data);
 		
 		var pageName = document.location.href.match(/[^\/]+$/)[0];
-		
+		if ( pageName.indexOf( "#" ) >= 0 ) pageName = pageName.substr( 0, pageName.indexOf( "#" ) );
+
 		if ( pageName == "index.html" ){
 			 $('.navbar-nav').children().eq(0).addClass( "active" );
 		}
@@ -31,7 +32,11 @@ $(document).ready(function() {
 	///// Fix anchor position with fixed navbar
 	var bodyPaddingTop = parseInt( jQuery( "body" ).css( "padding-top" ) );
 
-	var shiftWindow = function() { scrollBy(0, -bodyPaddingTop ) };
+	var shiftWindow = function() {
+		//scrollBy(0, -bodyPaddingTop );
+		scrollTo(0, $('a[name^="' + location.hash.substr(1) + '"]').offset().top - bodyPaddingTop ); 		
+	};
+
 	if (location.hash) shiftWindow();
 	window.addEventListener("hashchange", shiftWindow);
 	

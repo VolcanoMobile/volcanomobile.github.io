@@ -1,6 +1,29 @@
 $(document).ready(function() {
 	
 	//// Each title
+	$(":header").each(
+	
+		function(){
+
+			/////
+			var titleLevel = parseInt( $(this).prop("tagName").replace( /^\D+/g, ''), 10 );
+
+			if ( titleLevel > 1  &&  titleLevel < 4 ){			
+				
+				/////
+				var anchorName = 'anchor-title-' + $(this).html();
+				anchorName = anchorName.split(' ').join('-');///// Remove white spaces
+				anchorName = anchorName.replace('<br/>','-'); ///// Remove <br/> tags
+				anchorName = anchorName.replace('<br>','-'); ///// Remove <br> tags
+				anchorName = anchorName.replace(/(<([^>]+)>)/ig,""); ///// Remove html tags
+				
+				///// Create anchor link just before title
+				var anchorLink = $('<a></a>').attr('name', anchorName ).insertBefore( $(this) );
+			}
+		}
+	);
+	
+	//// Each title
     $(".references-table").each(
 		function(){
 	
@@ -28,16 +51,15 @@ $(document).ready(function() {
 						
 						
 						/////
-						var anchorName = 'anchor-title-2-' + $(this).html();
-						anchorName = anchorName.split(' ').join('');///// Remove white spaces
+						var anchorName = 'anchor-title-' + $(this).html();
+						anchorName = anchorName.split(' ').join('-');///// Remove white spaces
+						anchorName = anchorName.replace('<br/>','-'); ///// Remove <br/> tags
+						anchorName = anchorName.replace('<br>','-'); ///// Remove <br> tags
 						anchorName = anchorName.replace(/(<([^>]+)>)/ig,""); ///// Remove html tags
 						
-						///// Create anchor link just before title
-						var anchorLink = $('<a></a>').attr('name', anchorName ).insertBefore( $(this) );
-
 						/////
 						var reference = $('<a></a>').appendTo( referencesTable );
-						reference.attr( 'href', '#' + anchorLink.attr( 'name' ) );
+						reference.attr( 'href', '#' + anchorName );
 						
 						///// Item CSS class
 						var itemCssClass = '';

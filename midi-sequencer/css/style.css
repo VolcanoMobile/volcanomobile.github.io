@@ -11,6 +11,14 @@ body{
 	background-color: #dedede;
 }
 
+/*body::after{
+	position: fixed;
+	top: 0px;
+	content: "";
+	background-color: #00dede;
+	height: 90px;
+	width: 100%;
+}*/
 
 
 h1{
@@ -40,6 +48,13 @@ h3{
     font-family: 'Catamaran', sans-serif;
 }
 
+
+/*a[name^="anchor"] {
+    background: #8888ff;
+    display: block;
+    min-height: 3px;
+    margin-bottom: 3px;
+}*/
 
 
 .anchors-dropdown{
