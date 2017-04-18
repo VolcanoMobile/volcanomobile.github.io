@@ -19,7 +19,7 @@
 				"1": "Press the <b>new sequence</b> button",
 				"2": "Set the new <b>sequence settings</b> and press the <b>OK</b> button"
 			},
-			"responseFoot" : "You can also add a new sequence in the <a target='_blank' href='user-manual.html#anchor-sequences'>sequences screen</a>."
+			"responseFoot" : "You can also add a new sequence in the <a href='user-manual.html#anchor-sequences'>sequences screen</a>."
 		},
 		{
 			"question": "Can I delete a sequence?",
@@ -33,7 +33,7 @@
 				"1": "Press the <b>new track</b> button",
 				"2": "Set the new <b>track settings</b> and press the <b>OK</b> button"
 			},
-			"responseFoot" : "You can also add a new track in the <a target='_blank' href='user-manual.html#anchor-tracks'>tracks screen</a>."
+			"responseFoot" : "You can also add a new track in the <a href='user-manual.html#anchor-tracks'>tracks screen</a>."
 		},
 		{
 			"question": "Can I delete a track?",
