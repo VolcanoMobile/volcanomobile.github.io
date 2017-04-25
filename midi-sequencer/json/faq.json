@@ -38,6 +38,20 @@
 		{
 			"question": "Can I delete a track?",
 			"response": "No... This feature will probably be added later.<br/>For now, we suggest you to just don't care about useless tracks and to reuse them later if you need new tracks."
-		}		
+		},
+		{
+			"question": "Why it only display 7 notes per octave?",
+			"response": "It only display notes that are present in the scale defined in the project settings<br/><br/>See <a href='#how-do-i-change-the-project-scale'>how to change the project scale</a>."
+		},
+		{
+			"anchorName": "how-do-i-change-the-project-scale",
+			"question": "How do I change the project scale?",
+			"response": null,
+			"responseSteps": {
+				"0": "Press the <b>left menu</b> icon ( <span class=' fa fa-bars'></span> ) on the top left of the screen",
+				"1": "Press the <b>project settings</b> icon ( <span class=' fa fa-cog'></span> ) on the top of the left menu",
+				"2": "Change the <b>scale</b>"
+			}
+		}
 	]
 }

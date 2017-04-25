@@ -21,6 +21,10 @@ function loadFAQ( containerId ){
 			console.log('loadFAQ ' + i + ': ' + faq.question );
 
 			
+			anchorHtml = $('<a name="' + faq.anchorName + '"></a>');
+			$( '#' + containerId ).append( anchorHtml );
+
+
 			faqHtml = $("<div></div>");
 			faqHtml.addClass( 'card' );
 			
