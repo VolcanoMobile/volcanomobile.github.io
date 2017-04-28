@@ -41,7 +41,9 @@ function loadApps( type, containerId ){
 				
 				htmlCol = $("<div></div>");
 				htmlCol.addClass( 'col-6 col-sm-4 col-md-3 col-lg-2' );
-				
+				htmlCol.attr( 'itemscope', "" );
+				htmlCol.attr( 'itemtype', "http://schema.org/MobileApplication" );
+
 				var urlTarget = "_blank";
 				if ( app.urlTarget != null ) urlTarget = app.urlTarget;
 				htmlLink = $( '<a href="' + app.url + '" target="' + urlTarget + '"></a>');
@@ -59,15 +61,38 @@ function loadApps( type, containerId ){
 				appImage.addClass( 'img-fluid' );
 
 				htmlTitle = $("<div></div>");
-				//htmlTitle.html( app.name );
-				htmlTitle.addClass( 'card-title text-center' );
+				htmlTitle.html( app.name );
+				htmlTitle.attr( 'itemprop', "name" );
+				htmlTitle.css("display", "none")
+
+				htmlOperatingSystem = $("<span></span>");
+				htmlOperatingSystem.html( "Android" );
+				htmlOperatingSystem.attr( 'itemprop', "operatingSystem" );
+				htmlOperatingSystem.css("display", "none")
+
+				htmlApplicationCategory = $("<span></span>");
+				htmlApplicationCategory.html( app.category );
+				htmlApplicationCategory.attr( 'itemprop', "applicationCategory" );
+				htmlApplicationCategory.css("display", "none")
+
+				htmlApplicationOffers = $("<span></span>");
+				htmlApplicationOffers.html( app.category );
+				htmlApplicationOffers.attr( 'itemprop', "applicationCategory" );
+				htmlApplicationOffers.css("display", "none")
 
 				htmlCardBlock.append( appImage );
 				htmlCardBlock.append( htmlTitle );
+				htmlCardBlock.append( htmlOperatingSystem );
+				htmlCardBlock.append( htmlApplicationCategory );
+				
 				htmlCard.html( htmlCardBlock );
+				
 				htmlLink.html( htmlCard );
+				
 				htmlCol.html( htmlLink );
+				
 				$( containerId ).append(htmlCol);
+				$( containerId ).append("\n\r");
 			}
 		});
 	});
