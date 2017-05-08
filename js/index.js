@@ -75,15 +75,26 @@ function loadApps( type, containerId ){
 				htmlApplicationCategory.attr( 'itemprop', "applicationCategory" );
 				htmlApplicationCategory.css("display", "none")
 
-				htmlApplicationOffers = $("<span></span>");
-				htmlApplicationOffers.html( app.category );
-				htmlApplicationOffers.attr( 'itemprop', "applicationCategory" );
-				htmlApplicationOffers.css("display", "none")
+				/*htmlApplicationOffers = $("<span></span>");
+				htmlApplicationOffers.html( '<span itemprop="priceCurrency" content="USD">$</span><span itemprop="price">0.0</span>' );
+				htmlApplicationOffers.attr( 'itemprop', "offers" );
+				htmlApplicationOffers.attr( 'itemscope', "" );
+				htmlApplicationOffers.attr( 'itemtype', "http://schema.org/Offer" );
+				htmlApplicationOffers.css("display", "none");*/
+
+				/*htmlApplicationAggregateRating = $("<span></span>");
+				htmlApplicationAggregateRating.html( '<span itemprop="ratingValue">5</span><span itemprop="bestRating">5</span><span itemprop="ratingCount">5</span>' );
+				htmlApplicationAggregateRating.attr( 'itemprop', "aggregateRating" );
+				htmlApplicationAggregateRating.attr( 'itemscope', "" );
+				htmlApplicationAggregateRating.attr( 'itemtype', "http://schema.org/AggregateRating" );
+				htmlApplicationAggregateRating.css("display", "none")*/
 
 				htmlCardBlock.append( appImage );
 				htmlCardBlock.append( htmlTitle );
 				htmlCardBlock.append( htmlOperatingSystem );
 				htmlCardBlock.append( htmlApplicationCategory );
+				//htmlCardBlock.append( htmlApplicationOffers );
+				//htmlCardBlock.append( htmlApplicationAggregateRating );
 				
 				htmlCard.html( htmlCardBlock );
 				

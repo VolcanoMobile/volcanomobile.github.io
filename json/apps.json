@@ -54,7 +54,8 @@
 			"name": "General MIDI Synthesizer",
 			"icon": "img/general-midi-synthesizer/logo.png",
 			"url": "https://play.google.com/store/apps/details?id=net.volcanomobile.sonivoxeasmidi",
-			"type": "app"
+			"type": "app",
+			"category": "Audio"
 		},
 		{
 			"name": "Comic Reader",
