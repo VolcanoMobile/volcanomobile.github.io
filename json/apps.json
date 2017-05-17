@@ -100,13 +100,6 @@
 			"category": "Game"
 		},
 		{
-			"name": "Flying Jelly Bean",
-			"icon": "img/flying-jelly-bean/icon_512.png",
-			"url": "https://play.google.com/store/apps/details?id=net.volcanomobile.paflechien",
-			"type": "game",
-			"category": "Game"
-		},
-		{
 			"name": "Fartman",
 			"icon": "img/fartman/icon_512x512.png",
 			"url": "https://play.google.com/store/apps/details?id=net.volcanomobile.fartman",
