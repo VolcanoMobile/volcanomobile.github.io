@@ -119,6 +119,10 @@
 
 
 /***** Apps lists *****/
+#apps-container > div,
+#games-container > div{
+	margin-bottom: 1em;
+}
 
 .app-item{
 	text-align: center;

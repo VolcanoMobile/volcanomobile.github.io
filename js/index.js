@@ -40,13 +40,14 @@ function loadApps( type, containerId ){
 				
 				
 				htmlCol = $("<div></div>");
-				htmlCol.addClass( 'col-6 col-sm-4 col-md-3 col-lg-2' );
+				htmlCol.addClass( 'col-3 col-sm-3 col-md-3 col-lg-2' );
 				htmlCol.attr( 'itemscope', "" );
 				htmlCol.attr( 'itemtype', "http://schema.org/MobileApplication" );
 
 				var urlTarget = "_blank";
 				if ( app.urlTarget != null ) urlTarget = app.urlTarget;
 				htmlLink = $( '<a href="' + app.url + '" target="' + urlTarget + '"></a>');
+				htmlLink.addClass( "app-link" );
 				
 				htmlCard = $("<div></div>");
 				htmlCard.addClass( );
@@ -122,7 +123,7 @@ function loadReviews( containerId ){
 
 			
 			htmlCol = $("<div></div>");
-			htmlCol.addClass( 'col-6 col-lg-4' );
+			htmlCol.addClass( 'col-12 col-lg-4' );
 			
 			htmlLink = $( '<a href="' + review.url + '" target="_blank"></a>');
 			
