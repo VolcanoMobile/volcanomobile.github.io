@@ -93,13 +93,6 @@
 			"category": "Game"
 		},
 		{
-			"name": "Connect", 
-			"icon": "img/connect/icon.png",
-			"url": "https://play.google.com/store/apps/details?id=net.volcanomobile.casinochips",
-			"type": "game",
-			"category": "Game"
-		},
-		{
 			"name": "Fartman",
 			"icon": "img/fartman/icon_512x512.png",
 			"url": "https://play.google.com/store/apps/details?id=net.volcanomobile.fartman",
