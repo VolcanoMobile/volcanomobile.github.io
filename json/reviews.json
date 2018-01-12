@@ -2,6 +2,13 @@
 	"name": "reviews", 
 	"reviews": [
 		{
+			"url": "https://www.youtube.com/watch?v=v__fA1_2b_U",
+			"text": "MIDI Sequencer is reviewed by Bose Sounds",
+			"reviewerIcon": "https://yt3.ggpht.com/-rETPZa55WDE/AAAAAAAAAAI/AAAAAAAAAAA/ng2gMurteto/s88-c-k-no-mo-rj-c0xffffff/photo.jpg",
+			"appIcon": "img/midi-sequencer/logo.png",
+			"type": "app"
+		},
+		{
 			"url": "http://www.fettspielen.de/blog/android-games-fartman/",
 			"text": "Fartman is reviewed in Fettspielen",
 			"reviewerIcon": "http://www.fettspielen.de/blog/wp-content/uploads/2014/07/Fettspielen-Blog-Logo-Header.png",
