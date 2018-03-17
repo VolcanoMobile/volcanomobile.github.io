@@ -1,0 +1,28 @@
+{
+	"name": "faq", 
+	"faqs": [
+		{
+			"question": "How to change the tempo (bpm)?",
+			"response": null,
+			"responseSteps": {
+				"0": "Press the bpm button on the bottom right of the screen",
+				"1": "Use the seek bar to change the <b>bpm</b>"
+			}
+			
+		},
+		{
+			"question": "How to add a new sequence?",
+			"response": null,
+			"responseSteps": {
+				"0": "Press the <b>Sequence option menu</b> icon ( <span class=' fa fa-ellipsis-v'></span> )  in the <a href='user-manual.html#anchor-title-action-bar'>action bar</a>",
+				"1": "Press the <b>add sequence</b> button",
+				"2": "Set the new <b>sequence settings</b> and press the <b>add</b> button"
+			},
+			"responseFoot" : "You can also add a new sequence in the <a href='user-manual.html#anchor-sequences'>sequences screen</a>."
+		},
+		{
+			"question": "Can I delete a channel?",
+			"response": "No..."
+		}
+	]
+}

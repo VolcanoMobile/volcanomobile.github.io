@@ -1,0 +1,174 @@
+/***********************/
+/***** Bootstrap *******/
+/***********************/
+
+a{
+	color: #E09300;
+}
+
+a:hover{
+	color: #5a5a5a;
+}
+
+a:focus{
+	color: #E09300;
+}
+
+
+.badge-pill{
+	width: 2.5em;
+	height: 2.5em;
+	line-height: 2.5em;
+	padding: 0em;
+}
+
+
+
+.bg-primary{
+	background-color: #455a64!important;
+}
+
+
+/****** Titles ********/
+
+h1{
+	background-color: #455a64;
+	color: #ffffff;
+	padding: 0.25em;
+	border-radius: 5px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+h1 > *{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+h1 .header-img,
+h1 .header-img-lg{
+	height: 1em;
+	padding-right: 0.25em;
+}
+
+
+h2{
+    font-family: 'Catamaran', sans-serif;
+}
+h3{
+    font-family: 'Catamaran', sans-serif;
+}
+
+
+
+/******** Card ***********/
+
+.card{
+}
+
+a .card{
+	color: #5a5a5a;
+}
+
+.card-header{
+	color: #ffffff;
+	background-color: #455a64;
+}
+
+.card-header a{
+	color: #ffffff;
+}
+.card-header a:hover{
+	color: #ffffff;
+}
+.card-header a:focus{
+	color: #ffffff;
+}
+
+.card-img-top{
+	width: 100%;
+	height: auto;
+}
+
+
+
+.list-group-item{
+	display: block;
+}
+
+
+ /*******/
+ 
+.navbar{
+	/*box-shadow: 0em 0.0em 0.5em rgba(0, 0, 0, 0.5);*/
+    font-family: 'Source Sans Pro', sans-serif;
+	font-weight: bold;
+	/*background-image: url('https://imgjam.com/jamendomusic/radios/radio-electro-hero-l.jpg' );
+	background-position: bottom center;
+	background-size: cover;
+	background-repeat: no-repeat;*/
+	background-color: #455a64;
+}
+
+.navbar .navbar-brand{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: #ffffff;
+}
+
+.navbar .navbar-brand:hover{
+    color: #ffffff;
+}
+
+.navbar .nav-item{
+	text-transform: uppercase;
+}
+.navbar .nav-item:hover{
+}
+
+.navbar-nav .nav-item.active{
+	background-color: #FF9100;
+}
+.navbar .nav-item .nav-link{
+	color: #ffffff;
+}
+.navbar .nav-item.active .nav-link{
+	color: #ffffff;
+}
+.navbar .nav-item:hover .nav-link{
+	color: #FF9100;
+}
+.navbar .nav-item.active:hover .nav-link{
+	color: #ffffff;
+}
+
+
+/***** Responsive *******/
+@media (max-width: 575px) {
+
+	div[class^='col-lg-'], div[class*=' col-lg-']{
+		padding-bottom: 1em;
+	}
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+	div[class^='col-lg-'], div[class*=' col-lg-']{
+		padding-bottom: 1em;
+	}
+	
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+	div[class^='col-lg-'], div[class*=' col-lg-']{
+		padding-bottom: 1em;
+	}
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+@media (min-width: 1200px) {
+
+
+}

@@ -1,0 +1,22 @@
+#page-index-header{
+	background-image: url('../images/header-background.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top: -36px;
+	color: #ffffff;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+#page-index-header .logo{
+	height: 7em;
+}
+
+#page-index-header .title{
+	font-size: 2em;
+}
+
+#page-index-header .row > *{
+	/*background-color: #00ff00;*/
+	vertical-align: middle;
+}

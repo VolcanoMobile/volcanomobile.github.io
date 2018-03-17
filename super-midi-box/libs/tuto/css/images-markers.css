@@ -1,0 +1,58 @@
+/**** example1 ******/
+
+#tuto-image-example1 #tuto-image-marker-0 {
+    left: 10%;
+    top: 20%;
+}
+
+#tuto-image-example1 #tuto-image-marker-1 {
+    left: 80%;
+    top: 75%;
+}
+
+#tuto-image-example1 .tuto-image-square-1-0 {
+    width: 50%;
+    height: 60%;
+    left: 35%;
+    top: 20%;
+}
+
+
+/**** example1 ******/
+
+#tuto-image-example1-resized #tuto-image-marker-0 {
+    left: 10%;
+    top: 20%;
+}
+
+#tuto-image-example1-resized #tuto-image-marker-1 {
+    left: 80%;
+    top: 75%;
+}
+
+#tuto-image-example1-resized .tuto-image-square-1-0 {
+    width: 50%;
+    height: 60%;
+    left: 35%;
+    top: 20%;
+}
+
+
+/**** example2 ******/
+
+#tuto-image-example2 #tuto-image-marker-0 {
+    left: 25%;
+    top: 25%;
+}
+
+#tuto-image-example2 #tuto-image-marker-1 {
+    left: 75%;
+    top: 75%;
+}
+
+#tuto-image-example2 .tuto-image-square-1-0 {
+    width: 50%;
+    height: 50%;
+    left: 50%;
+    top: 50%;
+}

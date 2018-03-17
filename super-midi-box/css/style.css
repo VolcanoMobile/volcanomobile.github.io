@@ -1,0 +1,163 @@
+@import url("images-markers.css");
+@import url("bootstrap.css");
+@import url("fancybox.css");
+@import url("table-of-contents.css");
+
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700');
+@import url('https://fonts.googleapis.com/css?family=Catamaran:800'); 
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+body{
+	padding-top: 90px;
+	background-color: #dedede;
+}
+
+/*body::after{
+	position: fixed;
+	top: 0px;
+	content: "";
+	background-color: #00dede;
+	height: 90px;
+	width: 100%;
+}*/
+
+
+
+
+
+/*a[name^="anchor"] {
+    background: #8888ff;
+    display: block;
+    min-height: 3px;
+    margin-bottom: 3px;
+}*/
+
+
+.anchors-dropdown{
+	position: fixed;
+	top: 0em;
+	right: 0em;
+	z-index: 1000;
+	border-radius: 1em 0em 0em 1em; 
+	box-shadow: 0em 0.1em 1em #000000;
+}
+.anchors-dropdown > button{
+	width: auto; 
+	border-right: 0px; 
+	padding: 70px 1.0em 1.0em  1.0em;
+	border-radius: 0em 0em 0em 1em;
+	cursor: pointer;
+}
+.anchors-dropdown .fa{
+	color: #5a5a5a;
+}
+.anchors-dropdown .dropdown-menu{
+	width: 300px; 
+	padding: 0px;
+	box-shadow: 0em 0.1em 1em #000000;
+}
+
+
+
+footer{
+	position: relative;
+	display: block;
+}
+
+footer div.content{
+	overflow: auto;
+	padding: 2em 2em 0em 2em;
+}
+
+footer div.content a{
+	color: #ffffff;
+}
+
+footer div.content img{
+	padding: 0.5em;
+	height: 5em;
+}
+.footer-contact{
+	display: inline-block;
+}
+.footer-contact-title{
+	border-bottom: 1px solid;
+}
+.footer-contact-table td{
+	padding-right: 0.5em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+
+
+/***** Responsive *******/
+@media (max-width: 575px) {
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+	h1 .header-img-lg{
+		height: 2em;
+	}
+	
+	footer div.content img{
+		height: 8em;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+	h1 .header-img-lg{
+		height: 3em;
+	}
+	
+	footer div.content img{
+		height: 10em;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+	h1 .header-img{
+		height: 2em;
+	}
+	h1 .header-img-lg{
+		height: 4em;
+	}
+	
+	footer div.content img{
+		height: 10em;
+	}
+}
+
+@media (min-width: 1200px) {
+
+	h1 .header-img{
+		height: 2em;
+	}
+	h1 .header-img-lg{
+		height: 4em;
+	}
+	
+	footer div.content img{
+		height: 10em;
+	}
+}
+
+
+
+/***** Print *******/
+
+@media print {
+
+	.print-page-break {
+		page-break-before:always
+	}
+
+	body{
+		-webkit-print-color-adjust: exact;
+		padding-top: 0em;
+	}
+}
+

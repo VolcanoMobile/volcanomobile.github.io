@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>Super MIDI Box - User Manual</title>
+	<link rel="icon" type="image/png" href="images/logo.png" />
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	
+	<!-- font-awesome CSS -->
+	<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+	
+	<!-- Tuto CSS -->
+	<link rel="stylesheet" href="libs/tuto/css/tuto.css">
+	
+	<!-- Stylsheet CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	
+	
+</head>
+<body>
+	
+	<div id="myModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog" style="max-width: 95%;">
+			<div class="modal-content">
+				<div class="modal-header">
+					<b><span class="modal-title" id="exampleModalLabel"></span></b>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--div class="anchors-dropdown hidden-print">
+		<button class="btn btn-secondary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			<span class="fa fa-list-ul fa-2x"></span>
+		</button>
+		<div class="dropdown-menu dropdown-menu-right references-table" aria-labelledby="dropdownMenuButton">
+		</div>
+	</div-->
+		
+	<div class="container">
+				
+		<h1>
+			<img class="header-img" src="images/logo.png" alt=""> <span class="visible-print-inline">Super MIDI Box -&nbsp;</span>User manual
+			
+		</h1>
+
+		
+		<div class="card">
+			<div class="card-body">
+				<b class="card-title">Table of content</b>
+				<br/><br/>
+				<ul class="references-table visible-print-block">
+				</ul>
+			</div>
+		</div>
+		
+		<br/>
+	
+		<div class="print-page-break"></div>
+		<div class="card">
+			<div class="card-body">
+				<h2 class="card-title">Action bar</h2>
+				<div class="row">
+					<div class="col-lg-7">
+						<div id="tuto-image-actionbar" class="tuto-image" markers-list="tuto-image-actionbar-markers-list" title="Action bar">
+							<img class="img-fluid" src="images/screenshots/piano.png"></img>
+							<div class="tuto-image-marker">Open/close <a href='#anchor-left-menu'>left menu</a></div>
+							<div class="tuto-image-marker">Select edit <b>sequence</b></div>
+							<div class="tuto-image-marker">Sequence options</div>
+							<div class="tuto-image-marker">Select edit <b>channel</b></div>
+							<div class="tuto-image-marker">Channel options</div>
+							<div class="tuto-image-marker">Enable/disable <b>fill</b> mode</div>
+							<div class="tuto-image-marker">Options menu</a></div>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div id="tuto-image-actionbar-markers-list" class="tuto-image-markers-list"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<br/>
+	
+		<div class="print-page-break"></div>
+		<div class="card">
+			<div class="card-body">
+				<h2 class="card-title">Bottom bar</h2>
+				<div class="row">
+					<div class="col-lg-7">
+						<div id="tuto-image-bottombar" class="tuto-image" markers-list="tuto-image-bottombar-markers-list" title="Action bar">
+							<img class="img-fluid" src="images/screenshots/piano.png"></img>
+							<div class="tuto-image-marker">Metronome</div>
+							<div class="tuto-image-marker">Record</div>
+							<div class="tuto-image-marker">
+								<b>Play</b>
+								<br/>
+								Press to start playing
+								<br/>
+								Long press to start with tempo intro
+							</div>
+							<div class="tuto-image-marker">Stop</div>
+							<div class="tuto-image-marker">Current time signature</div>
+							<div class="tuto-image-marker">Quantization</div>
+							<div class="tuto-image-marker">
+								<b>Arpeggiator</b>
+								<br/>
+								Press to enable/disable arpeggiator
+								<br/>
+								Long press open arpeggiator settings
+							</div>
+							<div class="tuto-image-marker">BPM</div>
+							<div class="tuto-image-marker">Mixer</div>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div id="tuto-image-bottombar-markers-list" class="tuto-image-markers-list"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<br/>
+		
+		<div class="print-page-break"></div>
+		<a name="anchor-left-menu"></a>
+		<div class="card">
+			<div class="card-body">
+				<h2 class="card-title">Left menu</h2>
+				<div class="row">
+					<div class="col-lg-7">
+						<div id="tuto-image-left-menu" class="tuto-image" markers-list="tuto-image-left-menu-markers-list" title="Left menu">
+							<img class="img-fluid" src="images/screenshots/screen-shot-left-menu.png"></img>
+							<div class="tuto-image-marker">New project</div>
+							<div class="tuto-image-marker">Open project</div>
+							<div class="tuto-image-marker">Save project</div>
+							<div class="tuto-image-marker">Project settings</div>
+							<div class="tuto-image-marker">Panic button</div>
+							<div class="tuto-image-marker">Edit mode</div>
+							<div class="tuto-image-marker">Song mode</div>
+							<div class="tuto-image-marker">Sequences mode</div>
+							<div class="tuto-image-marker">MIDI settings</div>
+							<div class="tuto-image-marker">App settings</div>
+							<div class="tuto-image-marker">Help/about</div>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div id="tuto-image-left-menu-markers-list" class="tuto-image-markers-list"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<br/>
+		
+		<div class="print-page-break"></div>
+		<a name="anchor-piano"></a>
+		<div class="card">
+			<div class="card-body">
+				<h2 class="card-title">Piano</h2>
+				<div class="row">
+					<div class="col-lg-7">
+						<div id="tuto-image-piano" class="tuto-image" markers-list="tuto-image-options-menu-markers-list" title="Options menu">
+							<img class="img-fluid" src="images/screenshots/piano.png"></img>
+														
+							<div class="tuto-image-squares">
+								<div class="tuto-image-square tuto-image-square-0">
+								</div>
+							</div>
+							
+							<div class="tuto-image-marker tuto-image-marker-square">Piano keys</div>
+							<div class="tuto-image-marker">Clear the currently editing pattern</div>
+							<div class="tuto-image-marker">Pattern velocities</div>
+							<div class="tuto-image-marker">Grid pattern</div>
+							<div class="tuto-image-marker">Options menu</div>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div id="tuto-image-options-menu-markers-list" class="tuto-image-markers-list"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<br/>
+		
+		<div class="print-page-break"></div>
+		<a name="anchor-drumpads"></a>
+		<div class="card">
+			<div class="card-body">
+				<h2>Drum pads</h2>
+				<p>Drumpads are displayed for tracks mapped to the drum channel or using a drum map</p>
+				<hr/>
+				<div class="row">
+					<div class="col-lg-7">
+						<div id="tuto-image-drumpads" class="tuto-image" markers-list="tuto-image-pattern-drumpads-markers-list" title="Pattern - Drum pads">
+							<img class="img-fluid" src="images/screenshots/screen-shot-drum-pads.png"></img>
+							<div class="tuto-image-squares">
+								<div class="tuto-image-square tuto-image-square-0"></div>
+							</div>
+							
+							<div class="tuto-image-marker tuto-image-marker-square">Drum pads</div>
+							<div class="tuto-image-marker">Clear the currently editing pattern</div>
+							<div class="tuto-image-marker">Pattern velocities</div>
+							<div class="tuto-image-marker">Grid pattern</div>
+							<div class="tuto-image-marker">Options menu</div>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div id="tuto-image-pattern-drumpads-markers-list" class="tuto-image-markers-list"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<br/>
+		
+		<div class="print-page-break"></div>
+		<a name="anchor-pattern"></a>
+		<div class="card">
+			<div class="card-body">
+				<h2 class="card-title">Pattern grid</h2>
+				<div class="row">
+					<div class="col-lg-7">
+						<div id="tuto-image-pattern" class="tuto-image" markers-list="tuto-image-pattern-markers-list" title="Pattern">
+							<img class="img-fluid" src="images/screenshots/screen-shot-pattern.png"></img>
+							<div class="tuto-image-squares">
+								<div class="tuto-image-square tuto-image-square-0"></div>
+								<div class="tuto-image-square tuto-image-square-5"></div>
+							</div>
+							<div class="tuto-image-marker tuto-image-marker-square">Notes grid</div>
+							<div class="tuto-image-marker">Clear the currently editing pattern</div>
+							<div class="tuto-image-marker">Pattern velocities</div>
+							<div class="tuto-image-marker">Percussions select</div>
+							<div class="tuto-image-marker">Options menu</div>
+							<div class="tuto-image-marker tuto-image-marker-square">Measures</div>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div id="tuto-image-pattern-markers-list" class="tuto-image-markers-list"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<br/>
+		
+		<div class="print-page-break"></div>
+		<a name="anchor-velocities"></a>
+		<div class="card">
+			<div class="card-body">
+				<h2 class="card-title">Velocity</h2>
+				<hr/>
+				<div class="row">
+					<div class="col-lg-7">
+						<div id="tuto-image-velocities" class="tuto-image" markers-list="tuto-image-pattern-notespads-markers-list" title="Pattern - Notes pads">
+							<img class="img-fluid" src="images/screenshots/screen-shot-velocity.png"></img>
+							<div class="tuto-image-squares">
+								<div class="tuto-image-square tuto-image-square-0"></div>
+							</div>
+							<div class="tuto-image-marker tuto-image-marker-square">Slide to change notes velocity</div>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div id="tuto-image-pattern-notespads-markers-list" class="tuto-image-markers-list"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<br/>
+		
+		<div class="print-page-break"></div>
+		<a name="anchor-mixer"></a>
+		<div class="card">
+			<div class="card-body">
+				<h2 class="card-title">Mixer</h2>
+				<div class="row">
+					<div class="col-lg-7">
+						<div id="tuto-image-mixer" class="tuto-image" markers-list="tuto-image-mixer-markers-list" title="Mixer">
+							<img class="img-fluid" src="images/screenshots/screen-shot-mixer.png"></img>
+							<div class="tuto-image-squares">
+								<div class="tuto-image-square tuto-image-square-0"></div>
+							</div>
+							<div class="tuto-image-marker tuto-image-marker-square">Channel</div>
+							<div class="tuto-image-marker">Fader</div>
+							<div class="tuto-image-marker">Mute</div>
+							<div class="tuto-image-marker">Switch expression/volume mode</div>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div id="tuto-image-mixer-markers-list" class="tuto-image-markers-list"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<br/>
+		
+		<div class="print-page-break"></div>
+		<a name="anchor-song-mode"></a>
+		<div class="card">
+			<div class="card-body">
+				<h2 class="card-title">Song mode</h2>
+				<div class="row">
+					<div class="col-lg-7">
+						<div id="tuto-image-song-mode" class="tuto-image" markers-list="tuto-image-song-mode-markers-list" title="Song mode">
+							<img class="img-fluid" src="images/screenshots/screen-shot-song-mode.png"></img>
+							<div class="tuto-image-squares">
+								<div class="tuto-image-square tuto-image-square-0"></div>
+							</div>							
+							<div class="tuto-image-marker tuto-image-marker-square">Sequences items list</div>
+							<div class="tuto-image-marker">Reorder</div>
+							<div class="tuto-image-marker"><b>Sequence name</b><br/>Press to play sequence</div>
+							<div class="tuto-image-marker">Number of repeats</div>
+							<div class="tuto-image-marker">Item options</div>
+							<div class="tuto-image-marker">Add sequence</div>
+							<div class="tuto-image-marker">Export</div>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div id="tuto-image-song-mode-markers-list" class="tuto-image-markers-list"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<br/>
+		
+		<div class="print-page-break"></div>
+		<a name="anchor-sequences"></a>
+		<div class="card">
+			<div class="card-body">
+				<h2 class="card-title">Sequences mode</h2>
+				<div class="row">
+					<div class="col-lg-7">
+						<div id="tuto-image-sequences-mode" class="tuto-image" markers-list="tuto-image-sequences-markers-list" title="Sequences list">
+							<img class="img-fluid" src="images/screenshots/screen-shot-sequence-mode.png"></img>
+							<div class="tuto-image-squares">
+								<div class="tuto-image-square tuto-image-square-0"></div>
+							</div>
+							<div class="tuto-image-marker tuto-image-marker-square">Sequences list</div>
+							<div class="tuto-image-marker">Enable/disable fill</div>
+							<div class="tuto-image-marker">Reorder sequences</div>
+							<div class="tuto-image-marker"><b>Sequence name</b><br/>Press to play sequence</div>
+							<div class="tuto-image-marker">Set sequence as next</div>
+							<div class="tuto-image-marker">Time signature</div>
+							<div class="tuto-image-marker">Number of bars</div>
+							<div class="tuto-image-marker">Sequences options</div>
+							<div class="tuto-image-marker">Add sequence</div>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div id="tuto-image-sequences-markers-list" class="tuto-image-markers-list"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<br/>
+		
+		<!--div class="print-page-break"></div>
+		<a name="anchor-settings"></a>
+		<div class="card">
+			<div class="card-block">
+				<h2 class="card-title">Settings</h2>
+				<div class="row">
+					<div class="col-lg-7">
+						<div id="tuto-image-settings" class="tuto-image" markers-list="tuto-image-settings-markers-list" title="Settings">
+							<img class="img-fluid" src="images/screenshots/screen-shot-mixer.png"></img>
+							<div class="tuto-image-marker"><b>Slide mode</b><br/>Show slide mode button in patterns screens</div>
+							<div class="tuto-image-marker"><b>Purchase</b><br/>Purchase items or check purchased ones</div>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div id="tuto-image-settings-markers-list" class="tuto-image-markers-list"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<br/-->
+		
+		<div class="print-page-break"></div>
+		<a name="anchor-midi-connections"></a>
+		<div class="card">
+			<div class="card-body">
+				<h2 class="card-title">MIDI connections</h2>
+				<div class="row">
+					<div class="col-lg-7">
+						<div id="tuto-image-midi-connections" class="tuto-image" markers-list="tuto-image-midi-connections-markers-list" title="MIDI connections">
+							<img class="img-fluid" src="images/screenshots/screen-shot-midi-connections.png"></img>
+							<div class="tuto-image-squares">
+								<div class="tuto-image-square tuto-image-square-1"></div>
+								<div class="tuto-image-square tuto-image-square-2"></div>
+							</div>
+							<div class="tuto-image-marker">Bluetooth devices</div>
+							<div class="tuto-image-marker tuto-image-marker-square">Inputs</div>
+							<div class="tuto-image-marker tuto-image-marker-square">Outputs</div>
+							<div class="tuto-image-marker">Inputs settings</div>
+							<div class="tuto-image-marker">Inputs mapping</div>
+							<div class="tuto-image-marker">Outputs settings</div>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div id="tuto-image-midi-connections-markers-list" class="tuto-image-markers-list"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<br/>
+
+	</div>
+	
+	
+	<!-- jQuery first, then Tether, then Bootstrap JS. -->
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+	<script src="node_modules/tether/dist/js/tether.min.js"></script>
+	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	
+	<!-- Fancybox -->
+	<script type="text/javascript" src="node_modules/fancybox/dist/js/jquery.fancybox.pack.js"></script>
+	<script type="text/javascript" src="node_modules/jquery.easing/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="node_modules/fancybox/lib/jquery.mousewheel.pack.js"></script>
+
+	
+	<!-- references-table -->
+	<script src="libs/table-of-contents/js/table-of-contents.js"></script>
+	
+	<!-- tuto -->
+	<script src="libs/tuto/js/tuto.js"></script>
+	
+	<!-- -->
+	<script src="js/script.js"></script>
+
+
+
+</body>
+</html>
