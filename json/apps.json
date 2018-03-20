@@ -70,34 +70,6 @@
 			"url": "https://play.google.com/store/apps/details?id=net.volcanomobile.chordsplayer",
 			"type": "app",
 			"category": "Audio"
-		},	
-		{
-			"name": "Flip Runner", 
-			"icon": "img/flip-runner/logo.png",
-			"url": "https://play.google.com/store/apps/details?id=net.volcanomobile.fliprunner",
-			"type": "game",
-			"category": "Game"
-		},
-		{
-			"name": "Yarrrr! (Pirates vs Zombies)", 
-			"icon": "img/yarrrr/icon.png",
-			"url": "https://play.google.com/store/apps/details?id=net.volcanomobile.twofingersfighterandroid",
-			"type": "game",
-			"category": "Game"
-		},
-		{
-			"name": "Chain Reaction", 
-			"icon": "img/chain-reaction/icon.png",
-			"url": "https://play.google.com/store/apps/details?id=net.volcanomobile.chainreaction",
-			"type": "game",
-			"category": "Game"
-		},
-		{
-			"name": "Fartman",
-			"icon": "img/fartman/icon_512x512.png",
-			"url": "https://play.google.com/store/apps/details?id=net.volcanomobile.fartman",
-			"type": "game",
-			"category": "Game"
 		}
 	]
 }

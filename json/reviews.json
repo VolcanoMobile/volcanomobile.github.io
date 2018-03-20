@@ -7,20 +7,7 @@
 			"reviewerIcon": "https://yt3.ggpht.com/-rETPZa55WDE/AAAAAAAAAAI/AAAAAAAAAAA/ng2gMurteto/s88-c-k-no-mo-rj-c0xffffff/photo.jpg",
 			"appIcon": "img/midi-sequencer/logo.png",
 			"type": "app"
-		},
-		{
-			"url": "http://www.fettspielen.de/blog/android-games-fartman/",
-			"text": "Fartman is reviewed in Fettspielen",
-			"reviewerIcon": "http://www.fettspielen.de/blog/wp-content/uploads/2014/07/Fettspielen-Blog-Logo-Header.png",
-			"appIcon": "img/fartman/icon_512x512.png",
-			"type": "app"
-		},
-		{
-			"url": "http://volcanomobile.itch.io/fartman",
-			"text": "Fartman is reviewed in itch.io",
-			"reviewerIcon": "https://static.itch.io/images/itchio-450.png",
-			"appIcon": "img/fartman/icon_512x512.png",
-			"type": "app"
 		}
+
 	]
 }
