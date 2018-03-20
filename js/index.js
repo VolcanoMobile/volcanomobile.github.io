@@ -63,8 +63,9 @@ function loadApps( type, containerId ){
 
 				htmlTitle = $("<div></div>");
 				htmlTitle.html( app.name );
+				htmlTitle.addClass( "text-center" );
 				htmlTitle.attr( 'itemprop', "name" );
-				htmlTitle.css("display", "none")
+				//htmlTitle.css("display", "none")
 
 				htmlOperatingSystem = $("<span></span>");
 				htmlOperatingSystem.html( "Android" );
