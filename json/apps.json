@@ -2,6 +2,13 @@
 	"name": "apps", 
 	"apps": [
 		{
+			"name": "Super MIDI Box",
+			"icon": "super-midi-box/images/logo.png",
+			"url": "https://play.google.com/store/apps/details?id=net.volcanomobile.supermidibox",
+			"type": "app",
+			"category": "Audio"
+		},
+		{
 			"name": "Drum sequencer",
 			"icon": "img/drum-sequencer/ic_launcher_512.png",
 			"url": "https://play.google.com/store/apps/details?id=com.volcanomobile.drumsequencer",
