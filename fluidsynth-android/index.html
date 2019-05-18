@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<meta name="description" content="">
+
+	<title>FluidSynth Android</title>
+
+	<link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/navbar-fixed/">
+
+	<!-- Bootstrap core CSS -->
+	<link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+	<!-- Font-awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	
+	
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+	<!--  -->
+	<link href="assets/css/style.css" rel="stylesheet">
+	
+</head>
+<body>
+
+	<!-- -->
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+		<a class="navbar-brand" href="index.html">FluidSynth Android</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarCollapse">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active"><a class="nav-link" href="index.html"><span class="fa fa-home"></span> Home <span class="sr-only">(current)</span></a></li>
+				<li class="nav-item"><a class="nav-link" href="#anchorFeatures"><span class="fa fa-tools"></span> Features</a></li>
+				<li class="nav-item"><a class="nav-link" href="#anchorDocumentation"><span class="fa fa-keyboard "></span> Documentation</a></li>
+				<li class="nav-item"><a class="nav-link" href="#anchorApps"><span class="fab fa-android"></span> Apps</a></li>
+				<li class="nav-item"><a class="nav-link" href="#anchorContact"><span class="fa fa-envelope"></span> Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- -->
+	<main role="main">
+		
+		<div id="page-title">
+			<div class="container">
+				<h1>FluidSynth Android</h1>
+				<p class="lead">The easiest way to run FluidSynth on Google Android devices.</p>
+			</div>
+		</div>
+
+		<div style="background: #F2F4F9; padding-top: 3rem; padding-bottom: 2rem;">
+			<div class="container">
+				<a name="anchorFeatures"></a>
+				<h2 style="margin-top: 0;"><span class="fa fa-tools"></span> Features</h2>
+				
+				<div class="row">
+					<div class="col-12 mb-4 col-sm-6 col-md-4">
+						<div class="card bg-feature">
+							<div class="card-body">
+								<h5 class="card-title"><span class="fa fa-box"></span> SoundFonts</h5>
+								<div class="card-text">Load/unload/stack SoundFonts</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 mb-4 col-sm-6 col-md-4 mb-md-0">
+						<div class="card bg-feature">
+							<div class="card-body">
+								<h5 class="card-title"><span class="fa fa-cog"></span> Synth parameters</h5>
+								<div class="card-text">Control gain, effects settings...</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 mb-4 col-sm-6 col-md-4">
+						<div class="card bg-feature">
+							<div class="card-body">
+								<h5 class="card-title"><span class="fa fa-magic"></span> Effects</h5>
+								<div class="card-text">Chorus, reverb, portamento</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 mb-4 col-sm-6 col-md-4">
+						<div class="card bg-feature">
+							<div class="card-body">
+								<h5 class="card-title"><span class="fa fa-list"></span> Channels</h5>
+								<div class="card-text">Assign preset, set controls values (Volume, Expression, Pan, Reverb, Chorus, ...)</div>
+								
+							</div>
+						</div>
+					</div>	
+					
+					<div class="col-12 mb-4 col-sm-6 col-md-4">
+						<div class="card bg-feature">
+							<div class="card-body">
+								<h5 class="card-title"><span class="fa fa-compact-disc"></span> Recording</h5>
+								<div class="card-text">Live recording of FluidSynth output</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-12 mb-4 col-sm-6 col-md-4">
+						<div class="card bg-feature">
+							<div class="card-body">
+								<h5 class="card-title"><span class="fa fa-file-export"></span> Exporting</h5>
+								<div class="card-text">Export MIDI file to WAV format</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>	
+				
+				<h3 class="text-center">MIDI events</h3>
+				<p class="text-center">
+					And of course, you can send MIDI <b>notes</b>, <b>control changes</b> and <b>program change</b> events
+				</p>
+				
+			</div>
+
+		</div>
+		
+
+		<div class="container">
+			
+			<a name="anchorDocumentation"></a>
+			<h2><span class="fa fa-keyboard "></span> Documentation</h2>
+			
+			<div class="row">
+				<div class="col-12 mb-4 col-sm-6 col-md-4 offset-md-2 mb-md-0">
+					<div class="card bg-feature">
+						<div class="card-body">
+							<h5 class="card-title">JAVA API</h5>
+							<div class="card-text"><a href="doc/net/volcanomobile/fluidsynth/FluidSynthService.html#method.summary">Method Summary</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 mb-4 col-sm-6 col-md-4">
+					<div class="card bg-feature">
+						<div class="card-body">
+							<h5 class="card-title">Examples</h5>
+							<div class="card-text">Load/unload SoundFonts</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<p>
+				
+			</p>
+
+
+			<a name="anchorApps"></a>
+			<h2><span class="fab fa-android"></span> Apps using FluidSynth Android</h2>
+			
+			<div class="row mb-4">
+				<div class="mb-4 offset-md-2 col-md-8 mb-md-0">
+							
+					<div id="appsCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+
+						<div class="carousel-inner">
+							<a class="carousel-item active" target="_blank" href="https://play.google.com/store/apps/details?id=net.volcanomobile.supermidibox">
+								<div class="carousel-item-bg" style="background-image: url('assets/img/apps/super-midi-box-header-background.png');"></div>
+								<div class="carousel-caption d-block">
+									<h5>Super MIDI Box</h5>
+								</div>
+							</a>
+							<a class="carousel-item" target="_blank" href="https://play.google.com/store/apps/details?id=net.volcanomobile.midifileplayer">
+								<div class="carousel-item-bg" style="background-image: url('assets/img/apps/midi-file-player-feature-graphic.png');"></div>
+								<div class="carousel-caption d-block">
+									<h5>MIDI File Player</h5>
+								</div>
+							</a>
+							<a class="carousel-item" target="_blank" href="https://play.google.com/store/apps/details?id=net.volcanomobile.midisequencer">
+								<div class="carousel-item-bg" style="background-image: url('assets/img/apps/midi-sequencer-feature_graphic.png');"></div>
+								<div class="carousel-caption d-block">
+									<h5>MIDI Sequencer</h5>
+								</div>
+							</a>
+						</div>
+
+						<a class="carousel-control-prev" href="#appsCarousel" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control-next" href="#appsCarousel" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			
+			
+
+
+			<a name="anchorContact"></a>
+			<h2><span class="fa fa-envelope"></span> Contact</h2>
+			
+			<p class="text-center">
+				You can contact us by email<br/>
+			</p>
+			<p class="text-center">
+				<a class="btn btn-primary text-white" href="mailto:contact@volcanomobile.net"><span class="fa fa-envelope"></span> contact@volcanomobile.net</a>
+			</p>
+			
+		</div>
+		
+	</main>
+	
+	<!-- -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="libs/bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+	
+</body>
+</html>
+
+<script type='text/javascript'>
+    /*$(document).ready(function() {
+         $('.carousel').carousel({
+             interval: 750
+         })
+    });  */  
+</script>
+
+

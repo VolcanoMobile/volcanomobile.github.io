@@ -1,0 +1,110 @@
+/* Show it is fixed to the top */
+body {
+    font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	color: #868e96;
+}
+
+body b{
+	color: #67737F;
+}
+
+
+/** Heading */
+h1{
+	color: #212529;
+}
+h2{
+	color: #212529;
+	margin-top: 3rem;
+	margin-bottom: 2rem;
+}
+
+
+#page-title{
+	border: 1px solid transparent;
+	/*background-image: url('../img/header.png');
+	background-size: auto 100%;
+	background-position: right center;
+	background-repeat: no-repeat;*/
+	padding-top: 4.5rem;
+}
+
+
+/** Cards */
+.card.bg-feature{
+	border-width: 0px;
+	background-color: transparent;
+}
+.card.bg-feature .card-body{
+	padding: 0;
+}
+.card.bg-feature h5{
+	color: #212529;
+	border-width: 0px;
+	border-bottom-style: solid;
+	border-bottom-color: rgba(0, 0, 0, 0.05);
+	padding-bottom: 1rem;
+}
+.card.bg-feature h5 .fa,
+.card.bg-feature h5 .fab{
+	color: #1d82ff;
+	font-size: 2rem;
+	/*display: block;*/
+	margin-bottom: 1rem;
+}
+.card.bg-feature .card-text{
+	/*min-height: 5rem;*/
+}
+
+
+
+/* Apps carousel */
+#appsCarousel{}
+
+#appsCarousel .carousel-item{
+	
+}
+
+#appsCarousel .carousel-item-bg{
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	min-height: 10rem;
+	border-radius: 0.5rem 0.5rem 0rem 0rem; 
+	position: relative;
+}
+
+#appsCarousel .carousel-caption{
+	background-color: rgba(0, 0, 0, 1.0);
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 0.5rem;
+	border-radius: 0rem 0rem 0.5rem 0.5rem; 
+	position: relative;
+}
+#appsCarousel .carousel-caption h5{
+	font-weight: bold;	
+	font-size: 1.5rem;
+}
+
+@media (min-width: 576px) {
+	#appsCarousel .carousel-item-bg{
+		min-height: 15rem;
+	}
+}
+
+@media (min-width: 768px) {
+	#appsCarousel .carousel-item-bg{
+		min-height: 15rem;
+	}
+}
+
+
+@media (min-width: 992px) {
+	#appsCarousel .carousel-item-bg{
+		min-height: 22rem;
+	}
+}
+
