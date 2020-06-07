@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css"></link>
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css"/>
 
 	<!-- Bootstrap CSS -->
 	<link href="libs/fontawesome/css/all.min.css" rel="stylesheet">
@@ -24,7 +24,7 @@
 	
 	<nav class="navbar navbar-dark bg-primary">
 		<a class="navbar-brand" href="#">
-			<img src="img/placeholder-com-logo4-white.png" width="30" height="30"></img>
+			<img src="img/placeholder-com-logo4-white.png" width="30" height="30"/>
 			MIDI Clock Online
 		</a>
 		
@@ -37,19 +37,21 @@
 	</nav>
 
 		
-	<div id="midiPanel" class="card bg-light">
+	<div id="midiPanel" class="card bg-light pt-4">
 	
 		<div class="container">
 		
 			<div id="midiNotSupported" class="alert alert-danger">
-				MIDI not supported by your browser<br/>
+				<span class="fa fa-exclamation-triangle"></span> MIDI not supported by your browser<br/><br/>
+				Check that you are accessing a secure <b>https</b> website<br/><br/>
+				Browsers:<br/>
 				<ul class="mb-0">
 					<li><b>Edge</b>: Not supported<br/></li>
 					<li><b>Firefox</b>: Try to add <a href="https://addons.mozilla.org/fr/firefox/addon/web-midi-api" target="_blank">Web MIDI API</a> plugin </li>
 				</ul>
 			</div>
 			
-			<div class="pt-4 pb-0">
+			<div class=" pb-0">
 				<div class="row">
 					<div class="col-md-6 mb-4">
 						<h5 class="card-title mb-2">Inputs</h5>
@@ -65,7 +67,7 @@
 						
 						<div class="card-title mb-2"><b>Send</b></div>
 						<label class="mb-0" title="Shortcut: m key">
-							<input type="checkbox" id="metronomeCheckbox"></input>
+							<input type="checkbox" id="metronomeCheckbox"/>
 							Metronome
 							
 							<div id="beatLightContiner" class="led text-center">
@@ -74,7 +76,7 @@
 						</label>
 						
 						<label class="mb-0" title="Shortcut: d key">
-							<input type="checkbox" id="divisionCheckbox"></input>
+							<input type="checkbox" id="divisionCheckbox"/>
 							Division
 							
 							<div id="divisionLightContainer" class="led text-center">
@@ -188,7 +190,7 @@
 						
 						<div class="mb-4" title="Shortcuts: + and - keys">
 							<h5 class="text-center" id="bpmValue">BPM</h5>
-							<input type="range" id="bpmRange" style="width: 100%;"></input>
+							<input type="range" id="bpmRange" style="width: 100%;"/>
 						</div>	
 					</div>	
 				</div>	
@@ -202,7 +204,7 @@
 				<div class="text-center">
 					<button id="buttonStart" class="btn btn-lg btn-primary" title="Shortcut: Enter key"><span class="fa fa-play"></span> Start</button>
 					<button id="buttonContinue" class="btn btn-lg btn-primary" style="display: none;" title="Shortcut: Spacebar key"><span class="fa fa-pause"></span> Continue</button>
-					<button id="buttonStop" class="btn btn-lg btn-primary" style="display: none;"title="Shortcuts: Enter or Spacebar key"><span class="fa fa-stop"></span> Stop</button>		
+					<button id="buttonStop" class="btn btn-lg btn-primary" style="display: none;" title="Shortcuts: Enter or Spacebar key"><span class="fa fa-stop"></span> Stop</button>		
 				</div>		
 
 			</div>
@@ -213,7 +215,7 @@
 				
 				<div>
 					<label class="mb-0" title="Shortcut: m key">
-						<input type="checkbox" id="startTempoCheckbox" checked="checked"></input>
+						<input type="checkbox" id="startTempoCheckbox" checked="checked"/>
 						Start tempo
 						
 						<div id="startTempoLightContainer" class="led text-center">
@@ -276,7 +278,7 @@
 	<div class="text-center" style="position: fixed; top: 0; width: 100%;">
 		<div id="requestMIDIAccessFailure" class="alert alert-danger mt-4" style="display: none;">
 			MIDI Access is denied
-		</span>
+		</div>
 	</div>
 
 	<div class="progress" style="position: fixed; bottom: 0; z-index: 1000; width: 100%;">
@@ -306,9 +308,4 @@
 	
 </body>
 </html>
-
-<script>
-
-
-</script>
 
