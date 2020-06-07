@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css"></link>
+
+	<!-- Bootstrap CSS -->
+	<link href="libs/fontawesome/css/all.min.css" rel="stylesheet">
+  
+	<title>MIDI Access</title>
+	<link rel="icon" type="image/png" href="img/placeholder-com-logo4.png" />
+	
+</head>
+<body>
+
+	<div class="container">
+		<div id="midiSupported" class="alert alert-success">
+			<span class="fa fa-check"></span> MIDI supported by your browser
+		</div>
+
+		<div id="midiNotSupported" class="alert alert-danger">
+			MIDI not supported by your browser
+			Firefox: add <a href="https://addons.mozilla.org/fr/firefox/addon/web-midi-api" target="_blank">Web MIDI API</a> plugin 
+		</div>
+	</div>
+		
+	<div class="bg-primary text-center p-4">
+		<div class="container">
+			<h2 class="text-white">MIDI Web Tools</h2>
+			<div class="text-center">
+				<a href="midi-web-tools/midi-clock-online/index.html" target="_blank" class="btn btn-lg btn-info">MIDI Clock</a>				
+			</div>
+		</div>
+	</div>
+	
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="libs/jquery/jquery-3.4.1.min.js"></script>
+	<script src="libs/popper/popper.min.js"></script>
+
+	<!-- Bootstrap JS -->
+	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	
+</body>
+</html>
+
+
+<script>
+
+/** */
+jQuery( document ).ready(function() {
+			
+	var midiSupported = false
+	if ( navigator.requestMIDIAccess ){			
+		midiSupported = true;
+	}
+	jQuery( "#midiSupported" ).css( "display", midiSupported ? "block" : "none" );
+	jQuery( "#midiNotSupported" ).css( "display", midiSupported ? "none" : "block" );
+});
+</script>
