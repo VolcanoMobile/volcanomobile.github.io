@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css"></link>
+
+	<!-- Bootstrap CSS -->
+	<link href="libs/fontawesome/css/all.min.css" rel="stylesheet">
+	
+	<!-- -->
+	<link href="index.css" rel="stylesheet">
+  
+	<title>MIDI Clock Online</title>
+	<link rel="icon" type="image/png" href="img/placeholder-com-logo4.png" />
+	
+</head>
+<body>
+
+
+	
+	<nav class="navbar navbar-dark bg-primary">
+		<a class="navbar-brand" href="#">
+			<img src="img/placeholder-com-logo4-white.png" width="30" height="30"></img>
+			MIDI Clock
+		</a>
+		
+		<div class="navbar-nav">
+			<div class="nav-item">
+				<button id="midiPanelButton" class="btn btn-outline-light" title="MIDI"><span class="fa fa-plug"></span><span class="d-none d-md-inline"> MIDI</span></button>
+				<button id="infoButton" class="btn btn-outline-light" title="Info"><span class="fa fa-info"></span><span class="d-none d-md-inline"> Info</span></button>
+			</div>
+		</div>
+	</nav>
+
+		
+	<div id="midiPanel" class="card bg-light">
+	
+		<div class="container">
+		
+			<div id="midiNotSupported" class="alert alert-danger">
+				MIDI not supported by your browser
+				Firefox: add <a href="https://addons.mozilla.org/fr/firefox/addon/web-midi-api" target="_blank">Web MIDI API</a> plugin 
+			</div>
+
+			<div class="pt-4 pb-0">
+				<div class="row">
+					<div class="col-md-6 mb-4">
+						<h5 class="card-title mb-2">Inputs</h5>
+						<div class="card card-default">
+							<div id="midiInputs" class="list-group list-group-flush"></div>
+						</div>
+					</div>
+					<div class="col-md-6 mb-4">
+						<h5 class="card-title mb-2">Outputs</h5>
+						<div class="card card-default mb-2">
+							<div id="midiOutputs" class="list-group list-group-flush"></div>
+						</div>
+						
+						<div class="card-title mb-2"><b>Send</b></div>
+						<label class="mb-0" title="Shortcut: m key">
+							<input type="checkbox" id="metronomeCheckbox"></input>
+							Metronome
+							
+							<div id="beatLightContiner" class="led text-center">
+								<div id="beatLight" class="led on" style=""></div>
+							</div>
+						</label>
+						
+						<label class="mb-0" title="Shortcut: d key">
+							<input type="checkbox" id="divisionCheckbox"></input>
+							Division
+							
+							<div id="divisionLightContainer" class="led text-center">
+								<div id="divisionLight" class="led on" style=""></div>
+							</div>
+						</label>
+						
+					</div>
+				</div>
+				<button class="btn btn-link float-right" id="hideMidiPanelButton"><span class="fa fa-caret-up"></span></button>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div id="timeSignaturePanel" class="text-center pt-4">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-4 mb-4">
+				
+					<h4>Time Signature</h4>
+				
+					<div class="d-inline-block text-center">
+						Numerator<br/>
+						<select id="numeratorSelect" class="form-control d-inline-block" style="width: auto;">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+						</select>
+					</div>
+					<div class="d-inline-block pl-4 pr-4">
+						/
+					</div>
+					<div class="d-inline-block text-center">
+						Denominator<br/>
+						<select id="denominatorSelect" class="form-control d-inline-block" style="width: auto;">
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="6">6</option>
+							<option value="8">8</option>
+							<option value="12">12</option>
+							<option value="16">16</option>
+							<option value="24">24</option>
+							<option value="32">32</option>
+							<option value="48">48</option>
+							<option value="96">96</option>
+						</select>
+					</div>
+					
+				</div>
+				
+				<div class="col-12 col-sm-6 col-lg-4 mb-4">
+				
+					<h4>Number of bar</h4>
+				
+					<select id="numberOfBarSelect" class="form-control d-inline-block" style="width: auto;">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+						<option value="16">16</option>
+					</select>
+					
+				</div>
+				
+				<div class="col-12 col-sm-6 col-lg-4 mb-4">
+				
+					<h4>Division</h4>
+					<select id="divisionSelect" class="form-control d-inline-block" style="width: auto;">
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="6">6</option>
+						<option value="8">8</option>
+						<option value="12">12</option>
+						<option value="16">16</option>
+						<option value="24">24</option>
+						<option value="32">32</option>
+						<option value="48">48</option>
+						<option value="96">96</option>
+					</select>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+		
+	<div class="container">
+		<div class="row">
+			<div class="col-12 mb-4">
+				<div class="">
+					<div class="">
+						<div class="text-center mb-4">
+
+							
+						</div>		
+						
+						<hr/>
+						
+						<div class="mb-4" title="Shortcuts: + and - keys">
+							<h5 class="text-center" id="bpmValue">BPM</h5>
+							<input type="range" id="bpmRange" style="width: 100%;"></input>
+						</div>	
+					</div>	
+				</div>	
+			</div>	
+		</div>
+						
+		
+		<div class="row">
+			<div class="col-12 mb-0">
+					
+				<div class="text-center">
+					<button id="buttonStart" class="btn btn-lg btn-primary" title="Shortcut: Enter key"><span class="fa fa-play"></span> Start</button>
+					<button id="buttonContinue" class="btn btn-lg btn-primary" style="display: none;" title="Shortcut: Spacebar key"><span class="fa fa-pause"></span> Continue</button>
+					<button id="buttonStop" class="btn btn-lg btn-primary" style="display: none;"title="Shortcuts: Enter or Spacebar key"><span class="fa fa-stop"></span> Stop</button>		
+				</div>		
+
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-12 mb-4">
+				
+				<div>
+					<label class="mb-0" title="Shortcut: m key">
+						<input type="checkbox" id="startTempoCheckbox" checked="checked"></input>
+						Start tempo
+						
+						<div id="startTempoLightContainer" class="led text-center">
+							<div id="startTempoLight" class="led on" style=""></div>
+						</div>
+					</label>
+				</div>
+				
+				<br/>
+				
+				
+			</div>
+		</div>
+		
+	</div>
+	
+	<div id="infoPanel" class="card bg-light" style="display: none;">
+		<div class="container">
+			<div class="pt-4">
+				<div class="row">
+					<div class="col-12 col-md-6">
+						<div class="">
+							<h5 class="">Vars</h5>
+							<dl class="row">
+								<dt class="col-sm-4">Time Signature</dt>
+								<dd class="col-sm-8" id="clockTimeSignature"></dd>
+								
+								<dt class="col-sm-4">Number of bars</dt>
+								<dd class="col-sm-8" id="clockNumberOfBars"></dd>
+								
+								<dt class="col-sm-4">Division</dt>
+								<dd class="col-sm-8" id="clockDivision"></dd>							
+							</dl>
+						</div>
+					</div>
+					<div class="col-12 col-md-6">
+						<div class="">
+							<h5 class="">Tick counters</h5>
+							<dl class="row">							
+								<dt class="col-sm-3">Pattern</dt>
+								<dd class="col-sm-9" id="patternClockCounter"></dd>
+								
+								<dt class="col-sm-3">Bar</dt>
+								<dd class="col-sm-9" id="barClockCounter"></dd>
+								
+								<dt class="col-sm-3">Beat</dt>
+								<dd class="col-sm-9" id="beatClockCounter"></dd>
+								
+								<dt class="col-sm-3">Division</dt>
+								<dd class="col-sm-9" id="divisionClockCounter"></dd>							
+							</dl>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button class="btn btn-link float-right" id="hideInfoPanelButton"><span class="fa fa-caret-up"></span></button>
+		</div>
+	</div>	
+
+	<div class="progress" style="position: fixed; bottom: 0; z-index: 1000; width: 100%;">
+		<div id="measureProgressBar" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="transition: none;"></div>
+	</div>
+	
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="libs/jquery/jquery-3.4.1.min.js"></script>
+	<script src="libs/popper/popper.min.js"></script>
+
+	<!-- Bootstrap JS -->
+	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- -->
+	<script src="libs/jquery-midi-access-api/js/jquery-midi-access-api.min.js"></script>
+
+	<!-- -->
+	<script src="js/jquery-midi-clock.min.js"></script>
+	<script src="js/jquery-midi-clock-player.min.js"></script>
+
+	<!-- -->
+	<script src="libs/javascript-midi-message-event-parser/js/MIDIMessageEventParser.min.js"></script>
+
+	<!-- -->
+	<script src="js/index.min.js"></script>
+	
+</body>
+</html>
+
+<script>
+
+
+</script>
+
