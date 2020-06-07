@@ -11,26 +11,27 @@
 	<!-- Bootstrap CSS -->
 	<link href="libs/fontawesome/css/all.min.css" rel="stylesheet">
   
-	<title>MIDI Access</title>
+	<title>MIDI Web Tools</title>
 	<link rel="icon" type="image/png" href="img/placeholder-com-logo4.png" />
 	
 </head>
 <body>
-
-	<div class="container">
-		<div id="midiSupported" class="alert alert-success">
-			<span class="fa fa-check"></span> MIDI supported by your browser
-		</div>
-
-		<div id="midiNotSupported" class="alert alert-danger">
-			MIDI not supported by your browser
-			Firefox: add <a href="https://addons.mozilla.org/fr/firefox/addon/web-midi-api" target="_blank">Web MIDI API</a> plugin 
-		</div>
-	</div>
 		
 	<div class="bg-primary text-center p-4">
 		<div class="container">
 			<h2 class="text-white">MIDI Web Tools</h2>
+
+			<div id="midiSupported" class="alert alert-success">
+				<span class="fa fa-check"></span> MIDI supported by your browser
+			</div>
+
+			<div id="midiNotSupported" class="alert alert-danger">
+				MIDI not supported by your browser
+				Firefox: add <a href="https://addons.mozilla.org/fr/firefox/addon/web-midi-api" target="_blank">Web MIDI API</a> plugin 
+			</div>
+		</div>
+
+		<div class="container">
 			<div class="text-center">
 				<a href="midi-clock-online/index.html" target="_blank" class="btn btn-lg btn-info">MIDI Clock</a>				
 			</div>
