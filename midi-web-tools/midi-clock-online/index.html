@@ -25,7 +25,7 @@
 	<nav class="navbar navbar-dark bg-primary">
 		<a class="navbar-brand" href="#">
 			<img src="img/placeholder-com-logo4-white.png" width="30" height="30"></img>
-			MIDI Clock
+			MIDI Clock Online
 		</a>
 		
 		<div class="navbar-nav">
@@ -42,10 +42,13 @@
 		<div class="container">
 		
 			<div id="midiNotSupported" class="alert alert-danger">
-				MIDI not supported by your browser
-				Firefox: add <a href="https://addons.mozilla.org/fr/firefox/addon/web-midi-api" target="_blank">Web MIDI API</a> plugin 
+				MIDI not supported by your browser<br/>
+				<ul class="mb-0">
+					<li><b>Edge</b>: Not supported<br/></li>
+					<li><b>Firefox</b>: Try to add <a href="https://addons.mozilla.org/fr/firefox/addon/web-midi-api" target="_blank">Web MIDI API</a> plugin </li>
+				</ul>
 			</div>
-
+			
 			<div class="pt-4 pb-0">
 				<div class="row">
 					<div class="col-md-6 mb-4">
@@ -269,6 +272,12 @@
 			<button class="btn btn-link float-right" id="hideInfoPanelButton"><span class="fa fa-caret-up"></span></button>
 		</div>
 	</div>	
+	
+	<div class="text-center" style="position: fixed; top: 0; width: 100%;">
+		<div id="requestMIDIAccessFailure" class="alert alert-danger mt-4" style="display: none;">
+			MIDI Access is denied
+		</span>
+	</div>
 
 	<div class="progress" style="position: fixed; bottom: 0; z-index: 1000; width: 100%;">
 		<div id="measureProgressBar" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="transition: none;"></div>
