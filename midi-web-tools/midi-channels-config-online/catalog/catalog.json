@@ -1,0 +1,8 @@
+{
+	"projects"        : [
+	
+		{ "name" : "Default",           "filename"  : "default.json"     },
+		{ "name" : "Orchestra",         "filename"  : "orchestra.json"   }
+		
+	]
+}

@@ -1,0 +1,42 @@
+﻿html{	
+	height: 100%;
+}
+
+body{	
+	height: 100%;
+}
+
+.jcc-main-layout{
+	position: relative;
+	overflow: hidden;
+	user-select: none;
+	background: #00ff0000;
+}
+
+.jcc-content-layout{
+	position: relative;
+}
+
+
+
+/** */
+.jcc-channels-layout{}
+
+
+/** */
+.jcc-channels-channel{
+}
+.jcc-channels-channel:hover{
+	cursor: pointer;
+}
+
+/** */
+.jcc-channels-channel-label{}
+
+.jcc-channels-channel-edit{
+	display: block;
+}
+
+.jcc-channels-channel-mute{
+	display: block;
+}
