@@ -15,7 +15,7 @@
 	<link href="index.css" rel="stylesheet">
   
 	<title>MIDI Clock Online</title>
-	<link rel="icon" type="image/png" href="img/placeholder-com-logo4.png" />
+	<link rel="icon" type="image/png" href="img/logo.svg" />
 	
 </head>
 <body>
@@ -24,32 +24,38 @@
 	
 	<nav class="navbar navbar-dark bg-primary">
 		<a class="navbar-brand" href="#">
-			<img src="img/placeholder-com-logo4-white.png" width="30" height="30"/>
-			MIDI Clock Online
+			<img src="img/logo-white.svg" width="30" height="30"/>
+			MIDI Clock <span class="d-none d-md-inline">Online</span>
 		</a>
 		
 		<div class="navbar-nav">
 			<div class="nav-item">
-				<button id="midiPanelButton" class="btn btn-outline-light" title="MIDI"><span class="fa fa-plug"></span><span class="d-none d-md-inline"> MIDI</span></button>
-				<button id="infoButton" class="btn btn-outline-light" title="Info"><span class="fa fa-info"></span><span class="d-none d-md-inline"> Info</span></button>
+				<div class="btn-group">
+					<button id="midiPanelButton" class="btn btn-outline-light" title="MIDI (shortcut: m)"><span class="fa fa-plug"></span><span class="d-none d-md-inline"> MIDI</span></button>
+					<button id="timeSignatureButton" class="btn btn-outline-light toggleTimeSignaturePanel" title="Settings (shortcut: s)"><span class="fa fa-cog"></span><span class="d-none d-md-inline"> Settings</span></button>
+					<button id="infoButton" class="btn btn-outline-light" title="Info (shortcut: i)"><span class="fa fa-info-circle"></span><span class="d-none d-md-inline"> Info</span></button>
+				</div>
 			</div>
 		</div>
 	</nav>
 
+	<div id="midiNotSupported" class="container" style="display: none;">
+		<div class="alert alert-danger mt-4">
+			<span class="fa fa-exclamation-triangle"></span> MIDI not supported by your browser<br/><br/>
+			Check that you are accessing a secure <b>https</b> website<br/><br/>
+			Browsers:<br/>
+			<ul class="mb-0">
+				<li><b>Google Chrome</b>: Supported<br/></li>
+				<li><b>Opera</b>: Supported<br/></li>
+				<li><b>Firefox</b>: Try to add <a href="https://addons.mozilla.org/fr/firefox/addon/web-midi-api" target="_blank">Web MIDI API</a> plugin </li>
+				<li><b>Edge</b>: Not supported<br/></li>
+			</ul>
+		</div>
+	</div>
 		
-	<div id="midiPanel" class="card bg-light pt-4">
+	<div id="midiPanel" class="card bg-light pt-4" style="display: none;">
 	
 		<div class="container">
-		
-			<div id="midiNotSupported" class="alert alert-danger">
-				<span class="fa fa-exclamation-triangle"></span> MIDI not supported by your browser<br/><br/>
-				Check that you are accessing a secure <b>https</b> website<br/><br/>
-				Browsers:<br/>
-				<ul class="mb-0">
-					<li><b>Edge</b>: Not supported<br/></li>
-					<li><b>Firefox</b>: Try to add <a href="https://addons.mozilla.org/fr/firefox/addon/web-midi-api" target="_blank">Web MIDI API</a> plugin </li>
-				</ul>
-			</div>
 			
 			<div class=" pb-0">
 				<div class="row">
@@ -66,7 +72,7 @@
 						</div>
 						
 						<div class="card-title mb-2"><b>Send</b></div>
-						<label class="mb-0" title="Shortcut: m key">
+						<label class="mb-0" title="Shortcut: t key">
 							<input type="checkbox" id="metronomeCheckbox"/>
 							Metronome
 							
@@ -92,7 +98,7 @@
 	</div>
 	
 	
-	<div id="timeSignaturePanel" class="text-center pt-4">
+	<div id="timeSignaturePanel" class="card text-center pt-4" style="display: none;">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-lg-4 mb-4">
@@ -173,33 +179,23 @@
 					
 				</div>
 			</div>
+			<button class="btn btn-link float-right toggleTimeSignaturePanel"><span class="fa fa-caret-up"></span></button>
 		</div>
 	</div>
 		
 	<div class="container">
 		<div class="row">
-			<div class="col-12 mb-4">
-				<div class="">
-					<div class="">
-						<div class="text-center mb-4">
-
-							
-						</div>		
-						
-						<hr/>
-						
-						<div class="mb-4" title="Shortcuts: + and - keys">
-							<h5 class="text-center" id="bpmValue">BPM</h5>
-							<input type="range" id="bpmRange" style="width: 100%;"/>
-						</div>	
-					</div>	
+			<div class="col-12 pt-4 mb-4">
+				<div title="Shortcuts: + and - keys">
+					<h5 class="text-center" id="bpmValue">BPM</h5>
+					<input type="range" id="bpmRange" style="width: 100%;"/>
 				</div>	
 			</div>	
 		</div>
 						
 		
 		<div class="row">
-			<div class="col-12 mb-0">
+			<div class="col-12 mb-4">
 					
 				<div class="text-center">
 					<button id="buttonStart" class="btn btn-lg btn-primary" title="Shortcut: Enter key"><span class="fa fa-play"></span> Start</button>
@@ -232,40 +228,45 @@
 		
 	</div>
 	
-	<div id="infoPanel" class="card bg-light" style="display: none;">
+	<div id="infoPanel" class="card bg-light mb-4" style="display: none;">
 		<div class="container">
 			<div class="pt-4">
 				<div class="row">
+					<div class="col-12">
+						<div class="">
+							<h5 class=""><span class="fa fa-info-circle"></span> Info</h5>
+							<hr/>
+						</div>
+					</div>
 					<div class="col-12 col-md-6">
 						<div class="">
-							<h5 class="">Vars</h5>
 							<dl class="row">
-								<dt class="col-sm-4">Time Signature</dt>
-								<dd class="col-sm-8" id="clockTimeSignature"></dd>
+								<dt class="col-6 col-sm-4">Time Signature</dt>
+								<dd class="col-6 col-sm-8" id="clockTimeSignature"></dd>
 								
-								<dt class="col-sm-4">Number of bars</dt>
-								<dd class="col-sm-8" id="clockNumberOfBars"></dd>
+								<dt class="col-6 col-sm-4">Number of bars</dt>
+								<dd class="col-6 col-sm-8" id="clockNumberOfBars"></dd>
 								
-								<dt class="col-sm-4">Division</dt>
-								<dd class="col-sm-8" id="clockDivision"></dd>							
+								<dt class="col-6 col-sm-4">Division</dt>
+								<dd class="col-6 col-sm-8" id="clockDivision"></dd>							
 							</dl>
 						</div>
 					</div>
 					<div class="col-12 col-md-6">
 						<div class="">
-							<h5 class="">Tick counters</h5>
+							<h6 class="">Ticks</h6>
 							<dl class="row">							
-								<dt class="col-sm-3">Pattern</dt>
-								<dd class="col-sm-9" id="patternClockCounter"></dd>
+								<dt class="col-6 col-sm-3">Pattern</dt>
+								<dd class="col-6 col-sm-9" id="patternClockCounter"></dd>
 								
-								<dt class="col-sm-3">Bar</dt>
-								<dd class="col-sm-9" id="barClockCounter"></dd>
+								<dt class="col-6 col-sm-3">Bar</dt>
+								<dd class="col-6 col-sm-9" id="barClockCounter"></dd>
 								
-								<dt class="col-sm-3">Beat</dt>
-								<dd class="col-sm-9" id="beatClockCounter"></dd>
+								<dt class="col-6 col-sm-3">Beat</dt>
+								<dd class="col-6 col-sm-9" id="beatClockCounter"></dd>
 								
-								<dt class="col-sm-3">Division</dt>
-								<dd class="col-sm-9" id="divisionClockCounter"></dd>							
+								<dt class="col-6 col-sm-3">Division</dt>
+								<dd class="col-6 col-sm-9" id="divisionClockCounter"></dd>							
 							</dl>
 						</div>
 					</div>
@@ -297,8 +298,7 @@
 	<script src="libs/jquery-midi-access-api/js/jquery-midi-access-api.min.js"></script>
 
 	<!-- -->
-	<script src="js/jquery-midi-clock.min.js"></script>
-	<script src="js/jquery-midi-clock-player.min.js"></script>
+	<script src="js/midiClock.min.js"></script>
 
 	<!-- -->
 	<script src="libs/javascript-midi-message-event-parser/js/MIDIMessageEventParser.min.js"></script>
