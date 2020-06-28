@@ -17,8 +17,8 @@
 </head>
 <body class="bg-primary">
 		
-	<div class="text-center p-4">
-		<div class="container mb-5">
+	<div class="p-4">
+		<div class="text-center container mb-5">
 			<h2 class="text-white">MIDI Web Tools</h2>
 		</div>
 
@@ -28,8 +28,15 @@
 			</div>
 
 			<div id="midiNotSupported" class="alert alert-danger">
-				MIDI not supported by your browser
-				Firefox: add <a href="https://addons.mozilla.org/fr/firefox/addon/web-midi-api" target="_blank">Web MIDI API</a> plugin 
+				<span class="fa fa-exclamation-triangle"></span> MIDI not supported by your browser<br/><br/>
+				Check that you are accessing a secure <b>https</b> website<br/><br/>
+				Browsers:<br/>
+				<ul class="mb-0">
+					<li><b>Google Chrome</b>: Supported<br/></li>
+					<li><b>Opera</b>: Supported<br/></li>
+					<li><b>Firefox</b>: Try to add <a href="https://addons.mozilla.org/fr/firefox/addon/web-midi-api" target="_blank">Web MIDI API</a> plugin </li>
+					<li><b>Edge</b>: Not supported<br/></li>
+				</ul>
 			</div>
 		</div>
 
