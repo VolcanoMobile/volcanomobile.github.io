@@ -75,7 +75,9 @@ jQuery( document ).ready(function() {
 });
 
 /** Redirect to https */
-if ( location.index("localhost") < 0 ){
+console.log( "", location );
+if ( location.hostname !== "localhost" ){
+	console.log( "Redirect ", location );
 	if (location.protocol !== 'https:') {
 		location.replace(`https:${location.href.substring(location.protocol.length)}`);
 	}
