@@ -49,11 +49,11 @@ body{
 	top: 0.1rem;
 	right: 0.1rem;
 	bottom: 0.1rem;
-	border: 0.2rem solid #00000010;
+	border: 0.2rem solid rgba(0, 0, 0, 0.1);
 	border-radius: 1rem;
 }
 .jdc-pads-pad:hover{
-	background-color: #00000010;
+	background-color: rgba(0, 0, 0, 0.1);
 }
 
 /** */
@@ -77,5 +77,5 @@ body{
 	top: 0;
 	text-align: left;
 	padding: 0.5rem;
-	font-size: 2rem;
+	font-size: 1.25rem;
 }
