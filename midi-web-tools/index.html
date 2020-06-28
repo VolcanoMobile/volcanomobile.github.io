@@ -73,4 +73,11 @@ jQuery( document ).ready(function() {
 	jQuery( "#midiSupported" ).css( "display", midiSupported ? "block" : "none" );
 	jQuery( "#midiNotSupported" ).css( "display", midiSupported ? "none" : "block" );
 });
+
+/** Redirect to https */
+if ( location.index("localhost") < 0 ){
+	if (location.protocol !== 'https:') {
+		location.replace(`https:${location.href.substring(location.protocol.length)}`);
+	}
+}
 </script>
