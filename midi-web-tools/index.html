@@ -12,20 +12,21 @@
 	<link href="libs/fontawesome/css/all.min.css" rel="stylesheet">
   
 	<title>MIDI Web Tools</title>
-	<link rel="icon" type="image/png" href="img/placeholder-com-logo4.png" />
+	<link rel="icon" type="image/png" href="img/logo.svg" />
+	<meta name="description" content="MIDI Web Tools based on the MIDI Web API">
+	<meta name="keywords" content="midi,web,api,tools,online,clock,channels,pads">
 	
 </head>
 <body class="bg-primary">
 		
 	<div class="p-4">
-		<div class="text-center container mb-5">
-			<h2 class="text-white">MIDI Web Tools</h2>
+		<div class="text-center text-white container mb-5">
+			<h2><img src="img/logo-white.svg" style="height: 3rem;"></img> MIDI Web Tools</h2>
+			by <a href="https://www.volcanomobile.net" class="text-white">VolcanoMobile</a><br/><br/>
+			Online MIDI tools based on the MIDI Web API. <br/>
 		</div>
 
 		<div class="container mb-5">
-			<div id="midiSupported" class="alert alert-success">
-				<span class="fa fa-check"></span> MIDI supported by your browser
-			</div>
 
 			<div id="midiNotSupported" class="alert alert-danger">
 				<span class="fa fa-exclamation-triangle"></span> MIDI not supported by your browser<br/><br/>
@@ -40,13 +41,22 @@
 			</div>
 		</div>
 
-		<div class="container">
+		<div class="container mb-5">
 			<div class="text-center">
 				<a href="midi-clock-online/index.html" target="_blank" class="btn btn-lg btn-info mb-1"><span class="fa fa-clock"></span> MIDI Clock</a>				
 				<a href="midi-channels-config-online/index.html" target="_blank" class="btn btn-lg btn-info mb-1"><span class="fa fa-stream"></span> MIDI Channels Config</a>				
 				<a href="midi-pads-online/index.html" target="_blank" class="btn btn-lg btn-info mb-1"><span class="fa fa-th-large"></span> MIDI Pads</a>				
 			</div>
 		</div>
+		
+		<div class="container">
+			<div class="row">
+				<div id="midiSupported" class="text-white text-center col-md-6 offset-md-3">
+					<span class="fa fa-check"></span> MIDI supported by your browser
+				</div>
+			</div>
+		</div>
+
 	</div>
 	
 	<!-- Optional JavaScript -->
