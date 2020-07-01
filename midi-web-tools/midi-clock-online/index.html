@@ -33,7 +33,7 @@
 				<div class="btn-group">
 					<button id="midiPanelButton" class="btn btn-outline-light" title="MIDI (shortcut: m)"><span class="fa fa-plug"></span><span class="d-none d-md-inline"> MIDI</span></button>
 					<button id="timeSignatureButton" class="btn btn-outline-light toggleTimeSignaturePanel" title="Settings (shortcut: s)"><span class="fa fa-cog"></span><span class="d-none d-md-inline"> Settings</span></button>
-					<button id="infoButton" class="btn btn-outline-light" title="Info (shortcut: i)"><span class="fa fa-info-circle"></span><span class="d-none d-md-inline"> Info</span></button>
+					<button id="infoButton" class="d-none btn btn-outline-light" title="Info (shortcut: i)"><span class="fa fa-info-circle"></span><span class="d-none d-md-inline"> Info</span></button>
 				</div>
 			</div>
 		</div>
@@ -211,7 +211,7 @@
 				
 				<div>
 					<label class="mb-0" title="Shortcut: m key">
-						<input type="checkbox" id="startTempoCheckbox" checked="checked"/>
+						<input type="checkbox" id="startTempoCheckbox"/>
 						Start tempo
 						
 						<div id="startTempoLightContainer" class="led text-center">
@@ -299,13 +299,13 @@
 	<script src="libs/jquery-midi-access-api/js/jquery-midi-access-api.min.js"></script>
 
 	<!-- -->
-	<script src="js/midiClock.min.js"></script>
+	<script src="./js/midiClock.min.js"></script>
 
 	<!-- -->
 	<script src="libs/javascript-midi-message-event-parser/js/MIDIMessageEventParser.min.js"></script>
 
 	<!-- -->
-	<script src="js/index.min.js"></script>
+	<script src="./js/index.min.js"></script>
 	
 </body>
 </html>
