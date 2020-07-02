@@ -76,22 +76,25 @@
 			</div>
 		</div>
 	</nav>
+
+	<div id="midiNotSupported" class="container" style="display: none;">
+		<div class="alert alert-danger mt-4">
+			<span class="fa fa-exclamation-triangle"></span> MIDI not supported by your browser<br/><br/>
+			Check that you are accessing a secure <b>https</b> website<br/><br/>
+			Browsers:<br/>
+			<ul class="mb-0">
+				<li><b>Google Chrome</b>: Supported<br/></li>
+				<li><b>Opera</b>: Supported<br/></li>
+				<li><b>Firefox</b>: Try to add <a href="https://addons.mozilla.org/fr/firefox/addon/web-midi-api" target="_blank">Web MIDI API</a> plugin </li>
+				<li><b>Edge</b>: Not supported<br/></li>
+			</ul>
+		</div>
+	</div>
 	
 	<div id="midiPanel" class="card bg-light pt-4" style="display: none;">
 	
 		<div class="container">
 		
-			<div id="midiNotSupported" class="alert alert-danger">
-				<span class="fa fa-exclamation-triangle"></span> MIDI not supported by your browser<br/><br/>
-				Check that you are accessing a secure <b>https</b> website<br/><br/>
-				Browsers:<br/>
-				<ul class="mb-0">
-					<li><b>Google Chrome</b>: Supported<br/></li>
-					<li><b>Opera</b>: Supported<br/></li>
-					<li><b>Firefox</b>: Try to add <a href="https://addons.mozilla.org/fr/firefox/addon/web-midi-api" target="_blank">Web MIDI API</a> plugin </li>
-					<li><b>Edge</b>: Not supported<br/></li>
-				</ul>
-			</div>
 			
 			<div class=" pb-0">
 				<div class="row">
@@ -114,11 +117,11 @@
 		</div>
 	</div>
 	
-	<div class="card">
-		<div id="openFilePanel" class="container pt-4" style="display: none;">
+	<div class="card" id="openFilePanel" style="display: none;">
+		<div class="container pt-4">
 			<h2><span class="fa fa-folder-open"></span> Open</h2>
 			<div>
-				<input type="file" id="jsonInputFile" name="jsonInputFile" accept=".json"></input>
+				<input type="file" id="jsonInputFile" name="jsonInputFile" accept=".json"/>
 				<!--button id="createObjectFromJsonFileButton" class="btn btn-primary" onclick="handleFileSelect('jsonInputFile');"><span class="fa fa-upload"></span> Load</button-->
 			</div>
 			<button class="btn btn-link float-right toogleOpenFilePanel" id=""><span class="fa fa-caret-up"></span></button>
