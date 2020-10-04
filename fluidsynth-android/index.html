@@ -54,9 +54,9 @@
 			</div>
 		</div>
 
-		<div style="background: #F2F4F9; padding-top: 3rem; padding-bottom: 2rem;">
+		<div id="featuresDiv">
 			<div class="container">
-				<a name="anchorFeatures"></a>
+				<a class="anchor" name="anchorFeatures"></a>
 				<h2 style="margin-top: 0;"><span class="fa fa-tools"></span> Features</h2>
 				
 				<div class="row">
@@ -114,10 +114,12 @@
 					
 				</div>	
 				
-				<h3 class="text-center">MIDI events</h3>
-				<p class="text-center">
-					And of course, you can send MIDI <b>notes</b>, <b>control changes</b> and <b>program change</b> events
-				</p>
+				<div id="featurePunchline">
+					<!--h3 class="text-center">MIDI events</h3-->
+					<p class="text-center">
+						And of course, you can send MIDI <b>notes</b>, <b>control changes</b> and <b>program change</b> events
+					</p>
+				</div>
 				
 			</div>
 
@@ -126,34 +128,41 @@
 
 		<div class="container">
 			
-			<a name="anchorDocumentation"></a>
+			<a class="anchor" name="anchorDocumentation"></a>
 			<h2><span class="fa fa-keyboard "></span> Documentation</h2>
 			
-			<div class="row">
-				<div class="col-12 mb-4 col-sm-6 col-md-4 offset-md-2 mb-md-0">
-					<div class="card bg-feature">
-						<div class="card-body">
-							<h5 class="card-title">JAVA API</h5>
-							<div class="card-text"><a href="doc/net/volcanomobile/fluidsynth/FluidSynthService.html#method.summary">Method Summary</a></div>
+			<div id="documentationDiv">
+				
+				<div class="row">
+					<div class="col-12 mb-4 col-sm-6 col-md-5 offset-md-1 mb-md-0">
+						<div class="card bg-documentation">
+							<div class="card-body">
+								<h5 class="card-title">JAVA API</h5>
+								<div class="card-text"><a href="doc/net/volcanomobile/fluidsynth/FluidSynthService.html#method.summary">Method Summary</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 mb-4 col-sm-6 col-md-5">
+						<div class="card bg-documentation">
+							<div class="card-body">
+								<h5 class="card-title">Examples</h5>
+								<div class="card-text">Load/unload SoundFonts</div>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-12 mb-4 col-sm-6 col-md-4">
-					<div class="card bg-feature">
-						<div class="card-body">
-							<h5 class="card-title">Examples</h5>
-							<div class="card-text">Load/unload SoundFonts</div>
-						</div>
-					</div>
-				</div>
+				
+				<p>
+					
+				</p>
+				
 			</div>
 			
-			<p>
-				
-			</p>
+		</div>
 
+		<div class="container">
 
-			<a name="anchorApps"></a>
+			<a class="anchor" name="anchorApps"></a>
 			<h2><span class="fab fa-android"></span> Apps using FluidSynth Android</h2>
 			
 			<div class="row mb-4">
@@ -197,7 +206,7 @@
 			
 
 
-			<a name="anchorContact"></a>
+			<a class="anchor" name="anchorContact"></a>
 			<h2><span class="fa fa-envelope"></span> Contact</h2>
 			
 			<p class="text-center">
@@ -211,10 +220,23 @@
 		
 	</main>
 	
+	<footer>
+		
+	</footer>
+	
 	<!-- -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="libs/bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
 	
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-47075820-1', 'auto');
+		ga('send', 'pageview');
+	</script>
 </body>
 </html>
 

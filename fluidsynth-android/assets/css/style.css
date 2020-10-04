@@ -10,16 +10,30 @@ body b{
 }
 
 
+/** */
+body > footer{
+	height: 15rem;
+	background: #212529;
+}
+
 /** Heading */
 h1{
 	color: #212529;
 }
 h2{
 	color: #212529;
-	margin-top: 3rem;
+	margin-top: 2rem;
 	margin-bottom: 2rem;
 }
 
+
+/** Anchors */
+a.anchor {
+    display: block;
+    position: relative;
+    top: -5.0rem;
+    visibility: hidden;
+}
 
 #page-title{
 	border: 1px solid transparent;
@@ -56,6 +70,48 @@ h2{
 .card.bg-feature .card-text{
 	/*min-height: 5rem;*/
 }
+
+
+.card.bg-documentation{
+	border-width: 0px;
+	background-color: transparent;
+	background: #8b7386;
+	clip-path: polygon(3rem 0%, 100% 0%, 100% 100%, 0% 100%, 0% 3rem);
+	padding: 1rem 1rem 1rem 1.5rem;
+}
+.card.bg-documentation a{
+	color: #D9B500;
+	text-decoration: underline;
+}
+.card.bg-documentation h4,
+.card.bg-documentation h5{
+	color: #ffffff;
+}
+
+
+
+/** Features */
+#featuresDiv{
+	background: #F2F4F9; 
+	padding-top: 3rem;
+	padding-bottom: 2rem;
+	margin-bottom: 2rem;
+}
+
+#featurePunchline{
+	color: #000000;
+	padding-top: 1rem;
+}
+#featurePunchline b{
+	color: #00c6bb;
+}
+
+
+/** Documentation */
+#documentationDiv{
+	color: #ffffff;
+}
+
 
 
 
