@@ -1,0 +1,17 @@
+﻿#controlsLayout{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+.jmp-notes-note{
+	border: 2px solid #dddddd;
+	background-color: #eeeeee;
+	border-radius: 0.5rem;
+	padding-top: 0.6rem;
+	padding-left: 0.1rem;
+	padding-right: 0.1rem;
+	height: 3rem;
+	color: #00000088;
+	font-weight: bold;
+}

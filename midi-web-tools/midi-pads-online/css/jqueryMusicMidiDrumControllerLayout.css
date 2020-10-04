@@ -1,0 +1,81 @@
+﻿html{	
+	height: 100%;
+}
+
+body{	
+	height: 100%;
+}
+
+.jdc-main-layout{
+	position: relative;
+	overflow: hidden;
+	user-select: none;
+	height: 100%;
+}
+
+.jdc-content-layout{
+	position: relative;
+	height: 100%;
+}
+
+
+
+/** */
+.jdc-pads-layout{
+	pointer-events: none;
+	width: 100%;
+	height: 100%;
+}
+
+/** */
+.jdc-pads-row{
+	position: relative;
+}
+/** */
+.jdc-pads-pad-cell{
+    pointer-events:auto;
+	box-sizing: border-box;
+	border: 0px solid #ff000088;
+	padding: 0;
+}
+.jdc-pads-pad-cell:hover{
+	cursor: pointer;
+}
+
+/** */
+.jdc-pads-pad{
+	position: absolute;
+	left: 0.1rem;
+	top: 0.1rem;
+	right: 0.1rem;
+	bottom: 0.1rem;
+	border: 0.2rem solid rgba(0, 0, 0, 0.1);
+	border-radius: 1rem;
+}
+.jdc-pads-pad:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+/** */
+.jdc-pads-pad-label{
+	pointer-events: none;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 50%;
+    transform: translateY(-50%);
+	border: 0px solid #00000088;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.jdc-pads-pad-edit{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	text-align: left;
+	padding: 0.5rem;
+	font-size: 1.25rem;
+}

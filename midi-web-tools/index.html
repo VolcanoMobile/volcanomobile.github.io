@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css"></link>
+
+	<!-- Bootstrap CSS -->
+	<link href="libs/fontawesome/css/all.min.css" rel="stylesheet">
+  
+	<title>MIDI Web Tools</title>
+	<link rel="icon" type="image/png" href="img/logo.svg" />
+	<meta name="description" content="MIDI Web Tools based on the MIDI Web API">
+	<meta name="keywords" content="midi,web,api,tools,online,clock,channels,pads">
+	
+</head>
+<body class="bg-primary">
+		
+	<div class="p-4">
+		<div class="text-center text-white container mb-5">
+			<h2><img src="img/logo-white.svg" style="height: 3rem;"></img> MIDI Web Tools</h2>
+			by <a href="https://www.volcanomobile.net" class="text-white">VolcanoMobile</a><br/><br/>
+			Online MIDI tools based on the MIDI Web API. <br/>
+		</div>
+
+		<div class="container mb-5">
+			<div class="text-center">
+				<a href="midi-monitor-online/index.html" target="_blank" class="btn btn-lg btn-info mb-1"><span class="fa fa-desktop"></span> MIDI Monitor</a>				
+				<a href="midi-clock-online/index.html" target="_blank" class="btn btn-lg btn-info mb-1"><span class="fa fa-clock"></span> MIDI Clock</a>				
+				<a href="midi-channels-config-online/index.html" target="_blank" class="btn btn-lg btn-info mb-1"><span class="fa fa-stream"></span> MIDI Channels Config</a>				
+				<a href="midi-pads-online/index.html" target="_blank" class="btn btn-lg btn-info mb-1"><span class="fa fa-th-large"></span> MIDI Pads</a>				
+			</div>
+		</div>
+		
+		
+		<div class="container">
+		
+			<h5 class="text-white text-center">Browser Test</h5>
+			<div class="card">
+			
+				<div class="card-body">
+					
+					<div class="midiNotSupportedMessage mb-4" style="display: none;">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="text-center col-12">
+									<span class="fa fa-exclamation-triangle text-danger"></span> MIDI not supported by your browser
+								</div>
+								<div class="col-12">
+									<br/>
+									Check that you are accessing a secure <b>https</b> website<br/><br/>
+									Browsers:<br/>
+									<ul class="mb-0">
+										<li><b>Google Chrome</b>: Supported<br/></li>
+										<li><b>Opera</b>: Supported<br/></li>
+										<li>
+											<b>Firefox</b>: 
+											Try to add <a href="https://addons.mozilla.org/fr/firefox/addon/web-midi-api" target="_blank">Web MIDI API</a> plugin 
+											and <a href="https://addons.mozilla.org/fr/firefox/addon/jazz-midi" target="_blank">Jazz-MIDI</a> plugin
+											and <a href="https://jazz-soft.net/download/Jazz-Plugin/" target="_blank">Jazz-Plugin</a> 
+										</li>
+										<li><b>Edge</b>: Not supported<br/></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div id="midiSupported" class="mb-4" style="display: none;">
+						<div class="row">
+							<div class="text-center col-md-6 offset-md-3">
+								<span class="fa fa-check text-success"></span> MIDI supported by your browser
+							</div>
+						</div>
+					</div>
+					
+					<div id="requestMIDIAccessSuccess" class="container mb-4" style="display: none;">
+						<div class="text-center ">
+							<span class="fa fa-check text-success"></span> Request MIDI Access Success
+						</div>
+					</div>
+					
+					<div id="requestMIDIAccessFailure" class="container mb-4" style="display: none;">
+						<div class="text-center">
+							<span class="fa fa-exclamation-triangle text-danger"></span> Request MIDI Access Failure
+						</div>
+					</div>
+					
+					<div id="midiPorts" class="mb-4" style="display: none;">
+						<div class="row">
+							<div class="col-md-6 offset-md-3">
+								<div class="card-body">
+									<div class="text-center">
+										<h4>Inputs</h4>
+										<div id="midiInputs" class="mb-4"></div>
+										<h4>Outputs</h4>
+										<div id="midiOutputs"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="noMidiPortMessage mb-4" style="display: none;">
+						<div class="card-body">
+							<span class="fa fa-exclamation-triangle text-danger"></span> No MIDI port available<br/><br/>
+							Browsers:<br/>
+							<ul class="mb-0">
+								<li>
+									<b>Firefox</b>: 
+									Try to add <a href="https://addons.mozilla.org/fr/firefox/addon/jazz-midi" target="_blank">Jazz-MIDI</a> plugin
+									and <a href="https://jazz-soft.net/download/Jazz-Plugin/" target="_blank">Jazz-Plugin</a> 
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="libs/jquery/jquery-3.4.1.min.js"></script>
+	<script src="libs/popper/popper.min.js"></script>
+
+	<!-- Bootstrap JS -->
+	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- -->
+	<script src="libs/jquery-midi-access-api/jquery-midi-access-api.min.js"></script>
+
+	<!-- -->
+	<script src="index.js"></script>
+	<script src="indexMidiAccessApiTools.js"></script>
+
+</body>
+</html>

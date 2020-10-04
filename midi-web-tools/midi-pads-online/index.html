@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css"/>
+
+	<!-- Font awesome -->
+	<link href="libs/fontawesome/css/all.min.css" rel="stylesheet">
+  
+	<title>MIDI Drum Controls Online</title>
+	<link rel="icon" type="image/png" href="img/logo.svg" />
+	
+	<!-- -->
+	<link rel="stylesheet" type="text/css" href="css/jqueryMusicMidiDrumControllerLayout.css"/>
+	
+	<!-- -->
+	<link rel="stylesheet" type="text/css" href="index.css"/>
+	
+</head>
+<body>
+	
+	<table style="width: 100%; height: 100%; border-spacing: 0; border-collapse: collapse;">
+		<tr style="height: 0%;">
+			<td style="padding: 0;">
+				<nav class="navbar navbar-dark bg-primary mb-0">
+					<a class="navbar-brand" href="#">
+						<img src="img/logo-white.svg" width="30" height="30"/>
+						<span class="d-none d-sm-inline">MIDI Pads</span> <span class="d-none d-md-inline">Online</span>
+					</a>
+					
+					<div class="navbar-nav">
+						<div class="nav-item">
+							<!--a class="nav-link" href="libs/javascript-midi-message-event-parser">libs\javascript-midi-message-event-parser</a-->
+							<!-- Example single danger button -->
+							<div class="btn-group float-right" style="position: relative;">
+								
+								<button class="btn btn-outline-light float-right toggleMidiPanelButton" title="Shortcut : m">
+									<span class="fa fa-plug"></span><span class="d-none d-md-inline"> MIDI</span>
+								</button>
+								<button id="catalogButton" class="btn btn-outline-light float-right">
+									<span class="fa fa-folder"></span> <span class="d-none d-md-inline">Catalog</span>
+								</button>
+
+							
+								<div class="btn-group" role="group">
+									<button id="btnGroupDrop1" type="button" class="btn btn-outline-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<span class="fa fa-bars"></span>
+									</button>
+									<div class="dropdown-menu" aria-labelledby="btnGroupDrop1" style="position: absolute; left: auto; right: 0;">
+										<button type="button" id="newProjectButton" class="dropdown-item">
+											<span class="fa fa-file"></span> New
+										</button>
+										<!--button type="button" id="loadProjectButton" class="dropdown-item">
+											<span class="fa fa-folder-open"></span> Open old
+										</button-->
+										<button type="button" class="dropdown-item toogleOpenFilePanel" title="Shortcut : o">
+											<span class="fa fa-folder-open"></span> Open
+										</button>
+										<button id="serializeButton" class="dropdown-item" title="See in console log">
+											<span class="fa fa-save"></span> Save
+										</button>
+										<button class="dropdown-item toggleControlerSettingsPanelButton">
+											<span class="fa fa-cog"></span> Controler Settings
+										</button>
+										<button class="dropdown-item togglePadSettingsPanel" title="Shortcut : e">
+											<span class="fa fa-pencil-alt"></span> Edit pads
+										</button>									
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+				
+				<div class="container" id="midiNotSupported" style="display: none;">
+					<div class="alert alert-danger mt-4">
+						<span class="fa fa-exclamation-triangle"></span> MIDI not supported by your browser<br/><br/>
+						Check that you are accessing a secure <b>https</b> website<br/><br/>
+						Browsers:<br/>
+						<ul class="mb-0">
+							<li><b>Google Chrome</b>: Supported<br/></li>
+							<li><b>Opera</b>: Supported<br/></li>
+							<li><b>Firefox</b>: Try to add <a href="https://addons.mozilla.org/fr/firefox/addon/web-midi-api" target="_blank">Web MIDI API</a> plugin </li>
+							<li><b>Edge</b>: Not supported<br/></li>
+						</ul>
+					</div>
+				</div>
+				
+				<div id="openFilePanel"  class="card bg-secondary text-white" style="display: none;">
+					<div class="container pt-4 mb-2">
+						<h4><span class="fa fa-folder-open"></span> Open File</h4>
+						<div>
+							<input type="file" id="jsonInputFile" name="jsonInputFile" accept=".json"></input>
+							<!--button id="createObjectFromJsonFileButton" class="btn btn-primary" onclick="handleFileSelect('jsonInputFile');"><span class="fa fa-upload"></span> Load</button-->
+						</div>
+						<button class="btn btn-dark float-right toogleOpenFilePanel" id=""><span class="fa fa-caret-up"></span></button>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				
+				<div id="midiPanel" class="card bg-light pt-4" style="display: none;">
+				
+					<div class="container">
+						
+						<div class=" pb-0">
+							<div class="row">
+								<div class="col-md-6 mb-4">
+									<h5 class="card-title mb-2">Inputs</h5>
+									<div class="card card-default">
+										<div id="midiInputs" class="list-group list-group-flush"></div>
+									</div>
+								</div>
+								<div class="col-md-6 mb-4">
+									<h5 class="card-title mb-2">Outputs</h5>
+									<div class="card card-default mb-2">
+										<div id="midiOutputs" class="list-group list-group-flush"></div>
+									</div>
+									
+								</div>
+							</div>
+							<button class="btn btn-link float-right toggleMidiPanelButton"><span class="fa fa-caret-up"></span></button>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div id="controlerSettingsPanel" class="card bg-light pt-4 pb-0" style="display: none;">
+					<div class="container">
+						<div id="settingsLayout">
+						</div>
+						<button class="btn btn-link float-right toggleControlerSettingsPanelButton"><span class="fa fa-caret-up"></span></button>
+					</div>
+				</div>
+				
+				
+				<div id="padSettingsPanel" class="card bg-light pt-4 pb-0" style="display: none;">
+					<div class="container">
+						<div id="padSettingsLayout">
+						</div>
+						<button class="btn btn-link float-right togglePadSettingsPanel"><span class="fa fa-caret-up"></span></button>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr style="height: 100%;">
+			<td style="padding: 0;">
+				<div id="drumPadsLayout" style="height: 100%;"></div>
+			</td>
+		</tr>
+	</table>	
+	
+	<!--div id="loadProjectLayout" style="display: none; position: fixed; top: 0; background-color: #000000AA; width: 100%; height: 100%; z-index: 2;">
+		<div class="card card-default mb-4">
+			<h6 class="card-header">
+				<div><span class="fa fa-code"></span> Input</div>
+			</h6>
+			<div class="card-body">
+				<textarea id="jsonTextarea" class="form-control" placeholder="Paste text here"></textarea>
+				<button id="createObjectFromJsonStringButton" class="btn btn-primary">Create</button>
+			</div>
+		</div>
+	</div-->	
+	
+	
+	<div id="catalogLayout" style="display: none; position: fixed; top: 0; background-color: #000000AA; width: 100%; height: 100%; z-index: 2;">
+		<div class="container">
+			<div class="card card-default mb-4">
+				<h6 class="card-header">
+					<div><span class="fa fa-folder"></span> Catalog</div>
+				</h6>
+				<div class="card-body" id="catalogProjectsLayout">
+					<textarea id="jsonTextarea" class="form-control" placeholder="Paste text here"></textarea>
+					<button id="createObjectFromJsonStringButton" class="btn btn-primary">Create</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<!--div id="controlsLayout">
+		<div class="bg-primary text-white">
+			<div class="card-body">
+				
+				<div class="row">
+				
+					<div class="col-auto">
+						<button id="buttonStart" class="btn btn-dark" title="Shortcut: Enter key"><span class="fa fa-play"></span> Start</button>
+						<button id="buttonContinue" class="btn btn-dark" style="display: none;" title="Shortcut: Spacebar key"><span class="fa fa-pause"></span> Continue</button>
+						<button id="buttonStop" class="btn btn-dark" style="display: none;"title="Shortcuts: Enter or Spacebar key"><span class="fa fa-stop"></span> Stop</button>
+					</div>	
+					<div class="col-auto">
+						<h5 class="text-center" id="bpmValue">BPM</h5>
+					</div>	
+					<div class="col" title="Shortcuts: + and - keys">
+						<input type="range" id="bpmRange" style="width: 100%;"></input>
+					</div>	
+					<div class="col-auto">
+						<button id="clearButton" class="btn btn-dark"><span class="fa fa-broom"></span> Clear</button>
+					</div>
+					
+				</div>	
+		
+			</div>
+		</div>		
+	</div-->
+		
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="libs/jquery/jquery-3.4.1.min.js"></script>
+	
+	<!-- -->
+	<script src="libs/popper/popper.min.js"></script>
+
+	<!-- Bootstrap JS -->
+	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- -->
+	<script src="libs/jquery-midi-access-api/js/jquery-midi-access-api.min.js"></script>
+
+	<!-- MIDIMessageEventParser -->
+	<script src="libs/javascript-midi-message-event-parser/js/MIDIMessageEventParser.min.js"></script>
+
+	<!-- General MIDI strings -->
+	<script src="libs/gmStrings/gmStrings.min.js"></script>
+
+	<!-- -->
+	<script src="js/jqueryMusicMidiDrumController.min.js"></script>
+
+	<!-- -->
+	<script src="js/index.min.js"></script>
+	
+</body>
+</html>
+

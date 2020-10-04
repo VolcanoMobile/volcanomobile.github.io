@@ -2,6 +2,13 @@
 	"name": "apps", 
 	"apps": [
 		{
+			"name": "Metronome",
+			"icon": "img/metronome/icon.png",
+			"url": "https://play.google.com/store/apps/details?id=net.volcanomobile.metronome",
+			"type": "app",
+			"category": "Audio"
+		},
+		{
 			"name": "Super MIDI Box",
 			"icon": "super-midi-box/images/logo.png",
 			"url": "/super-midi-box/index.html",
@@ -23,6 +30,13 @@
 			"category": "Audio"
 		},
 		{
+			"name": "VGM Player",
+			"icon": "img/vgm-player/logo.png",
+			"url": "https://play.google.com/store/apps/details?id=net.volcanomobile.vgmplayer",
+			"type": "app",
+			"category": "Audio"
+		},
+		{
 			"name": "MIDI Sequencer",
 			"icon": "img/midi-sequencer/logo.png",
 			"url": "midi-sequencer/index.html",
@@ -40,13 +54,6 @@
 			"name": "OPL3 MIDI Synthesizer",
 			"icon": "img/opl3-midi-synthesizer/logo.png",
 			"url": "https://play.google.com/store/apps/details?id=net.volcanomobile.opl3midisynth",
-			"type": "app",
-			"category": "Audio"
-		},
-		{
-			"name": "VGM Player",
-			"icon": "img/vgm-player/logo.png",
-			"url": "https://play.google.com/store/apps/details?id=net.volcanomobile.vgmplayer",
 			"type": "app",
 			"category": "Audio"
 		},
