@@ -1,0 +1,23 @@
+{
+  "name": "volcanomobile.net",
+  "version": "1.0.0",
+  "description": "Volcanomobile's website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VolcanoMobile/volcanomobile.github.io.git"
+  },
+  "author": "Volcanomobile",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VolcanoMobile/volcanomobile.github.io/issues"
+  },
+  "homepage": "https://github.com/VolcanoMobile/volcanomobile.github.io#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0"
+  }
+}
