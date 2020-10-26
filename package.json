@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/VolcanoMobile/volcanomobile.github.io#readme",
   "dependencies": {
-    "bootstrap": "^4.0.0",
+    "bootstrap": "^4.3.1",
     "jquery": "3.3.1",
     "mime-types": "2.1.26",
     "popper.js": "1.14.1"
