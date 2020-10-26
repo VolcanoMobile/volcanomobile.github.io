@@ -4,7 +4,7 @@ var url = require('url');
 
 var fs = require('fs');
 
-var mime = require('mime');
+var mime = require('mime-types');
 
 ///// Create server
 var server = http.createServer(function(req, res) {
