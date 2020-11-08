@@ -21,6 +21,7 @@
     "bootstrap": "^4.3.1",
     "jquery": "^3.5.0",
     "mime-types": "2.1.26",
-    "popper.js": "1.14.1"
+    "popper.js": "1.14.1",
+    "tether": "^1.4.7"
   }
 }
