@@ -132,7 +132,7 @@ function loadReviews( containerId ){
 			card.addClass( 'card text-center' );
 			
 			cardBlock = $("<div></div>");
-			cardBlock.addClass( 'card-block' );
+			cardBlock.addClass( 'card-body' );
 			
 			reviewer = $("<div></div>");
 			reviewer.addClass( 'reviewer-icon-container' );
