@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+	
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"></link>
+	
+	<!-- -->
+	<link href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet"> <!--load all styles -->
+
+	<!-- Android Style -->
+	<link rel="stylesheet" href="css/android.css"></link>
+
+	<!-- Style -->
+	<link rel="stylesheet" href="contrast.css"></link>
+
+	<!-- -->
+	<title>Colors contrast finder</title>
+	<link rel="icon" type="image/png" href="logo.png" />
+	
+</head>
+<body class="androidPrimaryBg">
+
+	<div class="android-window" style="padding-top: 5rem;">
+
+		<nav id="mainMenu" class="navbar fixed-top navbar-expand-lg navbar-light justify-content-between androidPrimaryBg">
+			<div class="container">
+				<a class="navbar-brand d-inline-block" href="contrast.html"><span class="androidPrimaryText">Colors contrast finder</span></a>
+				<div class="pull-right">
+					<a id="shareLink" href="#" target="_blank" class="androidPrimaryText"><span class="fa fa-external-link-alt"></span></a>
+					<!--button class="android-btn androidSecondaryBg androidSecondaryText d-inline-block">Secondary</button-->
+					<!--button class="android-btn android-btn-link androidPrimaryText d-inline-block"><span class="fa fa-times"></span></button-->
+					<!--input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"-->
+					<!--button class="btn btn-outline-success my-2 my-sm-0 d-inline-block" type="submit">Search</button-->
+				</div>
+			</div>
+		</nav>
+		
+		<div class="container">
+			<div class="row">
+							
+				<div class="col-12 col-sm col-md-auto mb-4">
+					Primary<br/>
+					<input id='colorpicker' style="width: 6rem;"/>
+					<button id="colorPrimaryUseAsSecondaryButton" class="btn btn-light" title="Use as secondary"><span class="fa fa-check"></span></button>
+					<button id="colorPrimaryCopyButton" class="btn btn-light copyClipboard" title="Copy"><span class="fa fa-copy"></span></button>
+				</div>
+				
+				<div class="col-12 col-sm col-md-auto mb-4">
+					Secondary<br/>					
+					<input id='colorpickerSecondary'  style="width: 6rem;"/>
+					<button id="colorSecondaryUseAsPrimaryButton" class="btn btn-light" title="Use as primary"><span class="fa fa-check"></span></button>
+					<button id="colorSecondaryCopyButton" class="btn btn-light copyClipboard" title="Copy"><span class="fa fa-copy"></span></button>
+					<!--div style="width: 100%;">
+						<div style="text-align: center; font-size: 0.75rem;">Luminance</div>
+						<div>
+							<input type="range" min="0.0" max="1.0" step="0.001" value="0" class="slider" id="colorSecondaryLuminanceRange" style="display: block; width: 100%;">
+						</div>
+					</div-->
+				</div>
+				
+				<div class="col-md"></div>
+							
+							
+				<div class="col-12 col-md-2 mb-4">
+					<div style="text-align: center;" class="mb-2">
+						<div class="card d-inline-block androidPrimaryBg androidPrimaryText">
+							<h1 id="contrastResult" class="card-body" style="font-weight: bold;"></h1>
+						</div><br/>
+						<div class="d-inline-block">
+							<span id="contrastResultText">Wait...</span>
+						</div>
+					</div>
+						
+				</div>
+			</div>
+					
+
+			<div class="row">
+
+				<div class="col-md-3 mb-4">
+							
+					<div id="resultsPanel" class="mb-2">
+						<h4>Secondary list</h4>
+						<div id="scondaryColorList" class="list-group"></div>
+					</div>
+					<h5 class="text-center">
+						<span class="badge badge-danger"><3.0</span>
+						<span class="badge badge-warning">>= 3.0</span>
+						<span class="badge badge-success">>= 4.5</span>
+					</h5>
+				</div>
+			
+				<div class="col-md-9">
+				
+					<h4>Example</h4>
+
+					<div class="row">
+						<div class="col">
+							<div class="card mb-2">
+								<div class="card-body androidPrimaryBg androidPrimaryText">
+									<h1 class="androidDefaultText">Title</h1>
+									<h3 class="androidDefaultText">Text</h3>
+									<span class="androidDefaultText">Default text, a <a class="androidDefaultLink">link</a>,...</span>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col">
+							<div class="card mb-2">
+								<div class="card-header androidPrimaryBg androidPrimaryText">
+									<h4>Buttons</h4>
+								</div>
+								<div class="card-body">
+									<button class="android-btn androidPrimaryBg androidPrimaryText">Primary</button>
+									<button class="android-btn androidPrimaryBg androidPrimaryText"><span class="fa fa-star"></span></button>
+									<span class="android-btn androidSecondaryBg androidSecondaryText">Secondary</span>
+									<span class="android-btn androidSecondaryBg androidSecondaryText"><span class="fa fa-lemon"></span></span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				
+			</div>
+
+			<!-- CSS Result -->
+			<pre id="cssResult" style="height: 0px;"></pre>
+			<button id="showStyleLayoutButton" class="android-btn mb-2 d-none">Style</button>
+			<div id="cssLayout" class="card mb-2" style="display: none;">
+				<div class="card-body">
+					<pre id="cssResultHtml"></pre>
+				</div>
+			</div>
+			
+		</div>
+		
+		
+	</div>
+
+	<div class=" pt-5 pb-5">
+		<div class="container androidPrimaryText pt-5 pb-5">
+		</div>
+	</div>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	
+	<!-- -->
+	<script src="https://cdn.jsdelivr.net/npm/spectrum-colorpicker2/dist/spectrum.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/spectrum-colorpicker2/dist/spectrum.min.css">
+
+	<!-- -->
+	<script type="text/javascript" src="libs/get_parameters.js"></script>
+	<script type="text/javascript" src="libs/jqueryCopyClipboard.js"></script>
+	<script type="text/javascript" src="libs/notify.js"></script>
+
+	<!-- -->
+	<script src="libs/jsColors/public/js/jqueryColor.min.js"></script>
+
+
+	<!-- -->
+	<script src="contrast.js"></script>
+	<script src="contrast-color-primary.js"></script>
+	<script src="contrast-color-secondary.js"></script>
+
+</body>
+</html>

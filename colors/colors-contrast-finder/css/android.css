@@ -1,0 +1,24 @@
+.android-window{
+	background: #ffffff;
+}
+.android-btn{
+	border-radius: 0.25rem;
+	text-transform: uppercase;
+	background-color: rgba(0, 0, 0, 0.1);
+	border-width: 0px;
+	line-height: 2.25rem;
+	min-width: 2.25rem;
+	font-weight: bold;
+	color: #505050;
+	display: inline-block;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	text-align: center;
+}
+.android-btn:hover{
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.android-btn-link{
+	background-color: rgba(0, 0, 0, 0.0);
+}
