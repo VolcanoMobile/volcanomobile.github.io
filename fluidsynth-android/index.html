@@ -58,6 +58,8 @@
 				<a class="anchor" name="anchorFeatures"></a>
 				<h2 style="margin-top: 0;"><span class="fa fa-tools"></span> Features</h2>
 				
+				FLuidsyth provide a synth using SounFonts banks. It allows to play notes on multiple channels in low latency.<br/><br/>
+				
 				<div class="row">
 					<div class="col-12 mb-4 col-sm-6 col-md-4">
 						<div class="card bg-feature">
@@ -126,43 +128,46 @@
 		
 
 		<div class="container">
-			
-			<a class="anchor" name="anchorDocumentation"></a>
-			<h2><span class="fa fa-keyboard "></span> Documentation</h2>
-			
-			<div id="documentationDiv">
-				
-				<div class="row">
-					<div class="col-12 mb-4 col-sm-6 col-md-5 offset-md-1 mb-md-0">
-						<div class="card bg-documentation">
-							<div class="card-body">
-								<h5 class="card-title">JAVA API</h5>
-								<div class="card-text"><a href="doc/net/volcanomobile/fluidsynth/FluidSynthService.html#method.summary">Method Summary</a></div>
+			<div class="card">
+				<div class="card-body">
+					
+					<a class="anchor" name="anchorDocumentation"></a>
+					<h2><span class="fa fa-keyboard "></span> Documentation</h2>
+
+					VolcanoMobile provides an interface to use FluidSynth in Android apps.<br/><br/>
+					
+					<div id="documentationDiv">
+						
+						<div class="row">
+							<div class="col-12 mb-4 col-sm-6 col-md-5 offset-md-1 mb-md-0">
+								<div class="card bg-documentation">
+									<div class="card-body">
+										<h5 class="card-title">JAVA API</h5>
+										<div class="card-text"><a href="doc/net/volcanomobile/fluidsynth/FluidSynthService.html#method.summary">Method Summary</a></div>
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-					<div class="col-12 mb-4 col-sm-6 col-md-5">
-						<div class="card bg-documentation">
-							<div class="card-body">
-								<h5 class="card-title">Examples</h5>
-								<div class="card-text">Load/unload SoundFonts</div>
+							<div class="col-12 mb-4 col-sm-6 col-md-5">
+								<div class="card bg-documentation">
+									<div class="card-body">
+										<h5 class="card-title">Examples</h5>
+										<div class="card-text">Load/unload SoundFonts</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				
-				<p>
-					
-				</p>
-				
-			</div>
-			
+			</div>			
 		</div>
 
 		<div class="container">
 			<a class="anchor" name="anchorAndroidApp"></a>
 			<h2><img src="assets/img/fluidsynth-android-app/logo.png" style="height: 5rem;"></img> Android App</h2>
 			
+			The first Android application using FluidSynth.<br/>
+			Using the Android MIDI librairies, you can connect MIDI instrument to your Android device to control FluidSynth included in the app.<br/><br/>
+
 			<div class="row mb-5">
 				<div class="col-12 text-center">
 					<a href="https://play.google.com/store/apps/details?id=net.volcanomobile.fluidsynthmidi" target="_blank">
@@ -171,38 +176,41 @@
 				</div>
 			</div>
 
+			<h3>Select instrument</h3>
+			<hr/>
 			<div class="row">
 				<div class="mb-5 offset-2 col-8 offset-md-2 col-md-4">
 					<img src="assets/img/fluidsynth-android-app/instrument.png" class="w-100"></img>
 				</div>
 				<div class="mb-5 col-md-4 text-left">
-					<h3>Select instrument</h3>
-					<hr/>
-					<span>Use an <b>OTG cable</b> <a href="https://www.google.com/search?q=OTG+cable" target="_blank"><span class="fa far-external-link"></span></a> or a <b>Bluetooth adapter</b> to connect your instrument to your Android device.</span><br/><br/>
+					<span>
+						Use an <b>OTG cable</b> <a href="https://www.google.com/search?q=OTG+cable" target="_blank"><span class="fa fa-external-link-alt"></span></a> 
+						or a <b>Bluetooth adapter</b> <a href="https://www.google.com/search?q=midi+bluetooth+adapter" target="_blank"><span class="fa fa-external-link-alt"></span></a> to connect your instrument to your Android device.</span><br/><br/>
 					<span>You can also connect it to other apps that expose a MIDI connection.</span><br/>
 				</div>
 			</div>
 			
+			<h3>Channel Settings</h3>
+			<hr/>			
 			<div class="row">
 				<div class="mb-5 offset-2 col-8 offset-md-2 col-md-4">
 					<img src="assets/img/fluidsynth-android-app/channel_settings.png" class="w-100"></img>
 				</div>
 				<div class="mb-5 col-md-4">
-					<h3>Channel Settings</h3>
-					<hr/>
-					<span>Change channel - program</span><br/>
-					<span>- panning</span><br/>
-					<span>- send all notes off</span>
+					<span>Change channel</span><br/>
+					<span>- program</span><br/>
+					<span>- panning</span><br/><br/>
+					<span>Send all notes off</span>
 				</div>
-			</div>
+			</div>			
 			
+			<h3>Recordings</h3>
+			<hr/>
 			<div class="row">
 				<div class="mb-5 offset-2 col-8 offset-md-2 col-md-4">
 					<img src="assets/img/fluidsynth-android-app/my_recording.png" class="w-100"></img>
 				</div>
 				<div class="mb-5 col-md-4 text-left">
-					<h3>Recordings</h3>
-					<hr/>
 					<span>Record what you are playing in WAV files.<br/>
 				</div>
 			</div>
