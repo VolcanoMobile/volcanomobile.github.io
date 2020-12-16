@@ -61,11 +61,7 @@ header .row{
 }
 
 #header-title-link{
-	display: block;
-	height: 50%;
 	vertical-align: middle;
-	display: table;
-	width: 100%;
 }
 
 header h1{
