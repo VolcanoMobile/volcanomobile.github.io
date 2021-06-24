@@ -3,14 +3,21 @@
 	"reviews": [
 		{
 			"url": "https://freeappsforme.com/fluidsynth-midi-synthesizer-app-review/",
-			"text": "MIDI Sequencer is reviewed by Free Apps For Me",
+			"text": "MIDI Sequencer is reviewed by<br/><b>Apps Like These</b>",
+			"reviewerIcon": "https://www.appslikethese.com/wp-content/uploads/2021/03/logo.png",
+			"appIcon": "img/fluidsynth-midi-synthesizer/logo.png",
+			"type": "app"
+		},
+		{
+			"url": "https://freeappsforme.com/fluidsynth-midi-synthesizer-app-review/",
+			"text": "MIDI Sequencer is reviewed by<br/><b>Free Apps For Me</b>",
 			"reviewerIcon": "img/logofreeapps1.jpg",
 			"appIcon": "img/fluidsynth-midi-synthesizer/logo.png",
 			"type": "app"
 		},
 		{
 			"url": "https://www.youtube.com/watch?v=v__fA1_2b_U",
-			"text": "MIDI Sequencer is reviewed by Bose Sounds",
+			"text": "MIDI Sequencer is reviewed by<br/><b>Bose Sounds</b>",
 			"reviewerIcon": "https://yt3.ggpht.com/-rETPZa55WDE/AAAAAAAAAAI/AAAAAAAAAAA/ng2gMurteto/s88-c-k-no-mo-rj-c0xffffff/photo.jpg",
 			"appIcon": "img/midi-sequencer/logo.png",
 			"type": "app"
