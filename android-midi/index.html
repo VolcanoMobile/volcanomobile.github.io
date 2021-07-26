@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+
+	<title>Android MIDI</title>
+
+
+	<!-- Bootstrap -->
+	<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+	<!-- Font Awesome -->
+	<link href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+
+	<!-- Style -->
+	<link href="assets/css/style.css" rel="stylesheet">
+
+	<!-- -->
+	<meta name="theme-color" content="#7952b3">
+
+
+	<!-- Custom styles for this template -->
+	<link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+	<!-- Custom styles for this template -->
+	<link href="blog.css" rel="stylesheet">
+	
+</head>
+
+<body>
+    
+<div id="main-navbar" class="bg-dark text-white mb-3">
+	<div class="container  text-white">
+		<div class=" text-white">
+			<nav class="nav d-flex">
+				<a class="py-3" href=".."><img src="../img/logo.png" class="d-inline-block align-top" alt="" width="30" height="30"></a>
+				<a class="py-3 px-3" href="..">Volcano Mobile</a>
+				<a class="p-3" href="#android">Android</a>
+				<a class="p-3" href="#cables">Cables</a>
+				<a class="p-3" href="#apps">Apps</a>
+				<a class="p-3" href="#faq">FAQ</a>
+			</nav>
+		</div>
+	</div>
+</div>
+
+<main>
+	<div class="container">
+		<div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+			<div class="col-md-6 px-0">
+				<h1 class="display-4 fst-italic">Android MIDI</h1>
+				<p class="lead my-3">All to know about Android MIDI.</p>
+			</div>
+		</div>
+		
+		<div class="card bg-light mb-4 p-4">
+			<h2>Table of content</h2>
+			<ul class="mb-0">
+				<li><a href=".">Home</a></li>
+				<li>
+					<a href="#android">Android</a>
+					<ul class="mb-0">
+						<li><a href="#android_midi_usb_mode">MIDI USB Mode</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#cables">Cables</a>
+					<ul class="mb-0">
+						<li><a href="#cables_micro_usb_male_to_usb_male">Micro USB to USB</a></li>
+						<li><a href="#cables-otg">OTG</a></li>
+						<li><a href="#cables-midi-usb-adapter">MIDI-USB adapter</a></li>
+						<li><a href="#cables_din_midi_bluetooth_adapter">DIN MIDI Bluetooth adapter</a></li>
+					</ul>
+				</li>
+				<li><a href="#apps">Apps</a></li>
+				<li><a href="#faq">FAQ</a></li>
+			</ul>
+		</div>
+
+
+		<a name="android"></a>
+		<h2>Android</h2>
+
+		<a name="android_midi_usb_mode"></a>
+		<div class="card bg-light mb-4 p-4">
+			<div class="row">
+				<div class="col-12 col-lg-12">
+					<h3>MIDI USB Mode</h3>
+					<small class="d-block mb-4 text-muted">Turn your Android device in a MIDI device through the Mico-USB port.</small>
+					<p>First connect your Android device to an USB device with a <a href="#cables_micro_usb_male_to_usb_male">Micro USB to USB cable</a>.</p>
+					<p>Then choose the <b>MIDI mode</b> in the Android <b>USB Mode settings</b>, </p>
+					<div class="text-center">
+						<img class="rounded mb-3" style="width: 15rem;" src="assets/images/midi-usb-mode-1.png"></img>
+						<img class="rounded mb-3" style="width: 15rem;" src="assets/images/midi-usb-mode-2.png"></img>
+					</div>
+					<p>Your Android device can now be seen as a <b>MIDI device</b></p>
+					<hr class="mx-5"/>
+					<p>If you connected you Android device to your <b>Computer</b>, it should be available in the MIDI ports list in your DAW.</p>
+					<div class="text-center">
+						<img class="rounded mb-3" style="height: 5rem;" src="assets/images/android_midi_usb_mode_daw.png"></img>
+						<small class="d-block mb-4 text-muted">Samsung Android device available in qjack on Ubuntu</small>
+					</div>
+					<hr class="mx-5"/>
+					<p>And new <b>Virtual MIDI Ports</b> are available in <a href="#apps">Applications using MIDI</a>.</p>
+				</div>
+				<!--div class="col-6 offset-3 col-lg-3 offset-lg-0">
+					<img class="img img-fluid rounded" src="https://xmmc.de/touchdaw/man/amm1.png"></img>
+				</div-->
+			</div>
+		</div>
+		
+		
+		<a name="cables"></a>
+		<h2>Cables</h2>
+		
+		<a name="cables_micro_usb_male_to_usb_male"></a>
+		<div class="card bg-light mb-4 p-4">
+			<div class="row">
+				<div class="col-12 col-lg-9">
+					<h3>Micro USB Male to USB Male</h3>
+					<small class="d-block mb-4 text-muted">Connect your Android device to MIDI USB Female devices</small>
+					<div class="row mb-4 text-center d-none d-lg-block">
+						<div class="col-12">
+							<img class="midi-path-picto" src="assets/images/picto_smartphone.svg"></img>
+							<span class="midi-path-arrow fa fa-exchange-alt"></span>
+							<img class="border border-2 border-dark bg-white midi-path-picto" title="Micro USB Male to USB Male" src="assets/images/picto_micro_usb_male_to_usb_male.svg"></img>
+							<span class="midi-path-arrow fa fa-exchange-alt"></span>
+							<img class="midi-path-picto" src="assets/images/picto_computer.svg"></img>
+						</div>
+					</div>
+					<p>Micro USB Male to USB Male allow you to connect your Android device to your <b>computer</b></p>
+					<p>It is the same cable used for <b>charging</b> your Android device or <b>transfering</b> data to your computer</p>
+					<p>After you make the connection, don't forget to setup your Android device in <a href="#android_midi_usb_mode">MIDI USB Mode</a></p>
+				</div>
+				
+				<div class="col-6 offset-3 col-lg-3 offset-lg-0 text-center">
+					<img class="img img-fluid" src="https://cdn.webshopapp.com/shops/172646/files/135322346/orico-micro-cable-de-charge-usb-de-charge-rapide-e.jpg"></img>
+					<a class="link-secondary" target="_blank" href="https://www.google.com/search?q=micro+usb+male+to+usb+male">On the web <span class="fa fa-link"></span></a>
+				</div>
+			</div>
+		</div>
+		
+		<a name="cables-otg"></a>
+		<div class="card bg-light mb-4 p-4">
+			<div class="row">
+				<div class="col-12 col-lg-9">
+					<h3>OTG</h3>
+					<small class="d-block mb-4 text-muted">Connect your Android device to MIDI USB devices</small>
+					<div class="row mb-4 text-center d-none d-lg-block">
+						<div class="col-12">
+							<img class="midi-path-picto" src="assets/images/picto_midi_controller_keyboard_usb_right.svg"></img>
+							<span class="midi-path-arrow fa fa-exchange-alt"></span>
+							<img class="border border-2 border-dark bg-white midi-path-picto" src="assets/images/picto_otg_usb_female_to_micro_usb_male.svg"></img>
+							<span class="midi-path-arrow fa fa-exchange-alt"></span>
+							<img class="midi-path-picto" src="assets/images/picto_smartphone.svg"></img>
+						</div>
+					</div>
+					<p>USB OTG (USB On-The-Go) allow you to connect <b>USB devices</b> to your Android device through the <b>Micro-USB</b> port.</p>
+					<p>When a <b>USB MIDI device</b> is connected, it should be available in <a href="#apps">Applications using MIDI</a>.</p>
+				</div>
+				
+				<div class="col-6 offset-3 col-lg-3 offset-lg-0 text-center">
+					<img class="img img-fluid" src="https://images-eu.ssl-images-amazon.com/images/I/31pgreXToPL._SY445_SX342_QL70_FMwebp_.jpg"></img>
+					<a class="link-secondary" target="_blank" href="https://www.google.com/search?q=otg+cable">On the web <span class="fa fa-link"></span></a>
+				</div>
+			</div>
+		</div>
+		
+		<a name="cables-midi-usb-adapter"></a>
+		<div class="card bg-light mb-4 p-4">
+			<div class="row">
+				<div class="col-12 col-lg-9">
+					<h3>MIDI-USB Adapter</h3>
+					<small class="d-block mb-4 text-muted">Connect your Android device to MIDI DIN devices</small>
+					<div class="row mb-4 text-center d-none d-lg-block">
+						<div class="col-12">
+							<img class="midi-path-picto" src="assets/images/picto_smartphone.svg"></img>
+							<span class="midi-path-arrow fa fa-exchange-alt"></span>
+							<a href="#cables-otg" title="OTG Cable"><img class="midi-path-picto" src="assets/images/picto_otg_micro_usb_male_to_usb_female.svg"></img></a>
+							<span class="midi-path-arrow fa fa-exchange-alt"></span>
+							<img class="border border-2 border-dark bg-white midi-path-picto" src="assets/images/picto_usb_male_to_midi_din_bi.svg"></img>
+							<span class="midi-path-arrow fa fa-exchange-alt"></span>
+							<img class="midi-path-picto" src="assets/images/picto_midi_din_2_left_controller_keyboard.svg"></img>
+						</div>
+					</div>
+					<p>MIDI-USB Adapter allow you to connect <b>USB device</b> to <b>MIDI DIN</b> devices.</p>
+					<p>To connect it to your Android device you will also need an <a href="#cables-otg">OTG cable</a>.</p>
+				</div>
+				
+				<div class="col-6 offset-3 col-lg-3 offset-lg-0 text-center">
+					<img class="img img-fluid" src="https://ae01.alicdn.com/kf/HTB1QDptRXXXXXXOXpXXq6xXFXXXP/Convertisseur-de-c-ble-MIDI-USB-entr-e-sortie-adaptateur-de-clavier-PC-musique.jpg"></img>
+					<a class="link-secondary" target="_blank" href="https://www.google.com/search?q=midi+usb+adapter">On the web <span class="fa fa-link"></span></a>
+				</div>
+			</div>
+		</div>
+		
+		<a name="cables_din_midi_bluetooth_adapter"></a>
+		<div class="card bg-light mb-4 p-4">
+			<div class="row">
+				<div class="col-12 col-lg-9">
+					<h3>DIN MIDI Bluetooth adapter</h3>
+					<small class="d-block mb-4 text-muted">Connect Bluetooth MIDI Devices to your Android device</small>
+					<div class="row mb-4 text-center d-none d-lg-block">
+						<div class="col-12">
+							<img class="midi-path-picto" src="assets/images/picto_smartphone_bluetooth_right.svg"></img>
+							<span class="midi-path-arrow fa fa-exchange-alt"></span>
+							<img class="border border-2 border-dark bg-white midi-path-picto" src="assets/images/picto_bluetooth_to_midi_din_bi.svg"></img>
+							<span class="midi-path-arrow fa fa-exchange-alt"></span>
+							<img class="midi-path-picto" src="assets/images/picto_midi_din_2_left_controller_keyboard.svg"></img>
+						</div>
+					</div>
+					<p>DIN MIDI Bluetooth adapter allow you to connect <b>MIDI-DIN devices</b> to your <b>Android</b> devices through <b>MIDI Bluetooth</b>.</p>
+				</div>
+				
+				<div class="col-6 offset-3 col-lg-3 offset-lg-0 text-center">
+					<img class="img img-fluid" src="https://images-eu.ssl-images-amazon.com/images/I/815pZfivQ8L.__AC_SY300_SX300_QL70_ML2_.jpg"></img>
+					<a class="link-secondary" target="_blank" href="https://www.google.com/search?q=din+midi+bluetooth+adapter">On the web <span class="fa fa-link"></span></a>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+		
+		
+	<div class="bg-dark py-3 mb-4">
+		<div class="container">
+			<a name="apps"></a>
+			<h2 class='text-white'>Apps</h2>
+			
+			<div class="card p-4 mb-4">
+				<h3>Monitoring</h3>
+				<a target="_blank" class="apps-link mb-3" href="https://play.google.com/store/apps/details?id=net.volcanomobile.midi_controller">
+					<img class="rounded-circle apps-icon" src="https://play-lh.googleusercontent.com/T2KqgJbmZGlYzNExC4DcJjlHmRudgbqPmDo_gISXtzpXBBDTtOsrhZpGVjWU4cDhC9Y=s180"></img>
+					<b>MIDI Scope</b>
+					<p>This app is primarily intended for app developers and OEMs to test MIDI.</p>
+					<p>It displays MIDI messages as hex bytes and by name. It also displays timestamps. The app provides a MidiDeviceService that other apps can write to.</p>
+				</a>
+				<h3>Controlling</h3>
+				<a target="_blank" class="apps-link mb-3" href="https://play.google.com/store/apps/details?id=net.volcanomobile.midi_controller">
+					<img class="rounded-circle apps-icon" src="assets/images/icons/midi-controller.svg"></img>
+					<b>MIDI Controller</b>
+					<p>Android MIDI Controller (MIDI Bluetooth compliant)</p>
+				</a>
+				<h3>Rendering</h3>
+				<a target="_blank" class="apps-link mb-3" href="https://play.google.com/store/apps/details?id=net.volcanomobile.fluidsynthmidi">
+					<img class="rounded-circle apps-icon" src="assets/images/icons/fluidsynth.png"></img>
+					<b>FluidSynth</b>
+					<p>Plug your device to your computer, or hook a MIDI USB master keyboard via an OTG cable to play with this low-latency FluidSynth 1.1.9 based Synthesizer.</p>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		
+		<a name="faq"></a>
+		<h2>FAQ</h2>
+		
+		<div class="card p-4">
+			<h3>Monitoring</h3>
+			<div class="mb-3">
+				<b>MIDI Scope</b>
+			</div>
+			<h3>Controlling</h3>
+			<div class="mb-3">
+				<b>MIDI Controller</b>
+			</div>
+			<h3>Rendering</h3>
+			<div class="mb-3">
+				<b>FluidSynth</b>
+			</div>
+		</div>
+
+		<br/><br/><br/><br/>
+		
+	</div>
+	
+</main>
+
+<footer class="bg-dark text-white pt-5 pb-1 d-block">
+	<div class="container">
+		<p class="text-center">
+			<a class="pt-3" href=".."><img src="../img/logo.png" class="d-inline-block align-center" alt="" style="width: 5rem; height: 5rem;"></a><br/>
+			<a class="pb-3 px-2 link-light d-inline-block" href="..">Volcano Mobile</a>
+		</p>
+	</div>
+</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+/** Main navigation bar */
+#main-navbar a{
+	text-decoration: none;
+	color: white;
+}
+#main-navbar a:hover{
+	text-decoration: underline;
+}
+
+
+
+/** MIDI Path */
+.midi-path-picto{
+	height: 7.0rem;
+	border-radius: 0.25rem;
+	padding: 0.5rem;
+}
+.midi-path-arrow{
+	border-radius: 50%;
+	/*padding: 0.5rem;	*/
+	/*box-shadow: 0rem 0.1rem 0.5rem #b0b0b0;*/
+	font-size: 1.5rem;
+	color: #808080;
+	margin: 0rem 1.0rem;
+}
+
+
+
+/** Apps layout */
+.apps-icon{
+	height: 5rem;
+	float: left;
+	margin-right: 1rem;
+	box-shadow: 0rem 0.25rem 2rem #d0d0d0;
+}
+.apps-link{
+	text-decoration: none;
+}
+a.apps-link p{
+	color: #212529;
+}
+.apps-icon{
+	height: 5rem;
+	float: left;
+	margin-right: 1rem;
+	box-shadow: 0rem 0.25rem 2rem #d0d0d0;
+}
